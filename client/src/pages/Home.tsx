@@ -354,7 +354,7 @@ const deliverables = [
     title: "PDF Diagnóstico Financiero",
     items: [
       "Lo que este diagnóstico hace por tu negocio",
-      "Contexto sectorial detallado",
+      "Contexto sectorial",
       "Fortalezas y áreas de mejora",
       "Soluciones recomendadas de Ascente CFO®",
     ],
@@ -366,7 +366,6 @@ const deliverables = [
       "Revisión personalizada de 30 min",
       "Contexto estratégico y resolución de dudas",
       "Priorización de acciones inmediatas",
-      "Hoja de ruta personalizada",
     ],
   },
 ];
