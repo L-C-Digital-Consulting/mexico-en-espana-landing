@@ -30,8 +30,7 @@ import {
 } from "lucide-react";
 
 // CDN URLs
-const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/ascente_logo_white_version-Lk3RkxrocE9Vop3Yx4pTVW.png";
-const LOGO_HERO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/ascente_logo_hero-MkuV7eMM8xTgUqac2Gd7Nz.png";
+const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/ascente_logo_white_bcd9e595.png";
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/hero_bg-hCmBTqbzuN6tTGJpJsBUWU.webp";
 const ANALYSIS_VISUAL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/analysis_visual-j2t5e5SjLANxscfmmRgggu.webp";
 const PROCESS_VISUAL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/process_visual-D5SBNVriRFz7PheorVEk5j.webp";
@@ -82,7 +81,7 @@ function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <img src={LOGO_WHITE} alt="Ascente CFO" className="h-12 object-contain" />
+        <img src={LOGO_WHITE} alt="Ascente CFO" className="h-8 object-contain" />
         <div className="hidden md:flex items-center gap-8 text-sm text-white/80">
           <a href="#problema" className="hover:text-white transition-colors">El Problema</a>
           <a href="#entregables" className="hover:text-white transition-colors">Entregables</a>
@@ -121,7 +120,7 @@ function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <img src={LOGO_HERO} alt="Ascente CFO" className="h-28 mx-auto mb-8 object-contain" />
+          <img src={LOGO_WHITE} alt="Ascente CFO" className="h-12 mx-auto mb-8 object-contain" />
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" style={{ fontFamily: "'DM Sans', sans-serif" }}>
             Diagnóstico de<br />
             <span className="text-[#7B8CFF]">Claridad Financiera</span>®
@@ -355,7 +354,7 @@ const deliverables = [
     title: "PDF Diagnóstico Financiero",
     items: [
       "Lo que este diagnóstico hace por tu negocio",
-      "Contexto sectorial",
+      "Contexto sectorial detallado",
       "Fortalezas y áreas de mejora",
       "Soluciones recomendadas de Ascente CFO®",
     ],
@@ -367,6 +366,7 @@ const deliverables = [
       "Revisión personalizada de 30 min",
       "Contexto estratégico y resolución de dudas",
       "Priorización de acciones inmediatas",
+      "Hoja de ruta personalizada",
     ],
   },
 ];
@@ -777,7 +777,7 @@ function CTASection() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#0d0060]/85 to-[#1C00A8]/90" />
       <AnimatedSection className="relative z-10 max-w-3xl mx-auto px-6 text-center">
         <motion.div variants={fadeUp}>
-            <img src={LOGO_HERO} alt="Ascente CFO" className="h-16 mx-auto mb-8 object-contain" />
+          <img src={LOGO_WHITE} alt="Ascente CFO" className="h-10 mx-auto mb-8 object-contain" />
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: "'DM Sans', sans-serif" }}>
             Solicite su Diagnóstico Hoy
           </h2>
@@ -804,7 +804,7 @@ function Footer() {
   return (
     <footer className="bg-[#0d0060] py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <img src={LOGO_WHITE} alt="Ascente CFO" className="h-10 object-contain" />
+        <img src={LOGO_WHITE} alt="Ascente CFO" className="h-6 object-contain" />
         <p className="text-white/50 text-sm">
           © {new Date().getFullYear()} Ascente CFO® — Todos los derechos reservados
         </p>
