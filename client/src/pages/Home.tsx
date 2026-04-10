@@ -30,7 +30,7 @@ import {
 } from "lucide-react";
 
 // CDN URLs
-const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/ascente_logo_white_bcd9e595.png";
+const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/ascente_logo_white_version-Lk3RkxrocE9Vop3Yx4pTVW.png";
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/hero_bg-hCmBTqbzuN6tTGJpJsBUWU.webp";
 const ANALYSIS_VISUAL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/analysis_visual-j2t5e5SjLANxscfmmRgggu.webp";
 const PROCESS_VISUAL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/process_visual-D5SBNVriRFz7PheorVEk5j.webp";
