@@ -31,6 +31,7 @@ import {
 
 // CDN URLs
 const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/ascente_logo_white_bcd9e595.png";
+const LOGO_HERO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/ascente_logo_hero_exact_blue-8ctiYDygi5YNpd32sthVB3.png";
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/hero_bg-hCmBTqbzuN6tTGJpJsBUWU.webp";
 const ANALYSIS_VISUAL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/analysis_visual-j2t5e5SjLANxscfmmRgggu.webp";
 const PROCESS_VISUAL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/process_visual-D5SBNVriRFz7PheorVEk5j.webp";
@@ -120,7 +121,7 @@ function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <img src={LOGO_WHITE} alt="Ascente CFO" className="h-12 mx-auto mb-8 object-contain" />
+          <img src={LOGO_HERO} alt="Ascente CFO" className="h-32 mx-auto mb-8 object-contain" />
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" style={{ fontFamily: "'DM Sans', sans-serif" }}>
             Diagnóstico de<br />
             <span className="text-[#7B8CFF]">Claridad Financiera</span>®
