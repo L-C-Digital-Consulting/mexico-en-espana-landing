@@ -27,6 +27,7 @@ import {
   ArrowRight,
   ChevronDown,
   ExternalLink,
+  MessageCircle,
 } from "lucide-react";
 
 // CDN URLs
@@ -37,6 +38,7 @@ const PROCESS_VISUAL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861
 const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/cta_bg-dTM6XQZtDsLVuXizNMU6cV.webp";
 
 const TALLY_LINK = "https://tally.so/r/xXyWaJ";
+const WHATSAPP_LINK = "https://wa.me/34635580883?text=Hola%2C%20estoy%20viendo%20la%20demo%20de%20Ascente%20CFO%C2%AE%20y%20tengo%20una%20consulta.";
 
 // Animation variants
 const fadeUp = {
@@ -89,14 +91,25 @@ function Navbar() {
           <a href="#analisis" className="hover:text-white transition-colors">Análisis</a>
           <a href="#precios" className="hover:text-white transition-colors">Precios</a>
         </div>
-        <a
-          href={TALLY_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-[#2800ff] hover:bg-[#2000d6] text-white text-sm font-semibold px-5 py-2.5 transition-colors"
-        >
-          Solicitar Diagnóstico
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#25D366] transition-colors"
+            title="Contactar por WhatsApp"
+          >
+            <MessageCircle className="w-5 h-5" />
+          </a>
+          <a
+            href={TALLY_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#2800ff] hover:bg-[#2000d6] text-white text-sm font-semibold px-5 py-2.5 transition-colors"
+          >
+            Solicitar Diagnóstico
+          </a>
+        </div>
       </div>
     </nav>
   );
@@ -805,9 +818,20 @@ function Footer() {
     <footer className="bg-[#0d0060] py-8">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <img src={LOGO_WHITE} alt="Ascente CFO" className="h-6 object-contain" />
-        <p className="text-white/50 text-sm">
-          © {new Date().getFullYear()} Ascente CFO® — Todos los derechos reservados
-        </p>
+        <div className="flex items-center gap-4">
+          <a
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-[#25D366] transition-colors"
+            title="Contactar por WhatsApp"
+          >
+            <MessageCircle className="w-5 h-5" />
+          </a>
+          <p className="text-white/50 text-sm">
+            © {new Date().getFullYear()} Ascente CFO® — Todos los derechos reservados
+          </p>
+        </div>
       </div>
     </footer>
   );
