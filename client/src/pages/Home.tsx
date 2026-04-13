@@ -126,7 +126,7 @@ function HeroSection() {
             <span className="text-[#7B8CFF]">Claridad Financiera</span>®
           </h1>
           <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Análisis financiero profesional para pymes. Conoce el estado real de tu empresa con 37 ratios, 8 KPIs y una sesión estratégica con un CFO — en solo 48 horas.
+            Análisis financiero profesional para pymes. Conoce el estado real de tu empresa con 43 ratios, 8 KPIs y una sesión estratégica con un CFO — en solo 48 horas.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -336,7 +336,7 @@ const deliverables = [
       "5 bloques financieros ¿Qué miden? ¿Por qué importan?",
       "8 Indicadores clave y Semáforo por bloque",
       "Gráficos dinámicos interactivos",
-      "Tabla de 37 ratios con alertas y Resumen",
+      "Tabla de 43 ratios con alertas y Resumen",
     ],
   },
   {
@@ -345,7 +345,7 @@ const deliverables = [
     items: [
       "Balance y PyG comparativos",
       "Explicación de las principales variaciones",
-      "Cálculo de 37 ratios detallados",
+      "Cálculo de 43 ratios detallados",
       "Glosario completo de términos",
     ],
   },
@@ -523,7 +523,7 @@ function AnalysisSection() {
             Los 5 Bloques del Análisis
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Cada bloque recibe un semáforo con análisis calibrado al contexto del sector. 37 ratios en total.
+            Cada bloque recibe un semáforo con análisis calibrado al contexto del sector. 43 ratios en total.
           </p>
         </motion.div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -548,7 +548,7 @@ function AnalysisSection() {
           ))}
         </div>
         <motion.p variants={fadeUp} className="text-center text-gray-500 text-sm mt-8 italic">
-          * 37 ratios en la tabla principal + 8 KPIs en el dashboard + variaciones interanuales de cada partida.
+          * 43 ratios en la tabla principal + 8 KPIs en el dashboard + variaciones interanuales de cada partida.
         </motion.p>
       </AnimatedSection>
     </section>
