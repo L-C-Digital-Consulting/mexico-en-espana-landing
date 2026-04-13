@@ -96,7 +96,7 @@ function Navbar() {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-[#25D366] transition-colors"
+            className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#25D366] hover:bg-[#1fa855] text-white transition-colors"
             title="Contactar por WhatsApp"
           >
             <MessageCircle className="w-5 h-5" />
@@ -823,7 +823,7 @@ function Footer() {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-[#25D366] transition-colors"
+            className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#25D366] hover:bg-[#1fa855] text-white transition-colors"
             title="Contactar por WhatsApp"
           >
             <MessageCircle className="w-5 h-5" />
