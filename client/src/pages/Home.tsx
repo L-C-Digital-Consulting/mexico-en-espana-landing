@@ -684,10 +684,11 @@ function PricingSection() {
               Plan Semestral
             </h3>
             <p className="text-sm text-gray-500 mb-6">2 diagnósticos al año</p>
-            <div className="mb-6">
+            <div className="mb-2">
               <span className="text-4xl font-bold text-[#1C00A8]" style={{ fontFamily: "'DM Sans', sans-serif" }}>348,76 €</span>
               <span className="text-sm text-gray-500 ml-1">+ IVA</span>
             </div>
+            <p className="text-sm text-gray-500 mb-6">por diagnóstico</p>
             <ul className="space-y-3 mb-8 flex-1">
               <li className="flex items-start gap-2 text-sm text-gray-700">
                 <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
