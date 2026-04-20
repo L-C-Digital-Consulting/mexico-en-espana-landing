@@ -346,31 +346,25 @@ const deliverables = [
     icon: Monitor,
     title: "Informe Interactivo",
     items: [
-      "Punto de partida, cómo leer este informe",
-      "5 bloques financieros ¿Qué miden? ¿Por qué importan?",
-      "8 Indicadores clave y Semáforo por bloque",
-      "Gráficos dinámicos interactivos",
-      "Tabla de 43 ratios con alertas y Resumen",
+      "Punto de Partida — Las 6 áreas del análisis y cómo interpretar los resultados",
+      "Diagnóstico — el estado real del negocio: resumen ejecutivo, contexto sectorial, semáforos y hallazgos",
+      "Plan de Acción — qué hacer, en qué orden y qué se consigue. Derivado directamente de los semáforos",
+      "Dashboard — los indicadores principales en números, comparados con el ejercicio anterior",
+      "Tabla de 43 ratios con alertas y análisis completo",
     ],
   },
   {
     icon: FileText,
-    title: "PDF Financiero",
+    title: "PDF Diagnóstico Completo",
     items: [
-      "Balance y PyG comparativos",
-      "Explicación de las principales variaciones",
-      "Cálculo de 43 ratios detallados",
-      "Glosario completo de términos",
-    ],
-  },
-  {
-    icon: FileBarChart,
-    title: "PDF Diagnóstico Financiero",
-    items: [
-      "Lo que este diagnóstico hace por tu negocio",
-      "Contexto sectorial",
-      "Fortalezas y áreas de mejora",
-      "Soluciones recomendadas de Ascente CFO®",
+      "Punto de Partida — Las 6 áreas del análisis y cómo interpretar los resultados",
+      "Diagnóstico — el estado real del negocio: resumen ejecutivo, contexto sectorial, semáforos y hallazgos",
+      "Plan de Acción — qué hacer, en qué orden y qué se consigue. Derivado directamente de los semáforos",
+      "Dashboard — los indicadores principales en números, comparados con el ejercicio anterior, con evolución visual de márgenes, rentabilidad y estructura",
+      "Estados Financieros — Balance de Situación, Cuenta de Resultados con variaciones detalladas y Estado de Flujo de Efectivo",
+      "Indicadores — el detalle técnico completo: más de 40 indicadores con referencia y estado",
+      "Soluciones Ascente CFO — servicios recomendados basados en el análisis de tu diagnóstico",
+      "Glosario de términos",
     ],
   },
   {
@@ -393,7 +387,7 @@ function DeliverablesSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>
             Lo que Recibe con el Diagnóstico
           </h2>
-          <p className="text-lg text-white/70">Cuatro entregables clave en 48 horas.</p>
+          <p className="text-lg text-white/70">Tres entregables clave en 48 horas.</p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-6">
           {deliverables.map((d, i) => (
