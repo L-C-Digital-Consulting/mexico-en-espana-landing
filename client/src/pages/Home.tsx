@@ -346,7 +346,7 @@ const deliverables = [
     icon: FileBarChart,
     title: "Informe en formato HTML con PDF descargable",
     items: [
-      "Punto de Partida: estás aquí. Lo que hace este diagnóstico por tu negocio, explicación de cada una de las 6 áreas de análisis financiero y contexto sectorial.",
+      "Punto de Partida — Lo que hace este diagnóstico por tu negocio, explicación de cada una de las 6 áreas de análisis financiero y contexto sectorial.",
       "Diagnóstico: el estado real del negocio con resumen ejecutivo, riesgos críticos identificados, comparativa con indicadores medios del sectorial, estado de las 6 áreas de análisis y hallazgos del diagnóstico: fortalezas y áreas de mejora.",
       "Plan de Acción: acciones identificadas en el diagnóstico, tus próximos pasos a 30, 60 y 90 días.",
       "Dashboard: los indicadores principales de tu negocio en números, presentación gráfica comparativa de tu Balance, Cuenta de Resultados y flujo de efectivo, también tus márgenes y ratios financieros.",
