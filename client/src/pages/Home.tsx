@@ -344,24 +344,24 @@ function ProblemsSection() {
 const deliverables = [
   {
     icon: FileBarChart,
-    title: "Diagnóstico Completo (PDF e Informe Interactivo)",
+    title: "Informe en formato HTML con PDF descargable",
     items: [
-      "Punto de Partida: Las 6 áreas del análisis y cómo interpretar los resultados",
-      "Diagnóstico: el estado real del negocio con resumen ejecutivo, contexto sectorial, semáforos y hallazgos",
-      "Plan de Acción: qué hacer, en qué orden y qué se consigue, derivado directamente de los semáforos",
-      "Dashboard: los indicadores principales en números, comparados con el ejercicio anterior, con evolución visual de márgenes, rentabilidad y estructura",
-      "Estados Financieros: Balance de Situación, Cuenta de Resultados con variaciones detalladas y Estado de Flujo de Efectivo",
-      "Indicadores: el detalle técnico completo con más de 40 indicadores con referencia y estado",
-      "Glosario de términos financieros",
+      "Punto de Partida: estás aquí. Lo que hace este diagnóstico por tu negocio, explicación de cada una de las 6 áreas de análisis financiero y contexto sectorial.",
+      "Diagnóstico: el estado real del negocio con resumen ejecutivo, riesgos críticos identificados, comparativa con indicadores medios del sectorial, estado de las 6 áreas de análisis y hallazgos del diagnóstico: fortalezas y áreas de mejora.",
+      "Plan de Acción: acciones identificadas en el diagnóstico, tus próximos pasos a 30, 60 y 90 días.",
+      "Dashboard: los indicadores principales de tu negocio en números, presentación gráfica comparativa de tu Balance, Cuenta de Resultados y flujo de efectivo, también tus márgenes y ratios financieros.",
+      "Estados Financieros: el Balance de Situación y Cuenta de Resultados comparativos con análisis de variaciones principales y estado de flujo de efectivo de tu empresa.",
+      "Indicadores Financieros: el detalle técnico completo con 43 indicadores financieros de tu negocio con referencia y estado.",
+      "Glosario de términos: definiciones de los principales términos contables y financieros.",
     ],
   },
   {
     icon: Video,
-    title: "Sesión con un Director Financiero Senior",
+    title: "Sesión estratégica con un Director Financiero Senior",
     items: [
-      "Revisión personalizada de 30 min",
-      "Contexto estratégico y resolución de dudas",
-      "Priorización de acciones inmediatas",
+      "Revisión personalizada de 45 minutos.",
+      "Contexto estratégico y resolución de dudas.",
+      "Priorización de acciones inmediatas.",
     ],
   },
 ];
@@ -375,7 +375,7 @@ function DeliverablesSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>
             Lo que Recibe con el Diagnóstico
           </h2>
-          <p className="text-lg text-white/70">Dos entregables clave en 48 horas.</p>
+          <p className="text-lg text-white/70">Dos entregables completos en 48 horas.</p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-6">
           {deliverables.map((d, i) => (
