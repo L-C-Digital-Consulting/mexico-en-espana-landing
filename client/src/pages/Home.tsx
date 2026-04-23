@@ -415,7 +415,7 @@ function DeliverablesSection() {
           </a>
         </motion.div>
         <motion.p variants={fadeUp} className="text-center text-white/60 text-sm mt-8 italic">
-          * La videollamada de 30 minutos está incluida en todas las opciones de diagnóstico.
+          * La videollamada de 45 minutos está incluida en todas las opciones de diagnóstico.
         </motion.p>
       </AnimatedSection>
     </section>
@@ -439,7 +439,7 @@ const steps = [
   {
     num: "03",
     title: "Sesión con un Director Financiero Senior",
-    desc: "30 minutos de trabajo estratégico: revisión del informe, resolución de dudas y priorización de acciones inmediatas.",
+    desc: "45 minutos de trabajo estratégico: revisión del informe, resolución de dudas y priorización de acciones inmediatas.",
     icon: Users,
   },
 ];
@@ -709,7 +709,7 @@ function PricingSection() {
               </li>
               <li className="flex items-start gap-2 text-sm text-gray-700">
                 <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                Videollamada de 30 min con un Director Financiero Senior
+                Videollamada de 45 min con un Director Financiero Senior
               </li>
               <li className="flex items-start gap-2 text-sm text-gray-700">
                 <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
@@ -748,7 +748,7 @@ function PricingSection() {
               </li>
               <li className="flex items-start gap-2 text-sm text-gray-700">
                 <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                2 videollamadas de 30 min con un Director Financiero Senior
+                2 videollamadas de 45 min con un Director Financiero Senior
               </li>
               <li className="flex items-start gap-2 text-sm text-gray-700">
                 <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
@@ -790,7 +790,7 @@ function PricingSection() {
               </li>
               <li className="flex items-start gap-2 text-sm text-white/90">
                 <CheckCircle2 className="w-4 h-4 text-[#7B8CFF] mt-0.5 flex-shrink-0" />
-                4 videollamadas de 30 min con un Director Financiero Senior
+                4 videollamadas de 45 min con un Director Financiero Senior
               </li>
               <li className="flex items-start gap-2 text-sm text-white/90">
                 <CheckCircle2 className="w-4 h-4 text-[#7B8CFF] mt-0.5 flex-shrink-0" />
