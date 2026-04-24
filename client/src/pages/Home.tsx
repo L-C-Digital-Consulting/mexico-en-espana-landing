@@ -896,11 +896,11 @@ export default function Home() {
       <StatsSection />
       <RootProblemSection />
       <ProblemsSection />
-      <DeliverablesSection />
-      <ProcessSection />
-      <AnalysisSection />
       <WhatDiagnosisDoes />
       <BenefitsSection />
+      <ProcessSection />
+      <AnalysisSection />
+      <DeliverablesSection />
       <PricingSection />
       <CTASection />
       <Footer />
