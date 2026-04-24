@@ -898,9 +898,9 @@ export default function Home() {
       <ProblemsSection />
       <WhatDiagnosisDoes />
       <BenefitsSection />
-      <ProcessSection />
       <AnalysisSection />
       <DeliverablesSection />
+      <ProcessSection />
       <PricingSection />
       <CTASection />
       <Footer />
