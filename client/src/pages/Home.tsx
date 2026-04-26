@@ -322,24 +322,6 @@ function WhyIsImportantSection() {
           <p className="text-lg text-gray-600">Evita convertirte en una estadística</p>
         </motion.div>
         <div className="space-y-12">
-          <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-[#2800ff]">
-            <h3 className="text-xl font-bold text-[#1C00A8] mb-4">El Contexto de Crisis</h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <p className="text-3xl font-bold text-[#2800ff] mb-2">42%</p>
-                <p className="text-gray-700">de pymes cerraron sin beneficios</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl font-bold text-[#2800ff] mb-2">46%</p>
-                <p className="text-gray-700">sufrió problemas de liquidez</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl font-bold text-[#2800ff] mb-2">Récord</p>
-                <p className="text-gray-700">histórico de concursos</p>
-              </div>
-            </div>
-          </motion.div>
-
           <motion.div variants={fadeUp} className="bg-white p-8">
             <h3 className="text-xl font-bold text-[#1C00A8] mb-4">¿Qué te Falta Sin Claridad Financiera?</h3>
             <div className="space-y-3">
@@ -375,7 +357,7 @@ function WhyIsImportantSection() {
               ))}
             </div>
             <p className="mt-8 text-lg italic">
-              "La diferencia entre una Pyme que prospera y una que quiebra no es la suerte — es la claridad financiera."
+              "La diferencia entre una empresa que prospera y una que quiebra no es la suerte — es la claridad financiera."
             </p>
           </motion.div>
         </div>
@@ -392,7 +374,7 @@ function KeyQuestionsSection() {
         <motion.div variants={fadeUp} className="text-center mb-16">
           <p className="text-[#2800ff] font-semibold text-sm tracking-widest uppercase mb-3">Autoevaluación</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#1C00A8] mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-            Las Preguntas que Toda Pyme Debe Hacerse
+            Las Preguntas que Toda Empresa Debe Hacerse
           </h2>
           <p className="text-lg text-gray-600">Si no puedes responder estas preguntas, tu negocio está en riesgo</p>
         </motion.div>
@@ -507,13 +489,7 @@ const sixProblems = [
     desc: "Cuando las ventas bajan 10%, tus pérdidas caen 30%. Tus costes fijos son demasiado altos. Una recesión puede llevarte a la quiebra más rápido de lo que crees.",
     icon: Shield,
   },
-  {
-    num: "06",
-    title: "Destrucción de Valor Disfrazada de Crecimiento",
-    desc: "Tu empresa crece, pero el valor real disminuye. Si ROCE < Coste de Deuda, cada inversión destruye valor. El diagnóstico lo detecta ahora, con tus datos reales.",
-    icon: FileBarChart,
-  },
-];
+  ];
 
 function ProblemsSection() {
   return (
@@ -544,7 +520,7 @@ function ProblemsSection() {
         </div>
         <motion.div variants={fadeUp} className="mt-12 text-center bg-[#1C00A8] text-white p-8">
           <p className="text-lg">
-            Estos 6 problemas tienen algo en común: <span className="font-bold">no los ves hasta que es demasiado tarde</span>. El Diagnóstico de Claridad Financiera los detecta ahora, con tus datos reales, y te da el mapa exacto para evitarlos.
+            Estos 5 problemas tienen algo en común: <span className="font-bold">no los ves hasta que es demasiado tarde</span>. El Diagnóstico de Claridad Financiera los detecta ahora, con tus datos reales, y te da el mapa exacto para evitarlos.
           </p>
         </motion.div>
       </AnimatedSection>
@@ -719,85 +695,62 @@ function DeliverablesSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-[#1C00A8] mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>
             Lo que Recibe con el Diagnóstico
           </h2>
+          <p className="text-lg text-gray-600">Dos entregables completos en 48 horas.</p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <motion.div variants={fadeUp} className="bg-[#f8f7ff] p-8 border-t-4 border-[#2800ff]">
-            <div className="flex items-center gap-3 mb-4">
-              <Monitor className="w-6 h-6 text-[#2800ff]" />
-              <h3 className="text-lg font-bold text-[#1C00A8]">Informe Interactivo</h3>
-            </div>
+          <motion.div variants={fadeUp} className="bg-[#f8f7ff] p-8 border-l-4 border-[#2800ff]">
+            <h3 className="text-lg font-bold text-[#1C00A8] mb-4 flex items-start gap-2">
+              <FileText className="w-5 h-5 text-[#2800ff] mt-0.5 flex-shrink-0" />
+              Informe en formato HTML con PDF descargable
+            </h3>
             <ul className="space-y-3 text-sm text-gray-700">
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                Dashboard interactivo con todos tus ratios
+                <span className="text-[#2800ff] font-bold mt-0.5">•</span>
+                <span>Punto de Partida: Lo que hace este diagnóstico por tu negocio, explicación de cada una de las 6 áreas de análisis financiero y contexto sectorial.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                Visualizaciones de datos en tiempo real
+                <span className="text-[#2800ff] font-bold mt-0.5">•</span>
+                <span>Diagnóstico: el estado real del negocio con resumen ejecutivo, riesgos críticos identificados, comparativa con indicadores medios del sectorial, estado de las 6 áreas de análisis y hallazgos del diagnóstico: fortalezas y áreas de mejora.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                Análisis comparativo sectorial
+                <span className="text-[#2800ff] font-bold mt-0.5">•</span>
+                <span>Plan de Acción: acciones identificadas en el diagnóstico, tus próximos pasos a 30, 60 y 90 días.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#2800ff] font-bold mt-0.5">•</span>
+                <span>Dashboard: los indicadores principales de tu negocio en números, presentación gráfica comparativa de tu Balance, Cuenta de Resultados y flujo de efectivo, también tus márgenes y ratios financieros.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#2800ff] font-bold mt-0.5">•</span>
+                <span>Estados Financieros: el Balance de Situación y Cuenta de Resultados comparativos con análisis de variaciones principales y estado de flujo de efectivo de tu empresa.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#2800ff] font-bold mt-0.5">•</span>
+                <span>Indicadores Financieros: el detalle técnico completo con 43 indicadores financieros de tu negocio con referencia y estado.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#2800ff] font-bold mt-0.5">•</span>
+                <span>Glosario de términos: definiciones de los principales términos contables y financieros.</span>
               </li>
             </ul>
           </motion.div>
-          <motion.div variants={fadeUp} className="bg-[#f8f7ff] p-8 border-t-4 border-[#2800ff]">
-            <div className="flex items-center gap-3 mb-4">
-              <FileText className="w-6 h-6 text-[#2800ff]" />
-              <h3 className="text-lg font-bold text-[#1C00A8]">Informes PDF</h3>
-            </div>
+          <motion.div variants={fadeUp} className="bg-[#f8f7ff] p-8 border-l-4 border-[#2800ff]">
+            <h3 className="text-lg font-bold text-[#1C00A8] mb-4 flex items-start gap-2">
+              <Video className="w-5 h-5 text-[#2800ff] mt-0.5 flex-shrink-0" />
+              Sesión estratégica con un Director Financiero Senior
+            </h3>
             <ul className="space-y-3 text-sm text-gray-700">
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                PDF de diagnóstico ejecutivo
+                <span className="text-[#2800ff] font-bold mt-0.5">•</span>
+                <span>Revisión personalizada de 45 minutos.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                PDF financiero detallado
+                <span className="text-[#2800ff] font-bold mt-0.5">•</span>
+                <span>Contexto estratégico y resolución de dudas.</span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                Plan de acción recomendado
-              </li>
-            </ul>
-          </motion.div>
-          <motion.div variants={fadeUp} className="bg-[#f8f7ff] p-8 border-t-4 border-[#2800ff]">
-            <div className="flex items-center gap-3 mb-4">
-              <Video className="w-6 h-6 text-[#2800ff]" />
-              <h3 className="text-lg font-bold text-[#1C00A8]">Sesión Estratégica</h3>
-            </div>
-            <ul className="space-y-3 text-sm text-gray-700">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                45 minutos de videollamada
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                Revisión personalizada del informe
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                Priorización de acciones inmediatas
-              </li>
-            </ul>
-          </motion.div>
-          <motion.div variants={fadeUp} className="bg-[#f8f7ff] p-8 border-t-4 border-[#2800ff]">
-            <div className="flex items-center gap-3 mb-4">
-              <Users className="w-6 h-6 text-[#2800ff]" />
-              <h3 className="text-lg font-bold text-[#1C00A8]">Director Financiero</h3>
-            </div>
-            <ul className="space-y-3 text-sm text-gray-700">
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                Profesional certificado y con experiencia
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                Especializado en Pymes españolas
-              </li>
-              <li className="flex items-start gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#2800ff] mt-0.5 flex-shrink-0" />
-                Disponible para seguimiento
+                <span className="text-[#2800ff] font-bold mt-0.5">•</span>
+                <span>Priorización de acciones inmediatas.</span>
               </li>
             </ul>
           </motion.div>
@@ -809,13 +762,12 @@ function DeliverablesSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#0A66C2] hover:bg-[#095195] text-white font-semibold px-8 py-3 transition-colors"
           >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.836 0-9.754h3.554v1.391c.435-.671 1.213-1.627 2.948-1.627 2.154 0 3.767 1.41 3.767 4.44v5.55zM5.337 8.855c-1.144 0-1.915-.759-1.915-1.71 0-.955.771-1.71 1.958-1.71 1.187 0 1.914.755 1.939 1.71 0 .951-.752 1.71-1.982 1.71zm1.581 11.597H3.635V9.558h3.283v10.894zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+            </svg>
             Conoce a nuestro Director Financiero
-            <ArrowRight className="w-4 h-4" />
           </a>
         </motion.div>
-        <motion.p variants={fadeUp} className="text-center text-white/60 text-sm mt-8 italic bg-[#1C00A8] py-4 px-6 rounded">
-          * La videollamada de 45 minutos está incluida en todas las opciones de diagnóstico.
-        </motion.p>
       </AnimatedSection>
     </section>
   );
