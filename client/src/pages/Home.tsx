@@ -41,7 +41,7 @@ const VINTAGE_ACCOUNTING = "https://d2xsxph8kpxj0f.cloudfront.net/31051966349340
 const MODERN_CFO_PRESENTATION = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/cfo-hispanic-white-40s_5440af83.jpg";
 const CFO_DASHBOARD_PRESENTATION = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/cfo-dashboard-presentation_c33aa15a.png";
 
-const TALLY_LINK = "https://tally.so/r/xXyWaJ";
+const TALLY_LINK = "https://tally.so/r/ZjGg0z";
 const WHATSAPP_LINK = "https://wa.me/34635580883?text=Hola%2C%20estoy%20viendo%20la%20demo%20de%20Ascente%20CFO%C2%AE%20y%20tengo%20una%20consulta.";
 const WHATSAPP_LOGO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/whatsapp_logo_09eed037.png";
 const LINKEDIN_URL = "https://www.linkedin.com/in/miguel-ángel-lópez-sainz-0bb25341";
