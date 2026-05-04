@@ -974,7 +974,6 @@ function AboutMiguelSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-[#1C00A8] mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>
             Quién Hace Tu Diagnóstico
           </h2>
-          <p className="text-lg text-gray-600">No una gestoría. No un software. Un Director Financiero Senior con 20 años de experiencia real.</p>
         </motion.div>
         <div className="max-w-3xl mx-auto">
           <motion.div variants={fadeUp} className="space-y-6">
@@ -984,13 +983,14 @@ function AboutMiguelSection() {
               </h3>
               <p className="text-[#2800ff] font-semibold">Director Financiero Senior · L&amp;C CFO®</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {[
-                { icon: Shield, text: "Ex PwC (Big 4) — Auditoría Senior. Base de rigor técnico y metodología financiera." },
-                { icon: TrendingUp, text: "Grupo Televisa · 10 años — CFO Argentina + Controller Miami. Finanzas en escala real." },
-                { icon: BarChart3, text: "CFO en México, Panamá y Uruguay — operaciones en más de 20 países simultáneamente." },
-                { icon: FileBarChart, text: "Especialista en FP&A, M&A, reestructuración de capital y transformación digital con IA." },
-                { icon: Monitor, text: "Máster en Finanzas — ESADE España · Certificado en Machine Learning e IA para Directivos." },
+                { icon: Shield, text: "Ex PwC (Big 4) — 5 años como Auditor Senior. Bases contables, fiscales, control interno, análisis financiero y de riesgos." },
+                { icon: Monitor, text: "3 años como Controller Financiero en Estados Unidos. Gestión operativa, reporting, control presupuestario e implementación de ERP." },
+                { icon: TrendingUp, text: "16 años como Director Financiero en Latinoamérica y España. Negociación bancaria, reestructuración de deuda, planificación financiera, presupuestos, control de gestión, flujo de caja, mejora de rentabilidad y reducción de costes." },
+                { icon: BarChart3, text: "Eficiencia de procesos administrativos y operativos mediante inteligencia artificial y la experiencia real de haber resuelto problemas financieros en más de 20 países — la combinación de ambos es lo que marca la diferencia." },
+                { icon: FileBarChart, text: "Máster en Finanzas — ESADE España." },
+                { icon: Users, text: "En colaboración con Grupo Next — soporte fiscal, legal y contable integrado." },
               ].map((item, i) => (
                 <motion.div key={i} variants={fadeUp} className="flex gap-3 items-start">
                   <item.icon className="w-5 h-5 text-[#2800ff] flex-shrink-0 mt-0.5" />
@@ -1001,6 +1001,22 @@ function AboutMiguelSection() {
             <p className="text-gray-600 italic text-sm border-l-4 border-[#2800ff] pl-4">
               "Lo que hago hoy: convertir los números de tu empresa en decisiones claras. Basado en Madrid, asesorando pymes españolas."
             </p>
+            <div className="bg-[#f8f7ff] p-6 border-l-4 border-[#2800ff] space-y-3">
+              <p className="text-sm font-semibold text-[#1C00A8] uppercase tracking-widest mb-4">Lo que hago</p>
+              {[
+                { text: "Diagnóstico de Claridad Financiera®", desc: "Punto de partida. Sabes dónde estás en 48h." },
+                { text: "Planeación Financiera Mensual®", desc: "CFO Externo con seguimiento mensual continuo." },
+                { text: "Presupuesto Estratégico Anual®", desc: "Tu estrategia convertida en números accionables." },
+                { text: "Optimización de Rentabilidad y Caja®", desc: "Mejora de márgenes y flujos de caja." },
+                { text: "Estrategia de Deuda y Capital®", desc: "Financiación, reestructuración y acceso a capital." },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-3 items-start">
+                  <CheckCircle2 className="w-4 h-4 text-[#2800ff] flex-shrink-0 mt-0.5" />
+                  <p className="text-sm text-gray-700"><span className="font-semibold text-[#1C00A8]">{item.text}</span> — {item.desc}</p>
+                </div>
+              ))}
+              <p className="text-xs text-gray-500 pt-2 italic">El Diagnóstico es la puerta correcta antes de cualquier compromiso mayor.</p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <a
                 href={LINKEDIN_URL}
@@ -1009,7 +1025,7 @@ function AboutMiguelSection() {
                 className="inline-flex items-center gap-2 bg-[#0A66C2] hover:bg-[#095195] text-white font-semibold px-6 py-3 text-sm transition-colors"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.836 0-9.754h3.554v1.391c.435-.671 1.213-1.627 2.948-1.627 2.154 0 3.767 1.41 3.767 4.44v5.55zM5.337 8.855c-1.144 0-1.915-.759-1.915-1.71 0-.955.771-1.71 1.958-1.71 1.187 0 1.914.755 1.939 1.71 0 .951-.752 1.71-1.982 1.71zm1.581 11.597H3.635V9.558h3.283v10.894zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.836 0-9.754h3.554v1.391c.435-.671 1.213-1.627 2.948-1.627 2.154 0 3.767 1.41 3.767 4.44v5.55zM5.337 8.855c-1.144 0-1.915-.759-1.915-1.71 0-.955.771-1.71 1.958-1.71 0 .951-.752 1.71-1.982 1.71zm1.581 11.597H3.635V9.558h3.283v10.894zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
                 </svg>
                 Perfil LinkedIn
               </a>
