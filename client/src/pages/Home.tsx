@@ -1041,15 +1041,19 @@ function AboutMiguelSection() {
 const faqItems = [
   {
     q: "¿Qué documentos necesito para el diagnóstico?",
-    a: "Necesitas el Balance de Situación y la Cuenta de Resultados (PyG) de los dos últimos ejercicios cerrados. Opcionalmente, el detalle de deuda financiera y la plantilla de costes fijos y variables — para un análisis más completo. Si tus datos están en formato Cegid, A3, ContaPlus u otro ERP, los procesamos directamente.",
+    a: "Balance de Situación + Cuenta de PyG de los 2 últimos ejercicios cerrados (desglose mínimo 3 dígitos PGC), más una plantilla de costes y deuda que te facilitamos. Si usas Sage, A3, Holded, ContaSOL u otro ERP, puedes exportarlos directamente desde ahí — o pedirle a tu gestoría que te los envíe.",
   },
   {
-    q: "¿En qué formato recibo el informe?",
-    a: "Recibirás por email un informe HTML interactivo con 8 secciones (Diagnóstico, Dashboard, Gráficos, Ratios, Plan de Acción…) con acceso durante 30 días, más los PDFs descargables. El informe incluye 43 indicadores financieros con semáforos de estado y comparativa sectorial.",
+    q: "¿En cuánto tiempo recibo el informe?",
+    a: "2 días hábiles desde que te confirmamos por email que la documentación está completa y correcta. Ese email es el punto de partida oficial. Recibirás el informe junto con el enlace para reservar la videollamada en el horario que mejor te venga.",
   },
   {
     q: "¿Qué pasa en la sesión de 45 minutos?",
     a: "Es una videollamada con Miguel Ángel donde revisamos juntos el informe: los hallazgos más relevantes, el plan de acción priorizado a 30/60/90 días, y tus preguntas. No es una presentación — es una sesión de trabajo estratégico sobre los datos reales de tu empresa.",
+  },
+  {
+    q: "¿Mis datos son confidenciales?",
+    a: "Sí. Estamos sujetos a RGPD y al deber de confidencialidad durante la vigencia del contrato y 5 años posteriores. Los datos no se comparten con terceros ni se usan para otros fines.",
   },
   {
     q: "¿Cuál es la diferencia entre esto y lo que hace mi gestoría?",
@@ -1060,12 +1064,12 @@ const faqItems = [
     a: "No. El 60% de empresas que hacen el diagnóstico están en crecimiento — y descubren que su crecimiento consume más caja de la que genera, o que su margen real es la mitad de lo que creían. La claridad financiera es igual de valiosa cuando las cosas van bien: te permite crecer de forma sostenible.",
   },
   {
-    q: "¿Cuánto tiempo tarda en estar listo el informe?",
-    a: "48 horas desde que recibimos los documentos completos. Recibirás el informe por email junto con el enlace para reservar la videollamada en el horario que mejor te venga.",
+    q: "¿Sirve si mi contabilidad no está del todo ordenada?",
+    a: "El análisis funciona siempre que tengas los estados financieros de los 2 últimos ejercicios. Si hay lagunas o falta desglose de cuentas, te indicamos exactamente qué corregir antes de arrancar. Nunca iniciamos el análisis con datos incompletos.",
   },
   {
-    q: "¿Qué incluye el Plan Anual (267 €/diagnóstico)?",
-    a: "4 diagnósticos al año — uno por trimestre — con 4 sesiones estratégicas incluidas. Es la opción para quien quiere seguimiento continuo de la salud financiera sin el compromiso de un CFO externo mensual. El precio por diagnóstico pasa de 447 € a 267 €.",
+    q: "¿Cuál es la diferencia entre los tres planes?",
+    a: "El Diagnóstico Único (447 €) es un análisis puntual. El Plan Semestral (347 €/diagnóstico) incluye dos diagnósticos al año — uno por semestre. El Plan Anual (267 €/diagnóstico) incluye cuatro — uno por trimestre. Los tres incluyen exactamente lo mismo: informe completo HTML + PDF y sesión estratégica de 45 min.",
   },
 ];
 
