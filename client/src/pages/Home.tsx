@@ -1004,13 +1004,13 @@ function AboutMiguelSection() {
             <div className="bg-[#f8f7ff] p-6 border-l-4 border-[#2800ff] space-y-3">
               <p className="text-sm font-semibold text-[#1C00A8] uppercase tracking-widest mb-4">Lo que hago</p>
               {[
-                { text: "Diagnóstico de Claridad Financiera®", desc: "Diagnóstico financiero completo para detectar riesgos, ineficiencias y oportunidades." },
-                { text: "Planeación Financiera Mensual®", desc: "CFO estratégico sin contratar estructura interna." },
-                { text: "Presupuesto Estratégico Anual®", desc: "Convierte la estrategia en números accionables." },
-                { text: "Análisis de Decisiones Críticas®", desc: "Evaluación multiescenario para decisiones de alto impacto." },
-                { text: "Optimización de Rentabilidad y Caja®", desc: "Mejora de rentabilidad, flujos de caja y eficiencia operativa." },
-                { text: "Estrategia de Deuda y Capital®", desc: "Financiación, estructuración de deuda y acceso a capital privado." },
-                { text: "Validación de Nuevos Negocios®", desc: "Viabilidad de nuevos negocios o líneas: mercado, modelo e inversión." },
+                { text: "Diagnóstico de Claridad Financiera", desc: "Diagnóstico financiero completo para detectar riesgos, ineficiencias y oportunidades." },
+                { text: "Planeación Financiera Mensual", desc: "CFO estratégico sin contratar estructura interna." },
+                { text: "Presupuesto Estratégico Anual", desc: "Convierte la estrategia en números accionables." },
+                { text: "Análisis de Decisiones Críticas", desc: "Evaluación multiescenario para decisiones de alto impacto." },
+                { text: "Optimización de Rentabilidad y Caja", desc: "Mejora de rentabilidad, flujos de caja y eficiencia operativa." },
+                { text: "Estrategia de Deuda y Capital", desc: "Financiación, estructuración de deuda y acceso a capital privado." },
+                { text: "Validación de Nuevos Negocios", desc: "Viabilidad de nuevos negocios o líneas: mercado, modelo e inversión." },
               ].map((item, i) => (
                 <div key={i} className="flex gap-3 items-start">
                   <CheckCircle2 className="w-4 h-4 text-[#2800ff] flex-shrink-0 mt-0.5" />
