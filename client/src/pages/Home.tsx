@@ -1206,7 +1206,7 @@ function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Privacidad</a></li>
+              <li><a href={PRIVACY_POLICY_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacidad</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Términos</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Cookies</a></li>
             </ul>
