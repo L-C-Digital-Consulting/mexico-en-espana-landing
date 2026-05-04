@@ -1216,7 +1216,9 @@ function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm">
+              <li><a href="/aviso-legal" className="hover:text-white transition-colors">Aviso Legal</a></li>
               <li><a href={PRIVACY_POLICY_URL} className="hover:text-white transition-colors">Privacidad</a></li>
+              <li><a href="/cookies" className="hover:text-white transition-colors">Cookies</a></li>
             </ul>
           </div>
         </div>
