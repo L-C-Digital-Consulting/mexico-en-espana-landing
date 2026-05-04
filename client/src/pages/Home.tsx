@@ -1162,15 +1162,26 @@ function CTASection() {
           <p className="text-lg text-white/80 mb-10 max-w-2xl mx-auto">
             Descubre exactamente dónde estás financieramente y obtén un plan de acción concreto en solo 48 horas.
           </p>
-          <a
-            href={TALLY_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#2800ff] hover:bg-[#2000d6] text-white font-semibold px-10 py-4 text-lg transition-colors"
-          >
-            Solicitar Diagnóstico Ahora
-            <ArrowRight className="w-5 h-5" />
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={TALLY_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#2800ff] hover:bg-[#2000d6] text-white font-semibold px-10 py-4 text-lg transition-colors"
+            >
+              Solicitar Diagnóstico Ahora
+              <ArrowRight className="w-5 h-5" />
+            </a>
+            <a
+              href={`https://wa.me/34635580883?text=Hola%2C%20he%20visto%20el%20Diagn%C3%B3stico%20de%20Claridad%20Financiera%20y%20me%20gustar%C3%ADa%20ver%20una%20demo%20antes%20de%20contratar.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-10 py-4 text-lg transition-colors"
+            >
+              <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
+              Solicitar Demo
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
