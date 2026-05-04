@@ -1201,16 +1201,15 @@ function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Producto</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Características</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Planes</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
+              <li><a href="#diagnostico" className="hover:text-white transition-colors">Características</a></li>
+              <li><a href="#planes" className="hover:text-white transition-colors">Planes</a></li>
+              <li><a href="#faq" className="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
             </ul>
           </div>
           <div>
             <h4 className="text-white font-semibold mb-4">Empresa</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Sobre Nosotros</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+              <li><a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Sobre Nosotros</a></li>
               <li><a href="mailto:miguel.lopez@lycconsulting.com" className="hover:text-white transition-colors">Contacto</a></li>
             </ul>
           </div>
@@ -1218,8 +1217,6 @@ function Footer() {
             <h4 className="text-white font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm">
               <li><a href={PRIVACY_POLICY_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacidad</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Términos</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Cookies</a></li>
             </ul>
           </div>
         </div>
