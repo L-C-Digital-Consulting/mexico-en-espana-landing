@@ -45,7 +45,7 @@ const TALLY_LINK = "https://tally.so/r/ZjGg0z";
 const WHATSAPP_LINK = "https://wa.me/34635580883?text=Hola%2C%20me%20interesa%20el%20Diagn%C3%B3stico%20de%20Claridad%20Financiera%C2%AE%20y%20tengo%20una%20pregunta.";
 const WHATSAPP_LOGO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/whatsapp_logo_09eed037.png";
 const LINKEDIN_URL = "https://www.linkedin.com/in/miguel-ángel-lópez-sainz-0bb25341";
-const PRIVACY_POLICY_URL = "https://drive.google.com/file/d/1AqoOgiN6LzB_S8kV447NZwGYnGpLbXWD/view?usp=drive_link";
+const PRIVACY_POLICY_URL = "/privacidad";
 
 // Animation variants
 const fadeUp = {
@@ -1216,7 +1216,7 @@ function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href={PRIVACY_POLICY_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacidad</a></li>
+              <li><a href={PRIVACY_POLICY_URL} className="hover:text-white transition-colors">Privacidad</a></li>
             </ul>
           </div>
         </div>
