@@ -976,15 +976,8 @@ function AboutMiguelSection() {
           </h2>
           <p className="text-lg text-gray-600">No una gestoría. No un software. Un Director Financiero Senior con 20 años de experiencia real.</p>
         </motion.div>
-        <div className="grid lg:grid-cols-5 gap-12 items-center">
-          <motion.div variants={fadeUp} className="lg:col-span-2">
-            <img
-              src={MODERN_CFO_PRESENTATION}
-              alt="Miguel Ángel López Sainz — Director Financiero Senior"
-              className="w-full object-cover grayscale-[15%]"
-            />
-          </motion.div>
-          <motion.div variants={fadeUp} className="lg:col-span-3 space-y-6">
+        <div className="max-w-3xl mx-auto">
+          <motion.div variants={fadeUp} className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold text-[#1C00A8] mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                 Miguel Ángel López Sainz
