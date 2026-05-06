@@ -90,7 +90,7 @@ function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <a href="#"><img src="/logo-lc-negro.png" alt="L&C CFO®" className="h-10 w-auto object-contain" /></a>
+        <a href="#"><img src="/logo-lc.svg" alt="L&C CFO®" className="h-14 w-auto object-contain" /></a>
         <div className="hidden md:flex items-center gap-8 text-sm text-white/80">
           <a href="#problema" className="hover:text-white transition-colors">El Problema</a>
           <a href="#diagnostico" className="hover:text-white transition-colors">El Diagnóstico</a>
@@ -141,7 +141,7 @@ function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <img src="/logo-lc-negro.png" alt="L&C CFO®" className="h-16 w-auto object-contain mx-auto mb-8" />
+          <img src="/logo-lc.svg" alt="L&C CFO®" className="h-28 w-auto object-contain mx-auto mb-8" />
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" style={{ fontFamily: "'DM Sans', sans-serif" }}>
             Diagnóstico de<br />
             <span className="text-[#C9A84C]">Claridad Financiera</span>
@@ -1195,7 +1195,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <img src="/logo-lc-negro.png" alt="L&C CFO®" className="h-12 w-auto object-contain mb-3" />
+            <img src="/logo-lc.svg" alt="L&C CFO®" className="h-16 w-auto object-contain mb-3" />
             <p className="text-sm">Diagnóstico de Claridad Financiera para Pymes</p>
           </div>
           <div>
