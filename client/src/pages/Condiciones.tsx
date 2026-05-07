@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 
-const LOGO_WHITE =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/ascente_logo_white_bcd9e595.png";
 
 export default function Condiciones() {
   useEffect(() => {
@@ -14,9 +12,9 @@ export default function Condiciones() {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       {/* Header */}
-      <header className="bg-[#C9A84C] py-4 px-6 sticky top-0 z-50">
+      <header className="bg-[#0A0A0A] py-4 px-6 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <img src={LOGO_WHITE} alt="L&C CFO®" className="h-8" />
+          <img src="/logo-lc-negro.png" alt="L&C CFO®" className="h-10 w-auto mix-blend-screen" />
           <Link href="/">
             <a className="flex items-center gap-2 text-white/80 hover:text-white text-sm transition-colors">
               <ArrowLeft size={16} />
