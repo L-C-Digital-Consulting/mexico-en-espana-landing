@@ -14,7 +14,7 @@ export default function AvisoLegal() {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       {/* Header */}
-      <header className="bg-[#1C00A8] py-4 px-6 sticky top-0 z-50">
+      <header className="bg-[#C9A84C] py-4 px-6 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <img src={LOGO_WHITE} alt="L&C CFO®" className="h-8" />
           <Link href="/">
@@ -27,14 +27,14 @@ export default function AvisoLegal() {
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold text-[#1C00A8] mb-2">Aviso Legal</h1>
+        <h1 className="text-3xl font-bold text-[#C9A84C] mb-2">Aviso Legal</h1>
         <p className="text-sm text-gray-500 mb-10">
           L&C Digital &amp; Consulting, S.L. · Última actualización: mayo de 2026
         </p>
 
         {/* 1. Datos identificativos */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             1. Datos identificativos del titular
           </h2>
           <p className="text-sm text-gray-600 mb-4">
@@ -66,7 +66,7 @@ export default function AvisoLegal() {
 
         {/* 2. Objeto */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             2. Objeto y ámbito de aplicación
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -85,7 +85,7 @@ export default function AvisoLegal() {
 
         {/* 3. Propiedad intelectual */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             3. Propiedad intelectual e industrial
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -105,7 +105,7 @@ export default function AvisoLegal() {
 
         {/* 4. Condiciones de uso */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             4. Condiciones de uso del sitio web
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -128,7 +128,7 @@ export default function AvisoLegal() {
 
         {/* 5. Exclusión de garantías */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             5. Exclusión de garantías y de responsabilidad
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -151,12 +151,12 @@ export default function AvisoLegal() {
 
         {/* 6. Protección de datos */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             6. Protección de datos personales
           </h2>
           <p className="text-sm text-gray-600">
             El tratamiento de los datos personales recabados a través del sitio web se rige por la{" "}
-            <a href="/privacidad" className="text-[#1C00A8] underline underline-offset-2">
+            <a href="/privacidad" className="text-[#C9A84C] underline underline-offset-2">
               Política de Privacidad
             </a>{" "}
             del Titular, disponible en este mismo sitio web. Dicha Política informa al usuario sobre
@@ -168,14 +168,14 @@ export default function AvisoLegal() {
 
         {/* 7. Cookies */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             7. Política de cookies
           </h2>
           <p className="text-sm text-gray-600">
             El sitio web puede utilizar cookies y tecnologías similares. La información detallada
             sobre las cookies utilizadas, su finalidad, el plazo de conservación y las opciones del
             usuario para gestionarlas se encuentra en la{" "}
-            <a href="/cookies" className="text-[#1C00A8] underline underline-offset-2">
+            <a href="/cookies" className="text-[#C9A84C] underline underline-offset-2">
               Política de Cookies
             </a>
             , accesible desde el pie de página del sitio web.
@@ -184,7 +184,7 @@ export default function AvisoLegal() {
 
         {/* 8. Legislación */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             8. Legislación aplicable y jurisdicción
           </h2>
           <p className="text-sm text-gray-600 mb-3">

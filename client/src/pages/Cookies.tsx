@@ -14,7 +14,7 @@ export default function Cookies() {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       {/* Header */}
-      <header className="bg-[#1C00A8] py-4 px-6 sticky top-0 z-50">
+      <header className="bg-[#C9A84C] py-4 px-6 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <img src={LOGO_WHITE} alt="L&C CFO®" className="h-8" />
           <Link href="/">
@@ -27,14 +27,14 @@ export default function Cookies() {
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold text-[#1C00A8] mb-2">Política de Cookies</h1>
+        <h1 className="text-3xl font-bold text-[#C9A84C] mb-2">Política de Cookies</h1>
         <p className="text-sm text-gray-500 mb-10">
           L&C Digital &amp; Consulting, S.L. · Última actualización: mayo de 2026
         </p>
 
         {/* 1. Qué son */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             1. ¿Qué son las cookies?
           </h2>
           <p className="text-sm text-gray-600">
@@ -48,12 +48,12 @@ export default function Cookies() {
 
         {/* 2. Cookies utilizadas */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             2. Cookies utilizadas en este sitio web
           </h2>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
-            <p className="text-sm text-blue-800 font-medium">
+            <p className="text-sm text-[#C9A84C] 800 font-medium">
               Este sitio web únicamente utiliza cookies técnicas estrictamente necesarias para su
               funcionamiento. No se instalan cookies de analítica, publicidad ni seguimiento.
             </p>
@@ -62,7 +62,7 @@ export default function Cookies() {
           <div className="overflow-x-auto rounded-lg border border-gray-200 mb-3">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-[#1C00A8] text-white">
+                <tr className="bg-[#C9A84C] text-white">
                   <th className="px-4 py-3 text-left font-medium">Nombre</th>
                   <th className="px-4 py-3 text-left font-medium">Tipo</th>
                   <th className="px-4 py-3 text-left font-medium">Proveedor</th>
@@ -94,7 +94,7 @@ export default function Cookies() {
 
         {/* 3. Otras tecnologías */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             3. Otras tecnologías utilizadas que no instalan cookies
           </h2>
           <p className="text-sm text-gray-600 mb-6">
@@ -120,7 +120,7 @@ export default function Cookies() {
                 href="https://umami.is/privacy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-[#1C00A8] underline underline-offset-2"
+                className="text-xs text-[#C9A84C] underline underline-offset-2"
               >
                 Más información: umami.is/privacy
               </a>
@@ -142,7 +142,7 @@ export default function Cookies() {
                 href="https://policies.google.com/privacy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-[#1C00A8] underline underline-offset-2"
+                className="text-xs text-[#C9A84C] underline underline-offset-2"
               >
                 Política de privacidad de Google
               </a>
@@ -162,7 +162,7 @@ export default function Cookies() {
                 href="https://tally.so/help/privacy-policy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-[#1C00A8] underline underline-offset-2"
+                className="text-xs text-[#C9A84C] underline underline-offset-2"
               >
                 Política de privacidad de Tally
               </a>
@@ -172,7 +172,7 @@ export default function Cookies() {
 
         {/* 4. Gestión */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             4. Cómo gestionar las cookies del navegador
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -188,7 +188,7 @@ export default function Cookies() {
               "Microsoft Edge: Configuración > Cookies y permisos del sitio",
             ].map((item, i) => (
               <li key={i} className="flex gap-2">
-                <span className="text-[#1C00A8] font-bold shrink-0">·</span>
+                <span className="text-[#C9A84C] font-bold shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -201,7 +201,7 @@ export default function Cookies() {
 
         {/* 5. Actualizaciones */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             5. Actualizaciones de esta política
           </h2>
           <p className="text-sm text-gray-600">
@@ -211,7 +211,7 @@ export default function Cookies() {
             obligatorio. Para cualquier consulta:{" "}
             <a
               href="mailto:miguel.lopez@lycconsulting.com"
-              className="text-[#1C00A8] underline underline-offset-2"
+              className="text-[#C9A84C] underline underline-offset-2"
             >
               miguel.lopez@lycconsulting.com
             </a>

@@ -14,7 +14,7 @@ export default function Condiciones() {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       {/* Header */}
-      <header className="bg-[#1C00A8] py-4 px-6 sticky top-0 z-50">
+      <header className="bg-[#C9A84C] py-4 px-6 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <img src={LOGO_WHITE} alt="L&C CFO®" className="h-8" />
           <Link href="/">
@@ -28,7 +28,7 @@ export default function Condiciones() {
 
       {/* Content */}
       <main className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold text-[#1C00A8] mb-2">
+        <h1 className="text-3xl font-bold text-[#C9A84C] mb-2">
           Condiciones Generales de Contratación
         </h1>
         <p className="text-sm text-gray-500 mb-10">
@@ -37,7 +37,7 @@ export default function Condiciones() {
 
         {/* 1. Identificación */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             1. Identificación del Prestador
           </h2>
           <div className="overflow-x-auto rounded-lg border border-gray-200">
@@ -62,7 +62,7 @@ export default function Condiciones() {
 
         {/* 2. Objeto */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             2. Objeto y ámbito de aplicación
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -82,7 +82,7 @@ export default function Condiciones() {
 
         {/* 3. Proceso */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             3. Proceso de contratación
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -102,7 +102,7 @@ export default function Condiciones() {
 
         {/* 4. Precio */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             4. Precio y forma de pago
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -124,7 +124,7 @@ export default function Condiciones() {
 
         {/* 5. Desistimiento */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             5. Derecho de desistimiento
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -140,7 +140,7 @@ export default function Condiciones() {
             En caso de que el servicio no haya sido iniciado, el Cliente podrá ejercer el derecho de
             desistimiento en el plazo de catorce (14) días naturales desde la fecha de contratación, mediante
             comunicación escrita dirigida a{" "}
-            <a href="mailto:miguel.lopez@lycconsulting.com" className="text-[#1C00A8] underline underline-offset-2">
+            <a href="mailto:miguel.lopez@lycconsulting.com" className="text-[#C9A84C] underline underline-offset-2">
               miguel.lopez@lycconsulting.com
             </a>.
           </p>
@@ -148,7 +148,7 @@ export default function Condiciones() {
 
         {/* 6. Ejecución */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             6. Ejecución del servicio
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -166,7 +166,7 @@ export default function Condiciones() {
 
         {/* 7. Propiedad intelectual */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             7. Propiedad intelectual
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -195,7 +195,7 @@ export default function Condiciones() {
 
         {/* 8. Confidencialidad */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             8. Confidencialidad
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -211,7 +211,7 @@ export default function Condiciones() {
 
         {/* 9. Limitación de responsabilidad */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             9. Limitación de responsabilidad
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -232,17 +232,17 @@ export default function Condiciones() {
 
         {/* 10. Protección de datos */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             10. Protección de datos personales
           </h2>
           <p className="text-sm text-gray-600">
             El tratamiento de los datos personales del Cliente se rige por la{" "}
-            <a href="/privacidad" className="text-[#1C00A8] underline underline-offset-2">
+            <a href="/privacidad" className="text-[#C9A84C] underline underline-offset-2">
               Política de Privacidad
             </a>{" "}
             del Prestador. El Responsable del tratamiento es L&amp;C Digital &amp; Consulting, S.L. (NIF B22652069),
             correo electrónico:{" "}
-            <a href="mailto:miguel.lopez@lycconsulting.com" className="text-[#1C00A8] underline underline-offset-2">
+            <a href="mailto:miguel.lopez@lycconsulting.com" className="text-[#C9A84C] underline underline-offset-2">
               miguel.lopez@lycconsulting.com
             </a>.
             El tratamiento tiene como base jurídica la ejecución del contrato (art. 6.1.b RGPD). El Cliente
@@ -253,7 +253,7 @@ export default function Condiciones() {
 
         {/* 11. Modificaciones */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             11. Modificaciones de las Condiciones
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -270,7 +270,7 @@ export default function Condiciones() {
 
         {/* 12. Ley aplicable */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             12. Ley aplicable y jurisdicción
           </h2>
           <p className="text-sm text-gray-600 mb-3">

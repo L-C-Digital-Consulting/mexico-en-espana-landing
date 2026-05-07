@@ -14,7 +14,7 @@ export default function Privacidad() {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
       {/* Header */}
-      <header className="bg-[#1C00A8] py-4 px-6 sticky top-0 z-50">
+      <header className="bg-[#C9A84C] py-4 px-6 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <img src={LOGO_WHITE} alt="L&C CFO®" className="h-8" />
           <Link href="/">
@@ -28,7 +28,7 @@ export default function Privacidad() {
 
       {/* Content */}
       <main className="max-w-4xl mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold text-[#1C00A8] mb-2">
+        <h1 className="text-3xl font-bold text-[#C9A84C] mb-2">
           Política de Privacidad
         </h1>
         <p className="text-sm text-gray-500 mb-10">
@@ -37,7 +37,7 @@ export default function Privacidad() {
 
         {/* 1. Responsable */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             1. Responsable del tratamiento
           </h2>
           <div className="overflow-x-auto rounded-lg border border-gray-200">
@@ -65,7 +65,7 @@ export default function Privacidad() {
 
         {/* 2. Datos */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             2. Datos que tratamos y su origen
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -99,13 +99,13 @@ export default function Privacidad() {
 
         {/* 3. Finalidad */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             3. Finalidad y base jurídica del tratamiento
           </h2>
           <div className="overflow-x-auto rounded-lg border border-gray-200">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-[#1C00A8] text-white">
+                <tr className="bg-[#C9A84C] text-white">
                   <th className="px-4 py-3 text-left font-medium">Finalidad</th>
                   <th className="px-4 py-3 text-left font-medium">Base jurídica</th>
                 </tr>
@@ -141,7 +141,7 @@ export default function Privacidad() {
 
         {/* 4. Destinatarios */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             4. Destinatarios
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -177,7 +177,7 @@ export default function Privacidad() {
 
         {/* 5. Plazo */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             5. Plazo de conservación
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -186,21 +186,21 @@ export default function Privacidad() {
           </p>
           <ul className="space-y-1 text-sm text-gray-600 mb-3">
             <li className="flex gap-2">
-              <span className="text-[#1C00A8] font-bold">·</span>
+              <span className="text-[#C9A84C] font-bold">·</span>
               <span>
                 <strong>4 años</strong> — obligaciones fiscales y mercantiles (Ley General
                 Tributaria, Código de Comercio).
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-[#1C00A8] font-bold">·</span>
+              <span className="text-[#C9A84C] font-bold">·</span>
               <span>
                 <strong>5 años</strong> — obligación de confidencialidad establecida en el
                 contrato de servicio.
               </span>
             </li>
             <li className="flex gap-2">
-              <span className="text-[#1C00A8] font-bold">·</span>
+              <span className="text-[#C9A84C] font-bold">·</span>
               <span>
                 <strong>6 años</strong> — documentos contables conforme al art. 30 del Código
                 de Comercio.
@@ -222,7 +222,7 @@ export default function Privacidad() {
 
         {/* 6. Derechos */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             6. Derechos de los interesados
           </h2>
           <p className="text-sm text-gray-600 mb-3">
@@ -238,7 +238,7 @@ export default function Privacidad() {
               ["Portabilidad", "recibir sus datos en formato estructurado, de uso común y lectura mecánica."],
             ].map(([right, desc], i) => (
               <li key={i} className="flex gap-2">
-                <span className="text-[#1C00A8] font-bold">·</span>
+                <span className="text-[#C9A84C] font-bold">·</span>
                 <span>
                   <strong>{right}:</strong> {desc}
                 </span>
@@ -249,7 +249,7 @@ export default function Privacidad() {
             Para ejercer estos derechos, el interesado deberá dirigir comunicación escrita a{" "}
             <a
               href="mailto:miguel.lopez@lycconsulting.com"
-              className="text-[#1C00A8] underline underline-offset-2"
+              className="text-[#C9A84C] underline underline-offset-2"
             >
               miguel.lopez@lycconsulting.com
             </a>
@@ -265,7 +265,7 @@ export default function Privacidad() {
               href="https://www.aepd.es"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#1C00A8] underline underline-offset-2"
+              className="text-[#C9A84C] underline underline-offset-2"
             >
               www.aepd.es
             </a>
@@ -275,7 +275,7 @@ export default function Privacidad() {
 
         {/* 7. Seguridad */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             7. Seguridad de la información
           </h2>
           <p className="text-sm text-gray-600 mb-2">
@@ -294,7 +294,7 @@ export default function Privacidad() {
 
         {/* 8. Herramientas */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             8. Uso de herramientas tecnológicas de procesamiento automatizado
           </h2>
           <p className="text-sm text-gray-600">
@@ -308,7 +308,7 @@ export default function Privacidad() {
 
         {/* 9. Modificaciones */}
         <section className="mb-10">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#1C00A8] pl-3">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4 border-l-4 border-[#C9A84C] pl-3">
             9. Modificaciones de la Política de Privacidad
           </h2>
           <p className="text-sm text-gray-600">
