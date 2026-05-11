@@ -328,7 +328,7 @@ function FilosofiaSection() {
             <ul className="space-y-2 mb-6">
               {[
                 "Datos financieros en tiempo real",
-                "Integración de ERP, CRM, bancos y BI",
+                "Información de gestión consolidada y accesible",
                 "Visión única y clara del negocio",
                 "Automatización de flujos financieros",
                 "Información accesible para decidir",
@@ -345,7 +345,7 @@ function FilosofiaSection() {
               </p>
               <ul className="space-y-1 text-sm text-white/60">
                 <li>· Automatización de los procesos ya eficientados</li>
-                <li>· Integración de todas las fuentes de información</li>
+                <li>· Centralización de la información financiera dispersa</li>
                 <li>· Dashboards financieros centralizados</li>
                 <li>· IA para identificar desviaciones, riesgos y oportunidades</li>
               </ul>
