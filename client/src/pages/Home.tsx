@@ -866,6 +866,7 @@ function PricingSection() {
             <div className="mb-8">
               <span className="text-4xl font-bold text-[#C9A84C]">447€</span>
               <span className="text-gray-600 ml-2">+ IVA</span>
+              <p className="text-xs text-gray-500 mt-1">por diagnóstico</p>
             </div>
             <ul className="space-y-4 mb-8 flex-1">
               <li className="flex items-start gap-2 text-sm text-gray-700">
@@ -901,6 +902,7 @@ function PricingSection() {
             <div className="mb-8">
               <span className="text-4xl font-bold text-[#C9A84C]">347€</span>
               <span className="text-gray-600 ml-2">+ IVA</span>
+              <p className="text-xs text-gray-500 mt-1">por diagnóstico · 2 diagnósticos/año</p>
             </div>
             <ul className="space-y-4 mb-8 flex-1">
               <li className="flex items-start gap-2 text-sm text-gray-700">
@@ -933,6 +935,7 @@ function PricingSection() {
             <div className="mb-8">
               <span className="text-4xl font-bold text-[#C9A84C]">267€</span>
               <span className="text-white/80 ml-2">+ IVA</span>
+              <p className="text-xs text-white/60 mt-1">por diagnóstico · 4 diagnósticos/año</p>
             </div>
             <ul className="space-y-4 mb-8 flex-1">
               <li className="flex items-start gap-2 text-sm text-white/90">
