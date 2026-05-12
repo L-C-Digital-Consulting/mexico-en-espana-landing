@@ -344,6 +344,82 @@ function QuienesSomosSection() {
   );
 }
 
+// ─── NECESIDADES ───
+function NecesidadesSection() {
+  const proyectoEmpresarial = [
+    { item: "Constitución de sociedad limitada", detalle: "desde 3.000€ de capital social, lista para operar" },
+    { item: "Apertura de cuentas bancarias", detalle: "acompañamiento ante bancos españoles tras obtener NIE" },
+    { item: "Estructuración matriz-filial MX-ES", detalle: "optimización del grupo y flujos transfronterizos" },
+    { item: "Alta censal y de autónomos societarios", detalle: "todas las altas iniciales ante la AEAT y Seguridad Social" },
+    { item: "Contabilidad y cierres", detalle: "según PGC español, con seguimiento recurrente mensual" },
+    { item: "Impuestos y Cuentas Anuales", detalle: "mensuales, trimestrales, anuales y depósito en el Registro Mercantil" },
+    { item: "Nóminas y laboral", detalle: "contratos, Seguros Sociales e informes ITA mensuales" },
+  ];
+  const familiaPatrimonio = [
+    { item: "Compra o alquiler de vivienda", detalle: "revisión de contratos y fiscalidad del inmueble" },
+    { item: "IRPF del mexicano residente", detalle: "declaración anual y Modelo 151 (régimen impatriados)" },
+    { item: "Impuesto sobre el Patrimonio", detalle: "análisis de bienes mundiales vs. situados en España" },
+    { item: "Convenio doble imposición MX-ES", detalle: "evitar tributar dos veces por los mismos ingresos" },
+    { item: "Sucesiones y donaciones", detalle: "planificación sucesoria adaptada a herederos en México" },
+  ];
+  return (
+    <section className="bg-white py-20 lg:py-28">
+      <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div variants={fadeUp} className="text-center mb-14">
+          <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
+            Necesidades clave
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-4"
+            style={{ fontFamily: "'DM Sans', sans-serif" }}
+          >
+            Económicas, empresariales y familiares
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Del proyecto empresarial a la consolidación del patrimonio familiar — todo en un solo equipo.
+          </p>
+        </motion.div>
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Proyecto Empresarial */}
+          <motion.div variants={fadeUp}>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-[#C8102E]" />
+              <h3 className="font-bold text-[#0D1B2A] text-lg" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                Proyecto Empresarial
+              </h3>
+            </div>
+            <div className="space-y-3">
+              {proyectoEmpresarial.map((r, i) => (
+                <div key={i} className="border border-gray-100 p-4 hover:border-[#C8102E] transition-colors">
+                  <p className="font-semibold text-[#0D1B2A] text-sm">{r.item}</p>
+                  <p className="text-gray-500 text-xs mt-0.5">{r.detalle}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+          {/* Familia y Patrimonio */}
+          <motion.div variants={fadeUp}>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-1 h-8 bg-[#FCBA05]" />
+              <h3 className="font-bold text-[#0D1B2A] text-lg" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                Familia y Patrimonio
+              </h3>
+            </div>
+            <div className="space-y-3">
+              {familiaPatrimonio.map((r, i) => (
+                <div key={i} className="border border-gray-100 p-4 hover:border-[#FCBA05] transition-colors">
+                  <p className="font-semibold text-[#0D1B2A] text-sm">{r.item}</p>
+                  <p className="text-gray-500 text-xs mt-0.5">{r.detalle}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </AnimatedSection>
+    </section>
+  );
+}
+
 // ─── CÓMO TRABAJAMOS ───
 function ComoTrabajamosSection() {
   return (
@@ -1154,6 +1230,7 @@ export default function MexicoHome() {
       <QuienesSomosSection />
       <TuCaminoSection />
       <LeyBeckhamSection />
+      <NecesidadesSection />
       <ComoTrabajamosSection />
       <ServiciosSection />
       <MiguelSection />
