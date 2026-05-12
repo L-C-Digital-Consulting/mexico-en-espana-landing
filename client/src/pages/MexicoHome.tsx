@@ -1,7 +1,7 @@
 /*
  * México en España — Landing Page
  * Next Abogados · Ascente
- * Dark: #0D1B2A · Accent: #C8102E · Light: #F5F0E8
+ * Light bg: white / gray-50 · Accent: #C8102E (España) · #006847 (México) · Dark: #0D1B2A
  */
 
 import { useEffect, useRef, useState } from "react";
@@ -83,30 +83,30 @@ function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0D1B2A]/95 backdrop-blur-md shadow-lg"
+          ? "bg-white/95 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <a href="/" className="flex items-center gap-3">
           <span
-            className="text-white font-bold text-lg"
+            className={`font-bold text-lg transition-colors ${scrolled ? "text-[#0D1B2A]" : "text-white"}`}
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             <span className="text-[#C8102E]">México</span> en España
           </span>
         </a>
-        <div className="hidden md:flex items-center gap-8 text-sm text-white/80">
-          <a href="#por-que-espana" className="hover:text-white transition-colors">
+        <div className={`hidden md:flex items-center gap-8 text-sm transition-colors ${scrolled ? "text-[#0D1B2A]/70" : "text-white/80"}`}>
+          <a href="#por-que-espana" className="hover:text-[#C8102E] transition-colors">
             ¿Por qué España?
           </a>
-          <a href="#tu-camino" className="hover:text-white transition-colors">
+          <a href="#tu-camino" className="hover:text-[#C8102E] transition-colors">
             Tu camino
           </a>
-          <a href="#servicios" className="hover:text-white transition-colors">
+          <a href="#servicios" className="hover:text-[#C8102E] transition-colors">
             Servicios
           </a>
-          <a href="#equipo" className="hover:text-white transition-colors">
+          <a href="#equipo" className="hover:text-[#C8102E] transition-colors">
             Equipo
           </a>
         </div>
@@ -114,7 +114,7 @@ function Navbar() {
           href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-[#0D1B2A] font-semibold px-5 py-2 text-sm transition-colors"
+          className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-5 py-2 text-sm transition-colors"
         >
           <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-4 h-4 object-contain" />
           Habla con nosotros
@@ -166,7 +166,7 @@ function HeroSection() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-[#0D1B2A] font-semibold px-10 py-4 text-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-10 py-4 text-lg transition-colors"
             >
               <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
               Habla con nosotros
@@ -207,7 +207,7 @@ const stats = [
 
 function PorQueEspanaSection() {
   return (
-    <section id="por-que-espana" className="bg-[#F5F0E8] py-20 lg:py-28">
+    <section id="por-que-espana" className="bg-gray-50 py-20 lg:py-28">
       <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeUp} className="text-center mb-16">
           <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
@@ -278,19 +278,19 @@ const momentos = [
 
 function TuCaminoSection() {
   return (
-    <section id="tu-camino" className="bg-[#0D1B2A] py-20 lg:py-28">
+    <section id="tu-camino" className="bg-white py-20 lg:py-28">
       <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeUp} className="text-center mb-16">
           <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
             El proceso
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-4"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             Los 5 momentos críticos del mexicano en España
           </h2>
-          <p className="text-white/60 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             En cada uno de estos momentos, un error de planificación puede costar
             tiempo, dinero y la viabilidad del proyecto. Nosotros los cubrimos todos.
           </p>
@@ -300,11 +300,11 @@ function TuCaminoSection() {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="flex gap-6 bg-white/5 border border-white/10 p-6 hover:border-[#C8102E]/40 transition-colors"
+              className="flex gap-6 bg-gray-50 border border-gray-200 p-6 hover:border-[#C8102E] transition-colors"
             >
               <div className="flex-shrink-0">
                 <span
-                  className="text-4xl font-bold text-[#C8102E]/30"
+                  className="text-4xl font-bold text-[#C8102E]/40"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
                   {m.num}
@@ -312,12 +312,12 @@ function TuCaminoSection() {
               </div>
               <div>
                 <h3
-                  className="font-bold text-white text-lg mb-2"
+                  className="font-bold text-[#0D1B2A] text-lg mb-2"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
                   {m.titulo}
                 </h3>
-                <p className="text-white/60 text-sm leading-relaxed">{m.desc}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{m.desc}</p>
               </div>
             </motion.div>
           ))}
@@ -330,7 +330,7 @@ function TuCaminoSection() {
 // ─── LEY BECKHAM ───
 function LeyBeckhamSection() {
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section className="bg-gray-50 py-20 lg:py-28">
       <AnimatedSection className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeUp} className="text-center mb-12">
           <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
@@ -352,7 +352,7 @@ function LeyBeckhamSection() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <motion.div
             variants={fadeUp}
-            className="bg-gray-50 border border-gray-200 p-8 text-center"
+            className="bg-white border border-gray-200 p-8 text-center"
           >
             <p className="text-sm text-gray-500 uppercase tracking-widest mb-4">
               Sin planificación
@@ -373,7 +373,7 @@ function LeyBeckhamSection() {
             variants={fadeUp}
             className="bg-[#0D1B2A] border border-[#C8102E] p-8 text-center relative overflow-hidden"
           >
-            <div className="absolute top-4 right-4 bg-[#C8102E] text-[#0D1B2A] text-xs font-bold px-3 py-1">
+            <div className="absolute top-4 right-4 bg-[#C8102E] text-white text-xs font-bold px-3 py-1">
               CON PLANIFICACIÓN
             </div>
             <p className="text-sm text-[#C8102E] uppercase tracking-widest mb-4">
@@ -403,7 +403,7 @@ function LeyBeckhamSection() {
               "Nómadas digitales con visado de teletrabajo internacional",
               "Cónyuge e hijos menores de 25 años — extensión al núcleo familiar desde 2023",
             ].map((item, i) => (
-              <div key={i} className="flex items-start gap-3 bg-[#F5F0E8] p-4">
+              <div key={i} className="flex items-start gap-3 bg-white border border-gray-200 p-4">
                 <CheckCircle2 className="w-5 h-5 text-[#006847] flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-gray-700">{item}</p>
               </div>
@@ -421,7 +421,7 @@ const bloques = [
     icon: Scale,
     titulo: "Next Abogados",
     subtitulo: "Asesoramiento jurídico",
-    color: "bg-[#0D1B2A]",
+    variant: "light" as const,
     servicios: [
       "Derecho Fiscal e IRPF",
       "Fiscalidad Internacional",
@@ -437,7 +437,7 @@ const bloques = [
     icon: FileText,
     titulo: "Ascente",
     subtitulo: "Compliance y administración",
-    color: "bg-[#162232]",
+    variant: "light" as const,
     servicios: [
       "Altas iniciales (NIE, AEAT, S.Social)",
       "Contabilidad mensual",
@@ -453,8 +453,7 @@ const bloques = [
     icon: TrendingUp,
     titulo: "Ascente CFO®",
     subtitulo: "Dirección financiera",
-    color: "bg-[#C8102E]",
-    textColor: "text-[#0D1B2A]",
+    variant: "red" as const,
     servicios: [
       "Diagnóstico de Claridad Financiera®",
       "Planeación Financiera Mensual®",
@@ -469,7 +468,7 @@ const bloques = [
 
 function ServiciosSection() {
   return (
-    <section id="servicios" className="bg-[#F5F0E8] py-20 lg:py-28">
+    <section id="servicios" className="bg-white py-20 lg:py-28">
       <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeUp} className="text-center mb-16">
           <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
@@ -487,64 +486,65 @@ function ServiciosSection() {
           </p>
         </motion.div>
         <div className="grid md:grid-cols-3 gap-6">
-          {bloques.map((b, i) => (
-            <motion.div
-              key={i}
-              variants={fadeUp}
-              className={`${b.color} p-8 flex flex-col`}
-            >
-              <div
-                className={`w-10 h-10 ${
-                  b.color === "bg-[#C8102E]" ? "bg-[#0D1B2A]" : "bg-[#C8102E]"
-                } flex items-center justify-center mb-5`}
+          {bloques.map((b, i) => {
+            const isRed = b.variant === "red";
+            return (
+              <motion.div
+                key={i}
+                variants={fadeUp}
+                className={`${
+                  isRed
+                    ? "bg-[#C8102E]"
+                    : "bg-white border border-gray-200 hover:border-[#C8102E]"
+                } p-8 flex flex-col transition-colors`}
               >
-                <b.icon
-                  className={`w-5 h-5 ${
-                    b.color === "bg-[#C8102E]" ? "text-[#C8102E]" : "text-[#0D1B2A]"
+                <div
+                  className={`w-10 h-10 flex items-center justify-center mb-5 ${
+                    isRed ? "bg-[#0D1B2A]" : "bg-[#0D1B2A]"
                   }`}
-                />
-              </div>
-              <h3
-                className={`font-bold text-xl mb-1 ${
-                  b.color === "bg-[#C8102E]" ? "text-[#0D1B2A]" : "text-white"
-                }`}
-                style={{ fontFamily: "'DM Sans', sans-serif" }}
-              >
-                {b.titulo}
-              </h3>
-              <p
-                className={`text-sm mb-6 ${
-                  b.color === "bg-[#C8102E]"
-                    ? "text-[#0D1B2A]/70"
-                    : "text-[#C8102E]"
-                }`}
-              >
-                {b.subtitulo}
-              </p>
-              <ul className="space-y-2 flex-1">
-                {b.servicios.map((s, j) => (
-                  <li key={j} className="flex items-start gap-2">
-                    <CheckCircle2
-                      className={`w-4 h-4 flex-shrink-0 mt-0.5 ${
-                        b.color === "bg-[#C8102E]"
-                          ? "text-[#0D1B2A]"
-                          : "text-[#C8102E]"
-                      }`}
-                    />
-                    <span
-                      className={`text-sm ${
-                        b.color === "bg-[#C8102E]"
-                          ? "text-[#0D1B2A]/80"
-                          : "text-white/70"
-                      }`}
-                    >
-                      {s}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
+                >
+                  <b.icon
+                    className={`w-5 h-5 ${
+                      isRed ? "text-[#C8102E]" : "text-[#C8102E]"
+                    }`}
+                  />
+                </div>
+                <h3
+                  className={`font-bold text-xl mb-1 ${
+                    isRed ? "text-white" : "text-[#0D1B2A]"
+                  }`}
+                  style={{ fontFamily: "'DM Sans', sans-serif" }}
+                >
+                  {b.titulo}
+                </h3>
+                <p
+                  className={`text-sm mb-6 ${
+                    isRed ? "text-white/80" : "text-[#C8102E]"
+                  }`}
+                >
+                  {b.subtitulo}
+                </p>
+                <ul className="space-y-2 flex-1">
+                  {b.servicios.map((s, j) => (
+                    <li key={j} className="flex items-start gap-2">
+                      <CheckCircle2
+                        className={`w-4 h-4 flex-shrink-0 mt-0.5 ${
+                          isRed ? "text-white" : "text-[#006847]"
+                        }`}
+                      />
+                      <span
+                        className={`text-sm ${
+                          isRed ? "text-white/85" : "text-gray-600"
+                        }`}
+                      >
+                        {s}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            );
+          })}
         </div>
       </AnimatedSection>
     </section>
@@ -554,7 +554,7 @@ function ServiciosSection() {
 // ─── MIGUEL ÁNGEL — EL PUENTE ───
 function MiguelSection() {
   return (
-    <section id="equipo" className="bg-[#0D1B2A] py-20 lg:py-28">
+    <section id="equipo" className="bg-gray-50 py-20 lg:py-28">
       <AnimatedSection className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeUp}>
@@ -562,17 +562,17 @@ function MiguelSection() {
               Hecho en México
             </p>
             <h2
-              className="text-3xl sm:text-4xl font-bold text-white mb-6"
+              className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-6"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               Un mexicano acompañando a mexicanos
             </h2>
-            <p className="text-white/70 mb-6 leading-relaxed">
+            <p className="text-gray-600 mb-6 leading-relaxed">
               Miguel Ángel vivió el mismo proceso que cada cliente mexicano que
               llega a Madrid: emigrar, adaptarse a un nuevo sistema legal y
               fiscal, y construir una vida profesional en España.
             </p>
-            <p className="text-white/70 mb-8 leading-relaxed">
+            <p className="text-gray-600 mb-8 leading-relaxed">
               Entiende los matices, miedos y expectativas del cliente mexicano
               desde el primer contacto. Traduce tus necesidades al equipo de
               abogados y fiscalistas, y viceversa.
@@ -586,7 +586,7 @@ function MiguelSection() {
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="w-4 h-4 text-[#006847] flex-shrink-0 mt-0.5" />
-                  <span className="text-white/70 text-sm">{item}</span>
+                  <span className="text-gray-700 text-sm">{item}</span>
                 </li>
               ))}
             </ul>
@@ -623,15 +623,15 @@ function MiguelSection() {
                 desc: "No solo tramitamos la llegada — acompañamos a la sociedad y a la familia durante años.",
               },
             ].map((item, i) => (
-              <div key={i} className="flex gap-4 bg-white/5 border border-white/10 p-5">
+              <div key={i} className="flex gap-4 bg-white border border-gray-200 p-5 hover:border-[#C8102E] transition-colors">
                 <div className="w-10 h-10 bg-[#C8102E] flex items-center justify-center flex-shrink-0">
-                  <item.icon className="w-5 h-5 text-[#0D1B2A]" />
+                  <item.icon className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white text-sm mb-1">
+                  <h4 className="font-semibold text-[#0D1B2A] text-sm mb-1">
                     {item.titulo}
                   </h4>
-                  <p className="text-white/60 text-sm">{item.desc}</p>
+                  <p className="text-gray-500 text-sm">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -709,7 +709,7 @@ function DiferencialesSection() {
 // ─── CTA FINAL ───
 function CTASection() {
   return (
-    <section className="bg-[#0D1B2A] py-20 lg:py-28 border-t border-white/10">
+    <section className="bg-[#0D1B2A] py-20 lg:py-28 border-t-4 border-[#C8102E]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -738,7 +738,7 @@ function CTASection() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-[#0D1B2A] font-semibold px-10 py-4 text-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-10 py-4 text-lg transition-colors"
             >
               <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
               Escríbenos por WhatsApp
