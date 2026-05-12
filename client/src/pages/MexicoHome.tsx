@@ -593,22 +593,24 @@ function MiguelSection() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Foto + bio */}
           <motion.div variants={fadeUp} className="flex gap-8 items-start flex-col sm:flex-row md:flex-col lg:flex-row">
-            <div className="relative flex-shrink-0 overflow-hidden border-4 border-white shadow-lg" style={{ width: '180px', aspectRatio: '3/4', maxHeight: '240px' }}>
-              <img
-                src="/team/miguel.jpg"
-                alt="Miguel Ángel López"
-                className="w-full h-full object-cover object-top"
-              />
-              <div className="absolute bottom-2 right-2 bg-[#C8102E] px-2 py-1">
-                <p className="text-white text-xs font-bold">🇲🇽 CFO</p>
+            <div className="flex-shrink-0">
+              <div className="relative overflow-hidden border-4 border-white shadow-lg" style={{ width: '180px', aspectRatio: '3/4', maxHeight: '240px' }}>
+                <img
+                  src="/team/miguel.jpg"
+                  alt="Miguel Ángel López"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute bottom-2 right-2 bg-[#C8102E] px-2 py-1">
+                  <p className="text-white text-xs font-bold">🇲🇽 CFO</p>
+                </div>
               </div>
-            </div>
-            <div>
-              <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-2">
+              <p className="text-[#C8102E] font-semibold text-xs tracking-widest uppercase mt-3 text-center" style={{ width: '180px' }}>
                 Hecho en México
               </p>
+            </div>
+            <div>
               <h2
-                className="text-2xl sm:text-3xl font-bold text-[#0D1B2A] mb-4"
+                className="text-2xl sm:text-3xl font-bold text-[#0D1B2A] mb-4 mt-2"
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
                 Un mexicano acompañando a mexicanos
