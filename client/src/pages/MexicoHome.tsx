@@ -159,17 +159,20 @@ function HeroSection() {
         <div style={{ flex: 2 }} className="bg-[#FCBA05]" />
         <div className="flex-1 bg-[#C8102E]" />
       </div>
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full" style={{ paddingLeft: 'max(1rem, 30px)' }}>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="text-white/60 font-semibold text-xs tracking-widest uppercase mb-6 border-l-2 border-[#FCBA05] pl-4">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-28">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-2xl"
+        >
+          {/* Text panel con borde izquierdo amarillo */}
+          <div className="border-l-4 border-[#FCBA05] pl-6">
+            <p className="text-white/50 font-semibold text-xs tracking-widest uppercase mb-5">
               Next Abogados · Ascente — Madrid
             </p>
             <h1
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               Acompañando a<br />
@@ -177,15 +180,26 @@ function HeroSection() {
               <span className="text-white">en</span>{" "}
               <span className="text-[#C8102E]">España.</span>
             </h1>
-            <p className="text-lg text-white/80 mb-4 max-w-2xl">
+            <p className="text-lg text-white/85 mb-3 max-w-xl leading-relaxed">
               Asesoramiento jurídico, fiscal y financiero integral para mexicanos
               que quieren instalarse, emprender o invertir en España.
             </p>
-            <p className="text-base font-semibold text-[#FCBA05] mb-10">
+            <p className="text-base font-semibold text-[#FCBA05] mb-8">
               Un mexicano en el equipo. Todo bajo un mismo techo en Madrid.
             </p>
-          </motion.div>
-
+          </div>
+          <div className="pl-6">
+            <a
+              href={TALLY_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-8 py-4 text-base transition-colors"
+            >
+              Cuéntanos tu situación
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
