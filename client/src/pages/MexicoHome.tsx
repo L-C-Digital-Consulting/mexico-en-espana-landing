@@ -281,7 +281,7 @@ const momentos = [
   {
     num: "02",
     titulo: "Llegada a España",
-    desc: "NIE, TIE, empadronamiento, apertura de cuenta bancaria y canje de permiso de conducir.",
+    desc: "NIE, TIE, empadronamiento y apertura de cuenta bancaria.",
   },
   {
     num: "03",
