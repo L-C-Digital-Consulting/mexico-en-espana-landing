@@ -30,9 +30,6 @@ const WHATSAPP_LOGO =
 const TALLY_LINK = "https://tally.so/r/ZjGg0z";
 const LINKEDIN_URL =
   "https://www.linkedin.com/in/miguel-ángel-lópez-sainz-0bb25341";
-const HERO_BG =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/hero_bg-hCmBTqbzuN6tTGJpJsBUWU.webp";
-
 // ─── ANIMATION VARIANTS ───
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -127,59 +124,97 @@ function Navbar() {
 // ─── HERO ───
 function HeroSection() {
   return (
-    <section
-      className="relative min-h-screen flex items-center overflow-hidden"
-      style={{
-        backgroundImage: `url(${HERO_BG})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B2A]/97 to-[#0D1B2A]/75" />
-      <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#C8102E]" />
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <p className="text-[#C8102E] font-bold text-sm tracking-widest uppercase mb-6 border-l-4 border-[#C8102E] pl-4">
-            Next Abogados · Ascente — Madrid
-          </p>
-          <h1
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "'DM Sans', sans-serif" }}
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#0D1B2A]">
+      {/* México green bar — left */}
+      <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#006847]" />
+      {/* España red bar — right */}
+      <div className="absolute right-0 top-0 bottom-0 w-1.5 bg-[#C8102E]" />
+      {/* Subtle dot pattern */}
+      <div
+        className="absolute inset-0 opacity-[0.04]"
+        style={{
+          backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)",
+          backgroundSize: "32px 32px",
+        }}
+      />
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left: copy */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
           >
-            Tienes un proyecto en España.
-            <br />
-            <span className="text-[#C8102E]">Tienes a alguien que ya lo vivió.</span>
-          </h1>
-          <p className="text-lg text-white/70 mb-4 max-w-2xl">
-            Asesoramiento jurídico, fiscal y financiero integral para mexicanos
-            que quieren instalarse, emprender o invertir en España.
-          </p>
-          <p className="text-xl font-semibold text-[#C8102E] mb-10">
-            Un mexicano en el equipo. Todo bajo un mismo techo en Madrid.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-10 py-4 text-lg transition-colors"
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-[#006847] font-bold text-sm tracking-widest uppercase">🇲🇽 México</span>
+              <ArrowRight className="w-4 h-4 text-white/30" />
+              <span className="text-[#C8102E] font-bold text-sm tracking-widest uppercase">🇪🇸 España</span>
+            </div>
+            <p className="text-[#C8102E] font-bold text-xs tracking-widest uppercase mb-6 border-l-4 border-[#C8102E] pl-4">
+              Next Abogados · Ascente — Madrid
+            </p>
+            <h1
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
+              style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
-              Habla con nosotros
-            </a>
-            <a
-              href="#tu-camino"
-              className="inline-flex items-center gap-2 border border-white/30 hover:border-white/60 text-white font-semibold px-10 py-4 text-lg transition-colors"
-            >
-              Ver el proceso
-              <ArrowRight className="w-5 h-5" />
-            </a>
-          </div>
-        </motion.div>
+              Tienes un proyecto en España.
+              <br />
+              <span className="text-[#C8102E]">Tienes a alguien que ya lo vivió.</span>
+            </h1>
+            <p className="text-lg text-white/70 mb-4 max-w-xl">
+              Asesoramiento jurídico, fiscal y financiero integral para mexicanos
+              que quieren instalarse, emprender o invertir en España.
+            </p>
+            <p className="text-lg font-semibold text-[#C8102E] mb-10">
+              Un mexicano en el equipo. Todo bajo un mismo techo en Madrid.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-8 py-4 text-base transition-colors"
+              >
+                <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
+                Habla con nosotros
+              </a>
+              <a
+                href="#tu-camino"
+                className="inline-flex items-center gap-2 border border-white/30 hover:border-white/60 text-white font-semibold px-8 py-4 text-base transition-colors"
+              >
+                Ver el proceso
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Right: Miguel photo */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="hidden md:flex justify-center"
+          >
+            <div className="relative">
+              <div className="absolute -inset-3 border border-[#C8102E]/25" />
+              <div className="absolute -inset-6 border border-[#006847]/15" />
+              <img
+                src="/team/miguel.jpg"
+                alt="Miguel Ángel López"
+                className="w-72 h-88 object-cover object-top"
+                style={{ height: "22rem" }}
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0D1B2A]/90 to-transparent h-28 flex items-end p-4">
+                <div>
+                  <p className="text-white font-bold text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                    Miguel Ángel López
+                  </p>
+                  <p className="text-[#C8102E] text-xs font-medium">Ascente CFO® · Hecho en México</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
@@ -556,48 +591,56 @@ function MiguelSection() {
   return (
     <section id="equipo" className="bg-gray-50 py-20 lg:py-28">
       <AnimatedSection className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <motion.div variants={fadeUp}>
-            <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-4">
-              Hecho en México
-            </p>
-            <h2
-              className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-6"
-              style={{ fontFamily: "'DM Sans', sans-serif" }}
-            >
-              Un mexicano acompañando a mexicanos
-            </h2>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Miguel Ángel vivió el mismo proceso que cada cliente mexicano que
-              llega a Madrid: emigrar, adaptarse a un nuevo sistema legal y
-              fiscal, y construir una vida profesional en España.
-            </p>
-            <p className="text-gray-600 mb-8 leading-relaxed">
-              Entiende los matices, miedos y expectativas del cliente mexicano
-              desde el primer contacto. Traduce tus necesidades al equipo de
-              abogados y fiscalistas, y viceversa.
-            </p>
-            <ul className="space-y-3 mb-8">
-              {[
-                "Más de 20 años en empresas multinacionales",
-                "CFO en México, Panamá, Uruguay — operaciones en más de 20 países",
-                "Ex PwC · Executive Master en Finanzas — ESADE España",
-                "Acompaña personalmente a clientes mexicanos desde 2025",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-[#006847] flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700 text-sm">{item}</span>
-                </li>
-              ))}
-            </ul>
-            <a
-              href={LINKEDIN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#C8102E] text-sm font-semibold hover:underline"
-            >
-              Ver perfil en LinkedIn <ArrowRight className="w-4 h-4" />
-            </a>
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          {/* Foto + bio */}
+          <motion.div variants={fadeUp} className="flex gap-8 items-start flex-col sm:flex-row md:flex-col lg:flex-row">
+            <div className="relative flex-shrink-0">
+              <img
+                src="/team/miguel.jpg"
+                alt="Miguel Ángel López"
+                className="w-36 h-44 object-cover object-top border-4 border-white shadow-lg"
+              />
+              <div className="absolute -bottom-2 -right-2 bg-[#C8102E] px-2 py-1">
+                <p className="text-white text-xs font-bold">🇲🇽 CFO</p>
+              </div>
+            </div>
+            <div>
+              <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-2">
+                Hecho en México
+              </p>
+              <h2
+                className="text-2xl sm:text-3xl font-bold text-[#0D1B2A] mb-4"
+                style={{ fontFamily: "'DM Sans', sans-serif" }}
+              >
+                Un mexicano acompañando a mexicanos
+              </h2>
+              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+                Miguel Ángel vivió el mismo proceso que cada cliente mexicano que
+                llega a Madrid: emigrar, adaptarse a un nuevo sistema legal y
+                fiscal, y construir una vida profesional en España.
+              </p>
+              <ul className="space-y-2 mb-5">
+                {[
+                  "Más de 20 años en empresas multinacionales",
+                  "CFO en México, Panamá, Uruguay — +20 países",
+                  "Ex PwC · Executive Master ESADE España",
+                  "Atiende personalmente a clientes mexicanos",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#006847] flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#C8102E] text-sm font-semibold hover:underline"
+              >
+                Ver perfil en LinkedIn <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
           </motion.div>
 
           <motion.div variants={fadeUp} className="space-y-4">
@@ -636,6 +679,88 @@ function MiguelSection() {
               </div>
             ))}
           </motion.div>
+        </div>
+      </AnimatedSection>
+    </section>
+  );
+}
+
+// ─── EQUIPO NEXT ABOGADOS ───
+const equipoNext = [
+  {
+    nombre: "Rafael Núñez Blázquez",
+    cargo: "Fundador · Fiscal Internacional y Mercantil",
+    bio: "Doctor H.C. Staffordshire · ICADE E-1 · MBA Instituto de Empresa · Ex socio PwC España y KPMG LLP · Colegiado en Madrid desde 1990.",
+    foto: "/team/rafael.jpg",
+  },
+  {
+    nombre: "Yolanda Calderón",
+    cargo: "Derecho Mercantil y Societario",
+    bio: "Especialista en constitución de sociedades, pactos de socios, reestructuraciones y gobierno corporativo.",
+    foto: "/team/yolanda.jpg",
+  },
+  {
+    nombre: "Carlos Martín",
+    cargo: "Derecho Mercantil",
+    bio: "Asesoramiento en contratos mercantiles, operaciones corporativas y due diligence para inversores internacionales.",
+    foto: "/team/carlos.jpg",
+  },
+  {
+    nombre: "Ángel Bravo",
+    cargo: "Derecho Fiscal",
+    bio: "Fiscalidad de empresas y personas físicas, IRPF, IS, IVA y procedimientos tributarios ante la AEAT.",
+    foto: "/team/angel.jpg",
+  },
+  {
+    nombre: "Alfonso Picón",
+    cargo: "Derecho Inmobiliario y Procesal",
+    bio: "Compraventa, arrendamientos, urbanismo, due diligence inmobiliaria y representación procesal.",
+    foto: "/team/alfonso.jpg",
+  },
+];
+
+function EquipoSection() {
+  return (
+    <section className="bg-white py-20 lg:py-28 border-t border-gray-100">
+      <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div variants={fadeUp} className="text-center mb-14">
+          <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
+            Next Abogados
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-4"
+            style={{ fontFamily: "'DM Sans', sans-serif" }}
+          >
+            El equipo jurídico detrás del servicio
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Profesionales senior colegiados en Madrid. Cada cliente es atendido directamente por quienes firman — sin intermediarios.
+          </p>
+        </motion.div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          {equipoNext.map((m, i) => (
+            <motion.div
+              key={i}
+              variants={fadeUp}
+              className="group text-center border border-gray-200 hover:border-[#C8102E] transition-colors p-6"
+            >
+              <div className="relative w-24 h-24 mx-auto mb-4 overflow-hidden">
+                <img
+                  src={m.foto}
+                  alt={m.nombre}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <h3
+                className="font-bold text-[#0D1B2A] text-sm mb-1 leading-tight"
+                style={{ fontFamily: "'DM Sans', sans-serif" }}
+              >
+                {m.nombre}
+              </h3>
+              <p className="text-[#C8102E] text-xs font-medium mb-3">{m.cargo}</p>
+              <p className="text-gray-500 text-xs leading-relaxed">{m.bio}</p>
+            </motion.div>
+          ))}
         </div>
       </AnimatedSection>
     </section>
@@ -840,6 +965,7 @@ export default function MexicoHome() {
       <LeyBeckhamSection />
       <ServiciosSection />
       <MiguelSection />
+      <EquipoSection />
       <DiferencialesSection />
       <CTASection />
       <Footer />
