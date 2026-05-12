@@ -133,14 +133,15 @@ function Navbar() {
 function HeroSection() {
   return (
     <section
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative flex items-center overflow-hidden"
       style={{
         backgroundImage: `url(${HERO_BG})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "center 40%",
+        minHeight: "clamp(480px, 75vh, 780px)",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B2A]/95 via-[#0D1B2A]/80 to-[#0D1B2A]/50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B2A]/92 via-[#0D1B2A]/70 to-[#0D1B2A]/40" />
       {/* México green bar — left */}
       <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#006847]" />
       {/* España yellow bar — right */}
