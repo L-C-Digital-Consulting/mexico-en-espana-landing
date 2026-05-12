@@ -141,15 +141,13 @@ function HeroSection() {
         minHeight: "clamp(480px, 75vh, 780px)",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B2A]/92 via-[#0D1B2A]/70 to-[#0D1B2A]/40" />
-      {/* España flag diagonal — left side (mirrors Mexico flag on right) */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute inset-0" style={{ background: '#C8102E', clipPath: 'polygon(0 0, 5% 0, 9% 100%, 0 100%)', opacity: 0.45 }} />
-        <div className="absolute inset-0" style={{ background: '#FCBA05', clipPath: 'polygon(5% 0, 14% 0, 24% 100%, 9% 100%)', opacity: 0.45 }} />
-        <div className="absolute inset-0" style={{ background: '#C8102E', clipPath: 'polygon(14% 0, 19% 0, 32% 100%, 24% 100%)', opacity: 0.45 }} />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B2A]/90 via-[#0D1B2A]/65 to-[#0D1B2A]/35" />
+      {/* España flag — thin vertical accent bar on left edge */}
+      <div className="absolute left-0 top-0 bottom-0 flex" style={{ width: '6px', zIndex: 2 }}>
+        <div className="flex-1 bg-[#C8102E]" />
+        <div className="flex-1 bg-[#FCBA05]" />
+        <div className="flex-1 bg-[#C8102E]" />
       </div>
-      {/* España yellow bar — right */}
-      <div className="absolute right-0 top-0 bottom-0 w-1.5 bg-[#FCBA05]" />
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -161,7 +159,7 @@ function HeroSection() {
               <span className="text-white font-semibold text-sm tracking-wide">Acompañando a México en España</span>
               <span className="text-[#FCBA05] font-bold text-sm">🇪🇸</span>
             </div>
-            <p className="text-[#C8102E] font-bold text-xs tracking-widest uppercase mb-6 border-l-4 border-[#C8102E] pl-4">
+            <p className="text-white/60 font-semibold text-xs tracking-widest uppercase mb-6 border-l-2 border-[#FCBA05] pl-4">
               Next Abogados · Ascente — Madrid
             </p>
             <h1
