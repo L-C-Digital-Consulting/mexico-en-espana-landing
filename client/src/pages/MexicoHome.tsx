@@ -636,31 +636,21 @@ function MiguelSection() {
               >
                 Un mexicano acompañando a mexicanos
               </h2>
-              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+              <p className="text-gray-600 mb-6 leading-relaxed text-sm">
                 Miguel Ángel vivió el mismo proceso que cada cliente mexicano que
                 llega a Madrid: emigrar, adaptarse a un nuevo sistema legal y
                 fiscal, y construir una vida profesional en España.
               </p>
-              <ul className="space-y-2 mb-5">
-                {[
-                  "Más de 20 años en empresas multinacionales",
-                  "CFO en México, Panamá, Uruguay — +20 países",
-                  "Ex PwC · Executive Master ESADE España",
-                  "Atiende personalmente a clientes mexicanos",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#006847] flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700 text-sm">{item}</span>
-                  </li>
-                ))}
-              </ul>
               <a
                 href={LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[#C8102E] text-sm font-semibold hover:underline"
+                className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white text-sm font-semibold px-5 py-3 transition-colors"
               >
-                Ver perfil en LinkedIn <ArrowRight className="w-4 h-4" />
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                Conoce al CFO de Ascente
               </a>
             </div>
           </motion.div>
