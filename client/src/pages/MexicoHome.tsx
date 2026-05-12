@@ -490,6 +490,8 @@ const bloques = [
       "Convenio doble imposición MX-ES",
       "Planificación sucesoria",
       "Derecho Procesal",
+      "Derecho Laboral",
+      "Derecho Migratorio",
     ],
   },
   {
