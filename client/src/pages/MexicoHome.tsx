@@ -407,42 +407,44 @@ function LeyBeckhamSection() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* Sin planificación — amarillo España */}
           <motion.div
             variants={fadeUp}
-            className="bg-white border border-gray-200 p-8 text-center"
+            className="bg-[#FCBA05] p-8 text-center relative overflow-hidden"
           >
-            <p className="text-sm text-gray-500 uppercase tracking-widest mb-4">
+            <p className="text-sm text-[#0D1B2A]/70 font-semibold uppercase tracking-widest mb-4">
               Sin planificación
             </p>
             <p
-              className="text-6xl font-bold text-gray-400 mb-3"
+              className="text-6xl font-bold text-[#0D1B2A] mb-3"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               54%
             </p>
-            <p className="text-gray-500 text-sm">
+            <p className="text-[#0D1B2A]/70 text-sm">
               Régimen general IRPF — tributación sobre renta mundial con escala
               progresiva (19% a 54%)
             </p>
           </motion.div>
 
+          {/* Con Ley Beckham — rojo España */}
           <motion.div
             variants={fadeUp}
-            className="bg-[#0D1B2A] border border-[#C8102E] p-8 text-center relative overflow-hidden"
+            className="bg-[#C8102E] p-8 text-center relative overflow-hidden"
           >
-            <div className="absolute top-4 right-4 bg-[#C8102E] text-white text-xs font-bold px-3 py-1">
+            <div className="absolute top-4 right-4 bg-[#FCBA05] text-[#0D1B2A] text-xs font-bold px-3 py-1">
               CON PLANIFICACIÓN
             </div>
-            <p className="text-sm text-[#C8102E] uppercase tracking-widest mb-4">
+            <p className="text-sm text-[#FCBA05] font-semibold uppercase tracking-widest mb-4">
               Con Ley Beckham
             </p>
             <p
-              className="text-6xl font-bold text-[#C8102E] mb-3"
+              className="text-6xl font-bold text-white mb-3"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               24%
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white/80 text-sm">
               Tipo fijo hasta 600.000€ anuales, tributando solo por rentas de
               fuente española
             </p>
