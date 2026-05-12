@@ -274,6 +274,162 @@ function PorQueEspanaSection() {
   );
 }
 
+// ─── QUIÉNES SOMOS ───
+function QuienesSomosSection() {
+  return (
+    <section className="bg-white py-20 lg:py-28 border-t border-gray-100">
+      <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left: texto */}
+          <motion.div variants={fadeUp}>
+            <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
+              Quiénes somos
+            </p>
+            <h2
+              className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-6"
+              style={{ fontFamily: "'DM Sans', sans-serif" }}
+            >
+              Un grupo profesional con vocación internacional
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Next Abogados es un despacho independiente fundado en 2014 por Rafael Núñez Blázquez, orientado a ofrecer servicios jurídicos de elevada calidad técnica en Derecho Fiscal, Inmobiliario, Mercantil y Procesal.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-8">
+              En 2020 constituimos Ascente, nuestra unidad económico-financiera, para acompañar a nuestros clientes también en la gestión integral de su actividad empresarial.
+            </p>
+            <div className="space-y-3">
+              {[
+                { label: "Calidad técnica", desc: "Equipo con trayectoria en PwC y KPMG. Colegiados en Madrid desde 1990." },
+                { label: "Trato cercano", desc: "Despacho boutique: cada cliente es atendido por profesionales senior, no por intermediarios." },
+                { label: "Visión internacional", desc: "Especialidad en fiscalidad internacional y acompañamiento a clientes iberoamericanos." },
+              ].map((v, i) => (
+                <div key={i} className="flex gap-3">
+                  <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: i === 1 ? "#FCBA05" : "#C8102E" }} />
+                  <div>
+                    <span className="font-semibold text-[#0D1B2A] text-sm">{v.label} — </span>
+                    <span className="text-gray-600 text-sm">{v.desc}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-gray-400 mt-6">
+              C/ Miguel Ángel 21, planta baja B · 28010 Madrid · (+34) 91 159 42 48
+            </p>
+          </motion.div>
+          {/* Right: stats */}
+          <motion.div variants={fadeUp} className="grid grid-cols-3 gap-4">
+            {[
+              { value: "2014", label: "Fundación del despacho" },
+              { value: "+10", label: "Profesionales en plantilla" },
+              { value: "Madrid", label: "Chamberí — sede única" },
+            ].map((s, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center justify-center text-center p-6 border-2"
+                style={{ borderColor: i === 1 ? "#FCBA05" : "#C8102E" }}
+              >
+                <p
+                  className="text-3xl font-bold mb-2"
+                  style={{ fontFamily: "'DM Sans', sans-serif", color: i === 1 ? "#FCBA05" : "#C8102E" }}
+                >
+                  {s.value}
+                </p>
+                <p className="text-xs text-gray-500 leading-tight">{s.label}</p>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </AnimatedSection>
+    </section>
+  );
+}
+
+// ─── CÓMO TRABAJAMOS ───
+function ComoTrabajamosSection() {
+  return (
+    <section className="bg-gray-50 py-20 lg:py-28">
+      <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div variants={fadeUp} className="text-center mb-14">
+          <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
+            Cómo trabajamos
+          </p>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-4"
+            style={{ fontFamily: "'DM Sans', sans-serif" }}
+          >
+            Un modelo en tres fases
+          </h2>
+          <p className="text-gray-600 max-w-xl mx-auto">
+            Servicios contratados por proyecto con presupuesto cerrado. Ninguna implementación sin decisión consensuada.
+          </p>
+        </motion.div>
+        <div className="grid md:grid-cols-3 gap-0">
+          {[
+            {
+              num: "01",
+              titulo: "Análisis e informes",
+              color: "#C8102E",
+              items: [
+                "Asesoramiento fiscal integral desde la perspectiva legal, societaria y tributaria",
+                "Análisis de la situación laboral y encaje de las operaciones",
+                "Recomendaciones y escenarios según la documentación del cliente",
+              ],
+            },
+            {
+              num: "02",
+              titulo: "Decisión",
+              color: "#FCBA05",
+              items: [
+                "Reunión presencial para exponer el informe al cliente",
+                "Toma de decisiones compartida sobre el caso particular",
+                "Validación del plan de acción antes de cualquier implementación",
+              ],
+            },
+            {
+              num: "03",
+              titulo: "Implementación",
+              color: "#C8102E",
+              items: [
+                "Ejecución de actuaciones consensuadas y acordadas",
+                "Constitución de sociedad, aplicación Beckham, reagrupación, etc.",
+                "Seguimiento continuo con contabilidad, impuestos y laboral",
+              ],
+            },
+          ].map((fase, i) => (
+            <motion.div
+              key={i}
+              variants={fadeUp}
+              className="p-8 border border-gray-200"
+              style={{ borderTopWidth: '4px', borderTopColor: fase.color }}
+            >
+              <p
+                className="text-5xl font-bold mb-3 opacity-20"
+                style={{ fontFamily: "'DM Sans', sans-serif", color: fase.color }}
+              >
+                {fase.num}
+              </p>
+              <h3
+                className="font-bold text-[#0D1B2A] text-lg mb-5"
+                style={{ fontFamily: "'DM Sans', sans-serif" }}
+              >
+                {fase.titulo}
+              </h3>
+              <ul className="space-y-3">
+                {fase.items.map((item, j) => (
+                  <li key={j} className="flex items-start gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: fase.color }} />
+                    <p className="text-gray-600 text-sm leading-relaxed">{item}</p>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
+        </div>
+      </AnimatedSection>
+    </section>
+  );
+}
+
 // ─── TU CAMINO ───
 const momentos = [
   {
@@ -620,6 +776,18 @@ function MiguelSection() {
                 llega a Madrid: emigrar, adaptarse a un nuevo sistema legal y
                 fiscal, y construir una vida profesional en España.
               </p>
+              <div className="space-y-2 mb-6">
+                {[
+                  "+20 años en empresas multinacionales",
+                  "Executive Master en Finanzas · ESADE",
+                  "Acompañando a clientes mexicanos desde 2025",
+                ].map((c, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#C8102E] flex-shrink-0" />
+                    <p className="text-gray-600 text-sm">{c}</p>
+                  </div>
+                ))}
+              </div>
               <a
                 href={LINKEDIN_URL}
                 target="_blank"
@@ -983,8 +1151,10 @@ export default function MexicoHome() {
       <Navbar />
       <HeroSection />
       <PorQueEspanaSection />
+      <QuienesSomosSection />
       <TuCaminoSection />
       <LeyBeckhamSection />
+      <ComoTrabajamosSection />
       <ServiciosSection />
       <MiguelSection />
       <EquipoSection />
