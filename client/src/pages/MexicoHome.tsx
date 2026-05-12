@@ -734,26 +734,28 @@ function EquipoSection() {
               className="group border border-gray-200 hover:border-[#C8102E] transition-colors overflow-hidden"
             >
               {/* Photo */}
-              <div className="relative w-full overflow-hidden bg-gray-100 aspect-[4/3]">
+              <div className="relative w-full overflow-hidden bg-gray-100" style={{ aspectRatio: '3/4', maxHeight: '280px' }}>
                 <img
                   src={m.foto}
                   alt={m.nombre}
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
-                {i === 0 && (
-                  <div className="absolute top-3 left-3 bg-[#C8102E] text-white text-xs font-bold px-2 py-1">
-                    Fundador
-                  </div>
-                )}
               </div>
               {/* Info */}
               <div className="p-5">
-                <h3
-                  className="font-bold text-[#0D1B2A] text-sm mb-1 leading-tight"
-                  style={{ fontFamily: "'DM Sans', sans-serif" }}
-                >
-                  {m.nombre}
-                </h3>
+                <div className="flex items-center gap-2 mb-1">
+                  <h3
+                    className="font-bold text-[#0D1B2A] text-sm leading-tight"
+                    style={{ fontFamily: "'DM Sans', sans-serif" }}
+                  >
+                    {m.nombre}
+                  </h3>
+                  {i === 0 && (
+                    <span className="bg-[#C8102E] text-white text-[10px] font-bold px-2 py-0.5 shrink-0">
+                      Fundador
+                    </span>
+                  )}
+                </div>
                 <p className="text-[#C8102E] text-xs font-semibold mb-3 leading-tight">{m.cargo}</p>
                 <p className="text-gray-500 text-xs leading-relaxed">{m.bio}</p>
               </div>
