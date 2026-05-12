@@ -101,19 +101,13 @@ function Navbar() {
             <span className="text-[#C8102E]">España</span>
           </span>
         </a>
-        <div className={`hidden md:flex items-center gap-8 text-sm transition-colors ${scrolled ? "text-[#0D1B2A]/70" : "text-white/80"}`}>
-          <a href="#por-que-espana" className="hover:text-[#C8102E] transition-colors">
-            ¿Por qué España?
-          </a>
-          <a href="#tu-camino" className="hover:text-[#C8102E] transition-colors">
-            Tu camino
-          </a>
-          <a href="#servicios" className="hover:text-[#C8102E] transition-colors">
-            Servicios
-          </a>
-          <a href="#equipo" className="hover:text-[#C8102E] transition-colors">
-            Equipo
-          </a>
+        <div className={`hidden md:flex items-center gap-6 text-sm transition-colors ${scrolled ? "text-[#0D1B2A]/70" : "text-white/80"}`}>
+          <a href="#por-que-espana" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">¿Por qué España?</a>
+          <a href="#quienes-somos" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Quiénes somos</a>
+          <a href="#ley-beckham" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Ley Beckham</a>
+          <a href="#necesidades" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Necesidades</a>
+          <a href="#servicios" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Servicios</a>
+          <a href="#equipo" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Equipo</a>
         </div>
         <div className="flex items-center gap-2">
           <a
@@ -277,7 +271,7 @@ function PorQueEspanaSection() {
 // ─── QUIÉNES SOMOS ───
 function QuienesSomosSection() {
   return (
-    <section className="bg-white py-20 lg:py-28 border-t border-gray-100">
+    <section id="quienes-somos" className="bg-white py-20 lg:py-28 border-t border-gray-100">
       <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: texto */}
@@ -363,7 +357,7 @@ function NecesidadesSection() {
     { item: "Sucesiones y donaciones", detalle: "planificación sucesoria adaptada a herederos en México" },
   ];
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section id="necesidades" className="bg-white py-20 lg:py-28">
       <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeUp} className="text-center mb-14">
           <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
@@ -596,7 +590,7 @@ function TuCaminoSection() {
 // ─── LEY BECKHAM ───
 function LeyBeckhamSection() {
   return (
-    <section className="bg-gray-50 py-20 lg:py-28">
+    <section id="ley-beckham" className="bg-gray-50 py-20 lg:py-28">
       <AnimatedSection className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeUp} className="text-center mb-12">
           <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
