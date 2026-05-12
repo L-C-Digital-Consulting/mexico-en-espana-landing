@@ -142,8 +142,12 @@ function HeroSection() {
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B2A]/92 via-[#0D1B2A]/70 to-[#0D1B2A]/40" />
-      {/* México green bar — left */}
-      <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#006847]" />
+      {/* España flag diagonal — left side (mirrors Mexico flag on right) */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0" style={{ background: '#C8102E', clipPath: 'polygon(0 0, 10% 0, 18% 100%, 0 100%)', opacity: 0.75 }} />
+        <div className="absolute inset-0" style={{ background: '#FCBA05', clipPath: 'polygon(10% 0, 30% 0, 52% 100%, 18% 100%)', opacity: 0.75 }} />
+        <div className="absolute inset-0" style={{ background: '#C8102E', clipPath: 'polygon(30% 0, 42% 0, 70% 100%, 52% 100%)', opacity: 0.75 }} />
+      </div>
       {/* España yellow bar — right */}
       <div className="absolute right-0 top-0 bottom-0 w-1.5 bg-[#FCBA05]" />
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
