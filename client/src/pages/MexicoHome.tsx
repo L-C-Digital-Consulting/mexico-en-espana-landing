@@ -728,11 +728,11 @@ function EquipoSection() {
               className="group border border-gray-200 hover:border-[#C8102E] transition-colors overflow-hidden"
             >
               {/* Photo */}
-              <div className="relative w-full overflow-hidden bg-gray-100" style={{ height: "200px" }}>
+              <div className="relative w-full overflow-hidden bg-gray-100 aspect-[4/3]">
                 <img
                   src={m.foto}
                   alt={m.nombre}
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
                 {i === 0 && (
                   <div className="absolute top-3 left-3 bg-[#C8102E] text-white text-xs font-bold px-2 py-1">
