@@ -156,10 +156,10 @@ function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <span className="text-[#006847] font-bold text-sm tracking-widest uppercase">🇲🇽 México</span>
-              <ArrowRight className="w-4 h-4 text-white/30" />
-              <span className="text-[#FCBA05] font-bold text-sm tracking-widest uppercase">🇪🇸 España</span>
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-2 mb-6">
+              <span className="text-[#006847] font-bold text-sm">🇲🇽</span>
+              <span className="text-white font-semibold text-sm tracking-wide">Acompañando a México en España</span>
+              <span className="text-[#FCBA05] font-bold text-sm">🇪🇸</span>
             </div>
             <p className="text-[#C8102E] font-bold text-xs tracking-widest uppercase mb-6 border-l-4 border-[#C8102E] pl-4">
               Next Abogados · Ascente — Madrid
