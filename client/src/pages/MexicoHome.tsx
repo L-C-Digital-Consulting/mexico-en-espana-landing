@@ -196,31 +196,6 @@ function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Right: Miguel photo card */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:flex justify-end"
-          >
-            <div className="relative">
-              <div className="absolute -inset-3 border border-[#C8102E]/30" />
-              <img
-                src="/team/miguel.jpg"
-                alt="Miguel Ángel López"
-                className="w-64 object-cover object-top"
-                style={{ height: "22rem" }}
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0D1B2A] to-transparent h-28 flex items-end p-4">
-                <div>
-                  <p className="text-white font-bold text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                    Miguel Ángel López
-                  </p>
-                  <p className="text-[#C8102E] text-xs font-medium">Ascente CFO® · Hecho en México</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
