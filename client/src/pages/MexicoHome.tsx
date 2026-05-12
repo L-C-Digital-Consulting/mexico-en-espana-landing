@@ -142,23 +142,18 @@ function HeroSection() {
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B2A]/90 via-[#0D1B2A]/65 to-[#0D1B2A]/35" />
-      {/* España flag — thin vertical accent bar on left edge */}
-      <div className="absolute left-0 top-0 bottom-0 flex" style={{ width: '6px', zIndex: 2 }}>
+      {/* España flag — vertical accent bar on left edge */}
+      <div className="absolute left-0 top-0 bottom-0 flex" style={{ width: '18px', zIndex: 2 }}>
         <div className="flex-1 bg-[#C8102E]" />
-        <div className="flex-1 bg-[#FCBA05]" />
+        <div style={{ flex: 2 }} className="bg-[#FCBA05]" />
         <div className="flex-1 bg-[#C8102E]" />
       </div>
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full" style={{ paddingLeft: 'max(1rem, 30px)' }}>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-2 mb-6">
-              <span className="text-[#006847] font-bold text-sm">🇲🇽</span>
-              <span className="text-white font-semibold text-sm tracking-wide">Acompañando a México en España</span>
-              <span className="text-[#FCBA05] font-bold text-sm">🇪🇸</span>
-            </div>
             <p className="text-white/60 font-semibold text-xs tracking-widest uppercase mb-6 border-l-2 border-[#FCBA05] pl-4">
               Next Abogados · Ascente — Madrid
             </p>
@@ -166,15 +161,16 @@ function HeroSection() {
               className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              Tienes un proyecto en España.
-              <br />
-              <span className="text-[#C8102E]">Tienes a alguien que ya lo vivió.</span>
+              Acompañando a<br />
+              <span style={{ color: '#006847' }}>México</span>{" "}
+              <span className="text-white">en</span>{" "}
+              <span className="text-[#C8102E]">España.</span>
             </h1>
-            <p className="text-lg text-white/70 mb-4 max-w-2xl">
+            <p className="text-lg text-white/80 mb-4 max-w-2xl">
               Asesoramiento jurídico, fiscal y financiero integral para mexicanos
               que quieren instalarse, emprender o invertir en España.
             </p>
-            <p className="text-lg font-semibold text-[#FCBA05] mb-10">
+            <p className="text-base font-semibold text-[#FCBA05] mb-10">
               Un mexicano en el equipo. Todo bajo un mismo techo en Madrid.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
