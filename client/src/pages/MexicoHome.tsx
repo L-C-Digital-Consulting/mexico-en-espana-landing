@@ -593,13 +593,13 @@ function MiguelSection() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Foto + bio */}
           <motion.div variants={fadeUp} className="flex gap-8 items-start flex-col sm:flex-row md:flex-col lg:flex-row">
-            <div className="relative flex-shrink-0">
+            <div className="relative flex-shrink-0 overflow-hidden border-4 border-white shadow-lg" style={{ width: '180px', aspectRatio: '3/4', maxHeight: '240px' }}>
               <img
                 src="/team/miguel.jpg"
                 alt="Miguel Ángel López"
-                className="w-36 h-44 object-cover object-top border-4 border-white shadow-lg"
+                className="w-full h-full object-cover object-top"
               />
-              <div className="absolute -bottom-2 -right-2 bg-[#C8102E] px-2 py-1">
+              <div className="absolute bottom-2 right-2 bg-[#C8102E] px-2 py-1">
                 <p className="text-white text-xs font-bold">🇲🇽 CFO</p>
               </div>
             </div>
