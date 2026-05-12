@@ -23,6 +23,9 @@ import {
   Phone,
 } from "lucide-react";
 
+const HERO_BG =
+  "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1920&q=80";
+
 const WHATSAPP_LINK =
   "https://wa.me/34635580883?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20instalarme%20en%20Espa%C3%B1a.";
 const WHATSAPP_LOGO =
@@ -124,19 +127,17 @@ function Navbar() {
 // ─── HERO ───
 function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#0D1B2A]">
+    <section
+      className="relative min-h-screen flex items-center overflow-hidden"
+      style={{
+        backgroundImage: `url(${HERO_BG})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B2A]/95 via-[#0D1B2A]/80 to-[#0D1B2A]/50" />
       {/* México green bar — left */}
       <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#006847]" />
-      {/* España red bar — right */}
-      <div className="absolute right-0 top-0 bottom-0 w-1.5 bg-[#C8102E]" />
-      {/* Subtle dot pattern */}
-      <div
-        className="absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
-        }}
-      />
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: copy */}
@@ -188,23 +189,22 @@ function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Right: Miguel photo */}
+          {/* Right: Miguel photo card */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:flex justify-center"
+            className="hidden md:flex justify-end"
           >
             <div className="relative">
-              <div className="absolute -inset-3 border border-[#C8102E]/25" />
-              <div className="absolute -inset-6 border border-[#006847]/15" />
+              <div className="absolute -inset-3 border border-[#C8102E]/30" />
               <img
                 src="/team/miguel.jpg"
                 alt="Miguel Ángel López"
-                className="w-72 h-88 object-cover object-top"
+                className="w-64 object-cover object-top"
                 style={{ height: "22rem" }}
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0D1B2A]/90 to-transparent h-28 flex items-end p-4">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0D1B2A] to-transparent h-28 flex items-end p-4">
                 <div>
                   <p className="text-white font-bold text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                     Miguel Ángel López
@@ -689,32 +689,32 @@ function MiguelSection() {
 const equipoNext = [
   {
     nombre: "Rafael Núñez Blázquez",
-    cargo: "Fundador · Fiscal Internacional y Mercantil",
-    bio: "Doctor H.C. Staffordshire · ICADE E-1 · MBA Instituto de Empresa · Ex socio PwC España y KPMG LLP · Colegiado en Madrid desde 1990.",
+    cargo: "Fundador · Fiscal Internacional y Mercantil/Societario",
+    bio: "Doctor H.C. Universidad de Staffordshire · ICADE E-1 · MBA Instituto de Empresa · Ex socio internacional de PwC España y KPMG LLP · Colegiado en Madrid desde 1990 · Consejero de SOCIMIs y gestora de capital riesgo.",
     foto: "/team/rafael.jpg",
   },
   {
     nombre: "Yolanda Calderón",
     cargo: "Derecho Mercantil y Societario",
-    bio: "Especialista en constitución de sociedades, pactos de socios, reestructuraciones y gobierno corporativo.",
+    bio: "Licenciada en Derecho por la UCM (Cisneros). Especialista en constitución de sociedades, contratos mercantiles y gobierno corporativo.",
     foto: "/team/yolanda.jpg",
   },
   {
     nombre: "Carlos Martín",
-    cargo: "Derecho Mercantil",
-    bio: "Asesoramiento en contratos mercantiles, operaciones corporativas y due diligence para inversores internacionales.",
+    cargo: "Derecho Mercantil y Protección de Datos",
+    bio: "Doble Grado Derecho-ADE ICADE-ICAI. Asesoramiento mercantil, protección de datos y cumplimiento normativo para empresas internacionales.",
     foto: "/team/carlos.jpg",
   },
   {
     nombre: "Ángel Bravo",
-    cargo: "Derecho Fiscal",
-    bio: "Fiscalidad de empresas y personas físicas, IRPF, IS, IVA y procedimientos tributarios ante la AEAT.",
+    cargo: "Derecho Fiscal y Procedimientos",
+    bio: "Asociado Senior. UCLM · CEF · ESADE. Fiscalidad empresarial, IRPF, IS, IVA, Ley Beckham y procedimientos tributarios ante la AEAT.",
     foto: "/team/angel.jpg",
   },
   {
     nombre: "Alfonso Picón",
-    cargo: "Derecho Inmobiliario y Procesal",
-    bio: "Compraventa, arrendamientos, urbanismo, due diligence inmobiliaria y representación procesal.",
+    cargo: "Dirección Administrativa",
+    bio: "Responsable de contabilidad, compliance y administración de sociedades. Gestión integral del día a día de las empresas cliente.",
     foto: "/team/alfonso.jpg",
   },
 ];
@@ -742,23 +742,32 @@ function EquipoSection() {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="group text-center border border-gray-200 hover:border-[#C8102E] transition-colors p-6"
+              className="group border border-gray-200 hover:border-[#C8102E] transition-colors overflow-hidden"
             >
-              <div className="relative w-24 h-24 mx-auto mb-4 overflow-hidden">
+              {/* Photo */}
+              <div className="relative w-full overflow-hidden bg-gray-100" style={{ height: "200px" }}>
                 <img
                   src={m.foto}
                   alt={m.nombre}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
+                {i === 0 && (
+                  <div className="absolute top-3 left-3 bg-[#C8102E] text-white text-xs font-bold px-2 py-1">
+                    Fundador
+                  </div>
+                )}
               </div>
-              <h3
-                className="font-bold text-[#0D1B2A] text-sm mb-1 leading-tight"
-                style={{ fontFamily: "'DM Sans', sans-serif" }}
-              >
-                {m.nombre}
-              </h3>
-              <p className="text-[#C8102E] text-xs font-medium mb-3">{m.cargo}</p>
-              <p className="text-gray-500 text-xs leading-relaxed">{m.bio}</p>
+              {/* Info */}
+              <div className="p-5">
+                <h3
+                  className="font-bold text-[#0D1B2A] text-sm mb-1 leading-tight"
+                  style={{ fontFamily: "'DM Sans', sans-serif" }}
+                >
+                  {m.nombre}
+                </h3>
+                <p className="text-[#C8102E] text-xs font-semibold mb-3 leading-tight">{m.cargo}</p>
+                <p className="text-gray-500 text-xs leading-relaxed">{m.bio}</p>
+              </div>
             </motion.div>
           ))}
         </div>
