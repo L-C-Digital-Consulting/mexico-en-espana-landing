@@ -23,8 +23,7 @@ import {
   Phone,
 } from "lucide-react";
 
-const HERO_BG =
-  "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1920&q=80";
+const HERO_BG = "/hero-madrid.png";
 const ES_RED = "#C8102E";
 const ES_YELLOW = "#FCBA05";
 const MX_GREEN = "#006847";
