@@ -116,13 +116,13 @@ function Navbar() {
           </a>
         </div>
         <a
-          href={WHATSAPP_LINK}
+          href={TALLY_LINK}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-5 py-2 text-sm transition-colors"
         >
-          <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-4 h-4 object-contain" />
-          Habla con nosotros
+          Cuéntanos tu situación
+          <ArrowRight className="w-4 h-4" />
         </a>
       </div>
     </nav>
@@ -406,10 +406,10 @@ function LeyBeckhamSection() {
             variants={fadeUp}
             className="bg-[#C8102E] p-8 text-center relative overflow-hidden"
           >
-            <div className="absolute top-4 right-4 bg-[#FCBA05] text-[#0D1B2A] text-xs font-bold px-3 py-1">
+            <div className="absolute top-3 right-3 bg-[#FCBA05] text-[#0D1B2A] text-xs font-bold px-2 py-1 max-w-[45%] text-center leading-tight">
               CON PLANIFICACIÓN
             </div>
-            <p className="text-sm text-[#FCBA05] font-semibold uppercase tracking-widest mb-4">
+            <p className="text-sm text-[#FCBA05] font-semibold uppercase tracking-widest mb-4 mt-8">
               Con Ley Beckham
             </p>
             <p
