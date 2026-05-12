@@ -1,7 +1,7 @@
 /*
  * México en España — Landing Page
  * Next Abogados · Ascente
- * Dark: #0A0A0A · Accent: #C9A84C · Light: #FAF8F4
+ * Dark: #0D1B2A · Accent: #C8102E · Light: #F5F0E8
  */
 
 import { useEffect, useRef, useState } from "react";
@@ -83,7 +83,7 @@ function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0A0A0A]/95 backdrop-blur-md shadow-lg"
+          ? "bg-[#0D1B2A]/95 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -93,7 +93,7 @@ function Navbar() {
             className="text-white font-bold text-lg"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
-            <span className="text-[#C9A84C]">México</span> en España
+            <span className="text-[#C8102E]">México</span> en España
           </span>
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm text-white/80">
@@ -114,7 +114,7 @@ function Navbar() {
           href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-[#C9A84C] hover:bg-[#B8943B] text-[#0A0A0A] font-semibold px-5 py-2 text-sm transition-colors"
+          className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-[#0D1B2A] font-semibold px-5 py-2 text-sm transition-colors"
         >
           <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-4 h-4 object-contain" />
           Habla con nosotros
@@ -135,15 +135,15 @@ function HeroSection() {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/97 to-[#0A0A0A]/75" />
-      <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#C9A84C]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B2A]/97 to-[#0D1B2A]/75" />
+      <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#C8102E]" />
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-[#C9A84C] font-bold text-sm tracking-widest uppercase mb-6 border-l-4 border-[#C9A84C] pl-4">
+          <p className="text-[#C8102E] font-bold text-sm tracking-widest uppercase mb-6 border-l-4 border-[#C8102E] pl-4">
             Next Abogados · Ascente — Madrid
           </p>
           <h1
@@ -152,13 +152,13 @@ function HeroSection() {
           >
             Tienes un proyecto en España.
             <br />
-            <span className="text-[#C9A84C]">Tienes a alguien que ya lo vivió.</span>
+            <span className="text-[#C8102E]">Tienes a alguien que ya lo vivió.</span>
           </h1>
           <p className="text-lg text-white/70 mb-4 max-w-2xl">
             Asesoramiento jurídico, fiscal y financiero integral para mexicanos
             que quieren instalarse, emprender o invertir en España.
           </p>
-          <p className="text-xl font-semibold text-[#C9A84C] mb-10">
+          <p className="text-xl font-semibold text-[#C8102E] mb-10">
             Un mexicano en el equipo. Todo bajo un mismo techo en Madrid.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -166,7 +166,7 @@ function HeroSection() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#C9A84C] hover:bg-[#B8943B] text-[#0A0A0A] font-semibold px-10 py-4 text-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-[#0D1B2A] font-semibold px-10 py-4 text-lg transition-colors"
             >
               <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
               Habla con nosotros
@@ -207,14 +207,14 @@ const stats = [
 
 function PorQueEspanaSection() {
   return (
-    <section id="por-que-espana" className="bg-[#FAF8F4] py-20 lg:py-28">
+    <section id="por-que-espana" className="bg-[#F5F0E8] py-20 lg:py-28">
       <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeUp} className="text-center mb-16">
-          <p className="text-[#C9A84C] font-semibold text-sm tracking-widest uppercase mb-3">
+          <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
             Por qué España
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-bold text-[#0A0A0A] mb-4"
+            className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-4"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             Un destino natural para el mexicano
@@ -230,10 +230,10 @@ function PorQueEspanaSection() {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="bg-white border border-gray-200 p-8 text-center hover:border-[#C9A84C] transition-colors"
+              className="bg-white border border-gray-200 p-8 text-center hover:border-[#C8102E] transition-colors"
             >
               <p
-                className="text-4xl font-bold text-[#C9A84C] mb-3"
+                className="text-4xl font-bold text-[#C8102E] mb-3"
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
                 {s.value}
@@ -278,10 +278,10 @@ const momentos = [
 
 function TuCaminoSection() {
   return (
-    <section id="tu-camino" className="bg-[#0A0A0A] py-20 lg:py-28">
+    <section id="tu-camino" className="bg-[#0D1B2A] py-20 lg:py-28">
       <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeUp} className="text-center mb-16">
-          <p className="text-[#C9A84C] font-semibold text-sm tracking-widest uppercase mb-3">
+          <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
             El proceso
           </p>
           <h2
@@ -300,11 +300,11 @@ function TuCaminoSection() {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="flex gap-6 bg-white/5 border border-white/10 p-6 hover:border-[#C9A84C]/40 transition-colors"
+              className="flex gap-6 bg-white/5 border border-white/10 p-6 hover:border-[#C8102E]/40 transition-colors"
             >
               <div className="flex-shrink-0">
                 <span
-                  className="text-4xl font-bold text-[#C9A84C]/30"
+                  className="text-4xl font-bold text-[#C8102E]/30"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
                   {m.num}
@@ -333,11 +333,11 @@ function LeyBeckhamSection() {
     <section className="bg-white py-20 lg:py-28">
       <AnimatedSection className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeUp} className="text-center mb-12">
-          <p className="text-[#C9A84C] font-semibold text-sm tracking-widest uppercase mb-3">
+          <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
             La ventaja fiscal
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-bold text-[#0A0A0A] mb-4"
+            className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-4"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             Ley Beckham — tributa al 24% en lugar del 54%
@@ -371,16 +371,16 @@ function LeyBeckhamSection() {
 
           <motion.div
             variants={fadeUp}
-            className="bg-[#0A0A0A] border border-[#C9A84C] p-8 text-center relative overflow-hidden"
+            className="bg-[#0D1B2A] border border-[#C8102E] p-8 text-center relative overflow-hidden"
           >
-            <div className="absolute top-4 right-4 bg-[#C9A84C] text-[#0A0A0A] text-xs font-bold px-3 py-1">
+            <div className="absolute top-4 right-4 bg-[#C8102E] text-[#0D1B2A] text-xs font-bold px-3 py-1">
               CON PLANIFICACIÓN
             </div>
-            <p className="text-sm text-[#C9A84C] uppercase tracking-widest mb-4">
+            <p className="text-sm text-[#C8102E] uppercase tracking-widest mb-4">
               Con Ley Beckham
             </p>
             <p
-              className="text-6xl font-bold text-[#C9A84C] mb-3"
+              className="text-6xl font-bold text-[#C8102E] mb-3"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               24%
@@ -393,7 +393,7 @@ function LeyBeckhamSection() {
         </div>
 
         <motion.div variants={fadeUp}>
-          <p className="text-[#0A0A0A] font-semibold mb-4">
+          <p className="text-[#0D1B2A] font-semibold mb-4">
             Perfiles que habitualmente pueden acogerse:
           </p>
           <div className="grid sm:grid-cols-2 gap-3">
@@ -403,8 +403,8 @@ function LeyBeckhamSection() {
               "Nómadas digitales con visado de teletrabajo internacional",
               "Cónyuge e hijos menores de 25 años — extensión al núcleo familiar desde 2023",
             ].map((item, i) => (
-              <div key={i} className="flex items-start gap-3 bg-[#FAF8F4] p-4">
-                <CheckCircle2 className="w-5 h-5 text-[#C9A84C] flex-shrink-0 mt-0.5" />
+              <div key={i} className="flex items-start gap-3 bg-[#F5F0E8] p-4">
+                <CheckCircle2 className="w-5 h-5 text-[#006847] flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-gray-700">{item}</p>
               </div>
             ))}
@@ -421,7 +421,7 @@ const bloques = [
     icon: Scale,
     titulo: "Next Abogados",
     subtitulo: "Asesoramiento jurídico",
-    color: "bg-[#0A0A0A]",
+    color: "bg-[#0D1B2A]",
     servicios: [
       "Derecho Fiscal e IRPF",
       "Fiscalidad Internacional",
@@ -437,7 +437,7 @@ const bloques = [
     icon: FileText,
     titulo: "Ascente",
     subtitulo: "Compliance y administración",
-    color: "bg-[#1a1a1a]",
+    color: "bg-[#162232]",
     servicios: [
       "Altas iniciales (NIE, AEAT, S.Social)",
       "Contabilidad mensual",
@@ -453,8 +453,8 @@ const bloques = [
     icon: TrendingUp,
     titulo: "Ascente CFO®",
     subtitulo: "Dirección financiera",
-    color: "bg-[#C9A84C]",
-    textColor: "text-[#0A0A0A]",
+    color: "bg-[#C8102E]",
+    textColor: "text-[#0D1B2A]",
     servicios: [
       "Diagnóstico de Claridad Financiera®",
       "Planeación Financiera Mensual®",
@@ -469,14 +469,14 @@ const bloques = [
 
 function ServiciosSection() {
   return (
-    <section id="servicios" className="bg-[#FAF8F4] py-20 lg:py-28">
+    <section id="servicios" className="bg-[#F5F0E8] py-20 lg:py-28">
       <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeUp} className="text-center mb-16">
-          <p className="text-[#C9A84C] font-semibold text-sm tracking-widest uppercase mb-3">
+          <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
             Servicios
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-bold text-[#0A0A0A] mb-4"
+            className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-4"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             Todo bajo un mismo techo
@@ -495,18 +495,18 @@ function ServiciosSection() {
             >
               <div
                 className={`w-10 h-10 ${
-                  b.color === "bg-[#C9A84C]" ? "bg-[#0A0A0A]" : "bg-[#C9A84C]"
+                  b.color === "bg-[#C8102E]" ? "bg-[#0D1B2A]" : "bg-[#C8102E]"
                 } flex items-center justify-center mb-5`}
               >
                 <b.icon
                   className={`w-5 h-5 ${
-                    b.color === "bg-[#C9A84C]" ? "text-[#C9A84C]" : "text-[#0A0A0A]"
+                    b.color === "bg-[#C8102E]" ? "text-[#C8102E]" : "text-[#0D1B2A]"
                   }`}
                 />
               </div>
               <h3
                 className={`font-bold text-xl mb-1 ${
-                  b.color === "bg-[#C9A84C]" ? "text-[#0A0A0A]" : "text-white"
+                  b.color === "bg-[#C8102E]" ? "text-[#0D1B2A]" : "text-white"
                 }`}
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
@@ -514,9 +514,9 @@ function ServiciosSection() {
               </h3>
               <p
                 className={`text-sm mb-6 ${
-                  b.color === "bg-[#C9A84C]"
-                    ? "text-[#0A0A0A]/70"
-                    : "text-[#C9A84C]"
+                  b.color === "bg-[#C8102E]"
+                    ? "text-[#0D1B2A]/70"
+                    : "text-[#C8102E]"
                 }`}
               >
                 {b.subtitulo}
@@ -526,15 +526,15 @@ function ServiciosSection() {
                   <li key={j} className="flex items-start gap-2">
                     <CheckCircle2
                       className={`w-4 h-4 flex-shrink-0 mt-0.5 ${
-                        b.color === "bg-[#C9A84C]"
-                          ? "text-[#0A0A0A]"
-                          : "text-[#C9A84C]"
+                        b.color === "bg-[#C8102E]"
+                          ? "text-[#0D1B2A]"
+                          : "text-[#C8102E]"
                       }`}
                     />
                     <span
                       className={`text-sm ${
-                        b.color === "bg-[#C9A84C]"
-                          ? "text-[#0A0A0A]/80"
+                        b.color === "bg-[#C8102E]"
+                          ? "text-[#0D1B2A]/80"
                           : "text-white/70"
                       }`}
                     >
@@ -554,11 +554,11 @@ function ServiciosSection() {
 // ─── MIGUEL ÁNGEL — EL PUENTE ───
 function MiguelSection() {
   return (
-    <section id="equipo" className="bg-[#0A0A0A] py-20 lg:py-28">
+    <section id="equipo" className="bg-[#0D1B2A] py-20 lg:py-28">
       <AnimatedSection className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div variants={fadeUp}>
-            <p className="text-[#C9A84C] font-semibold text-sm tracking-widest uppercase mb-4">
+            <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-4">
               Hecho en México
             </p>
             <h2
@@ -585,7 +585,7 @@ function MiguelSection() {
                 "Acompaña personalmente a clientes mexicanos desde 2025",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-[#C9A84C] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#006847] flex-shrink-0 mt-0.5" />
                   <span className="text-white/70 text-sm">{item}</span>
                 </li>
               ))}
@@ -594,7 +594,7 @@ function MiguelSection() {
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#C9A84C] text-sm font-semibold hover:underline"
+              className="inline-flex items-center gap-2 text-[#C8102E] text-sm font-semibold hover:underline"
             >
               Ver perfil en LinkedIn <ArrowRight className="w-4 h-4" />
             </a>
@@ -624,8 +624,8 @@ function MiguelSection() {
               },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 bg-white/5 border border-white/10 p-5">
-                <div className="w-10 h-10 bg-[#C9A84C] flex items-center justify-center flex-shrink-0">
-                  <item.icon className="w-5 h-5 text-[#0A0A0A]" />
+                <div className="w-10 h-10 bg-[#C8102E] flex items-center justify-center flex-shrink-0">
+                  <item.icon className="w-5 h-5 text-[#0D1B2A]" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-white text-sm mb-1">
@@ -671,11 +671,11 @@ function DiferencialesSection() {
     <section className="bg-white py-20 lg:py-28">
       <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={fadeUp} className="text-center mb-16">
-          <p className="text-[#C9A84C] font-semibold text-sm tracking-widest uppercase mb-3">
+          <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-3">
             Por qué nosotros
           </p>
           <h2
-            className="text-3xl sm:text-4xl font-bold text-[#0A0A0A] mb-4"
+            className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-4"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             "Acompañamos proyectos, no tramitamos expedientes"
@@ -686,13 +686,13 @@ function DiferencialesSection() {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="border border-gray-200 p-6 hover:border-[#C9A84C] transition-colors"
+              className="border border-gray-200 p-6 hover:border-[#C8102E] transition-colors"
             >
-              <div className="w-10 h-10 bg-[#0A0A0A] flex items-center justify-center mb-4">
-                <d.icon className="w-5 h-5 text-[#C9A84C]" />
+              <div className="w-10 h-10 bg-[#0D1B2A] flex items-center justify-center mb-4">
+                <d.icon className="w-5 h-5 text-[#C8102E]" />
               </div>
               <h3
-                className="font-bold text-[#0A0A0A] text-sm mb-2"
+                className="font-bold text-[#0D1B2A] text-sm mb-2"
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
                 {d.titulo}
@@ -709,7 +709,7 @@ function DiferencialesSection() {
 // ─── CTA FINAL ───
 function CTASection() {
   return (
-    <section className="bg-[#0A0A0A] py-20 lg:py-28 border-t border-white/10">
+    <section className="bg-[#0D1B2A] py-20 lg:py-28 border-t border-white/10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -717,7 +717,7 @@ function CTASection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <p className="text-[#C9A84C] font-semibold text-sm tracking-widest uppercase mb-6">
+          <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-6">
             El primer paso
           </p>
           <h2
@@ -726,7 +726,7 @@ function CTASection() {
           >
             La primera conversación es gratis.
             <br />
-            <span className="text-[#C9A84C]">La mala planificación, no.</span>
+            <span className="text-[#C8102E]">La mala planificación, no.</span>
           </h2>
           <p className="text-lg text-white/70 mb-10 max-w-2xl mx-auto">
             Cuéntanos tu situación. En una llamada te decimos si podemos ayudarte,
@@ -738,7 +738,7 @@ function CTASection() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#C9A84C] hover:bg-[#B8943B] text-[#0A0A0A] font-semibold px-10 py-4 text-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-[#0D1B2A] font-semibold px-10 py-4 text-lg transition-colors"
             >
               <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
               Escríbenos por WhatsApp
@@ -762,7 +762,7 @@ function CTASection() {
 // ─── FOOTER ───
 function Footer() {
   return (
-    <footer className="bg-[#0A0A0A] text-white/60 py-12 border-t border-white/10">
+    <footer className="bg-[#0D1B2A] text-white/60 py-12 border-t border-white/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -770,7 +770,7 @@ function Footer() {
               className="text-white font-bold text-lg mb-2"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              <span className="text-[#C9A84C]">México</span> en España
+              <span className="text-[#C8102E]">México</span> en España
             </p>
             <p className="text-sm">Next Abogados · Ascente</p>
             <p className="text-sm mt-1">C/ Miguel Ángel 21, planta baja B</p>
