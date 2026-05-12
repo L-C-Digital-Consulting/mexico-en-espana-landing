@@ -176,20 +176,22 @@ function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href={WHATSAPP_LINK}
+                href={TALLY_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-8 py-4 text-base transition-colors"
               >
-                <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
-                Habla con nosotros
+                Cuéntanos tu situación
+                <ArrowRight className="w-5 h-5" />
               </a>
               <a
-                href="#tu-camino"
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-white/30 hover:border-white/60 text-white font-semibold px-8 py-4 text-base transition-colors"
               >
-                Ver el proceso
-                <ArrowRight className="w-5 h-5" />
+                <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
+                WhatsApp
               </a>
             </div>
           </motion.div>
@@ -860,33 +862,32 @@ function CTASection() {
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
-            La primera conversación es gratis.
+            Primero cuéntanos tu situación.
             <br />
-            <span className="text-[#FCBA05]">La mala planificación, no.</span>
+            <span className="text-[#FCBA05]">Después hablamos.</span>
           </h2>
           <p className="text-lg text-white/85 mb-10 max-w-2xl mx-auto">
-            Cuéntanos tu situación. En una llamada te decimos si podemos ayudarte,
-            qué pasos son prioritarios y qué riesgos hay que cubrir antes de salir
-            de México.
+            Completa el formulario en 2 minutos. Te contactamos en menos de 24 horas
+            para una primera llamada sin coste donde evaluamos tu caso.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#0D1B2A] hover:bg-black text-white font-semibold px-10 py-4 text-lg transition-colors"
-            >
-              <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
-              Escríbenos por WhatsApp
-            </a>
             <a
               href={TALLY_LINK}
               target="_blank"
               rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#0D1B2A] hover:bg-black text-white font-semibold px-10 py-4 text-lg transition-colors"
+            >
+              Completar el formulario
+              <ArrowRight className="w-5 h-5" />
+            </a>
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border-2 border-white hover:bg-white hover:text-[#C8102E] text-white font-semibold px-10 py-4 text-lg transition-colors"
             >
-              Cuéntanos tu situación
-              <ArrowRight className="w-5 h-5" />
+              <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
+              WhatsApp
             </a>
           </div>
         </motion.div>
