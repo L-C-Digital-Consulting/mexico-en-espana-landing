@@ -25,6 +25,10 @@ import {
 
 const HERO_BG =
   "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1920&q=80";
+const ES_RED = "#C8102E";
+const ES_YELLOW = "#FCBA05";
+const MX_GREEN = "#006847";
+const DARK = "#0D1B2A";
 
 const WHATSAPP_LINK =
   "https://wa.me/34635580883?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20instalarme%20en%20Espa%C3%B1a.";
@@ -93,7 +97,9 @@ function Navbar() {
             className={`font-bold text-lg transition-colors ${scrolled ? "text-[#0D1B2A]" : "text-white"}`}
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
-            <span className="text-[#C8102E]">México</span> en España
+            <span className="text-[#006847]">México</span>{" "}
+            <span className={scrolled ? "text-[#0D1B2A]/50" : "text-white/50"}>en</span>{" "}
+            <span className="text-[#C8102E]">España</span>
           </span>
         </a>
         <div className={`hidden md:flex items-center gap-8 text-sm transition-colors ${scrolled ? "text-[#0D1B2A]/70" : "text-white/80"}`}>
@@ -138,6 +144,8 @@ function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B2A]/95 via-[#0D1B2A]/80 to-[#0D1B2A]/50" />
       {/* México green bar — left */}
       <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#006847]" />
+      {/* España yellow bar — right */}
+      <div className="absolute right-0 top-0 bottom-0 w-1.5 bg-[#FCBA05]" />
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: copy */}
@@ -265,11 +273,18 @@ function PorQueEspanaSection() {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="bg-white border border-gray-200 p-8 text-center hover:border-[#C8102E] transition-colors"
+              className={`bg-white border p-8 text-center transition-colors ${
+                i % 2 === 0
+                  ? "border-gray-200 hover:border-[#C8102E]"
+                  : "border-gray-200 hover:border-[#FCBA05]"
+              }`}
             >
               <p
-                className="text-4xl font-bold text-[#C8102E] mb-3"
-                style={{ fontFamily: "'DM Sans', sans-serif" }}
+                className="text-4xl font-bold mb-3"
+                style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  color: i % 2 === 0 ? "#C8102E" : "#FCBA05",
+                }}
               >
                 {s.value}
               </p>
@@ -335,12 +350,19 @@ function TuCaminoSection() {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="flex gap-6 bg-gray-50 border border-gray-200 p-6 hover:border-[#C8102E] transition-colors"
+              className={`flex gap-6 bg-gray-50 border p-6 transition-colors ${
+                i % 2 === 0
+                  ? "border-gray-200 hover:border-[#C8102E]"
+                  : "border-gray-200 hover:border-[#FCBA05]"
+              }`}
             >
               <div className="flex-shrink-0">
                 <span
-                  className="text-4xl font-bold text-[#C8102E]/40"
-                  style={{ fontFamily: "'DM Sans', sans-serif" }}
+                  className="text-4xl font-bold"
+                  style={{
+                    fontFamily: "'DM Sans', sans-serif",
+                    color: i % 2 === 0 ? "#C8102E66" : "#FCBA0566",
+                  }}
                 >
                   {m.num}
                 </span>
@@ -820,10 +842,17 @@ function DiferencialesSection() {
             <motion.div
               key={i}
               variants={fadeUp}
-              className="border border-gray-200 p-6 hover:border-[#C8102E] transition-colors"
+              className={`border p-6 transition-colors ${
+                i % 2 === 0
+                  ? "border-gray-200 hover:border-[#C8102E]"
+                  : "border-gray-200 hover:border-[#FCBA05]"
+              }`}
             >
-              <div className="w-10 h-10 bg-[#0D1B2A] flex items-center justify-center mb-4">
-                <d.icon className="w-5 h-5 text-[#C8102E]" />
+              <div
+                className="w-10 h-10 flex items-center justify-center mb-4"
+                style={{ backgroundColor: i % 2 === 0 ? "#C8102E" : "#FCBA05" }}
+              >
+                <d.icon className="w-5 h-5 text-white" />
               </div>
               <h3
                 className="font-bold text-[#0D1B2A] text-sm mb-2"
@@ -843,15 +872,27 @@ function DiferencialesSection() {
 // ─── CTA FINAL ───
 function CTASection() {
   return (
-    <section className="bg-[#0D1B2A] py-20 lg:py-28 border-t-4 border-[#C8102E]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="bg-[#C8102E] py-20 lg:py-28 relative overflow-hidden">
+      {/* Yellow top bar — bandera España */}
+      <div className="absolute top-0 left-0 right-0 h-1.5 bg-[#FCBA05]" />
+      {/* Yellow bottom bar */}
+      <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-[#FCBA05]" />
+      {/* Subtle dot pattern */}
+      <div
+        className="absolute inset-0 opacity-[0.06]"
+        style={{
+          backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
+        }}
+      />
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <p className="text-[#C8102E] font-semibold text-sm tracking-widest uppercase mb-6">
+          <p className="text-[#FCBA05] font-bold text-sm tracking-widest uppercase mb-6">
             El primer paso
           </p>
           <h2
@@ -860,9 +901,9 @@ function CTASection() {
           >
             La primera conversación es gratis.
             <br />
-            <span className="text-[#C8102E]">La mala planificación, no.</span>
+            <span className="text-[#FCBA05]">La mala planificación, no.</span>
           </h2>
-          <p className="text-lg text-white/70 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg text-white/85 mb-10 max-w-2xl mx-auto">
             Cuéntanos tu situación. En una llamada te decimos si podemos ayudarte,
             qué pasos son prioritarios y qué riesgos hay que cubrir antes de salir
             de México.
@@ -872,7 +913,7 @@ function CTASection() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-10 py-4 text-lg transition-colors"
+              className="inline-flex items-center gap-2 bg-[#0D1B2A] hover:bg-black text-white font-semibold px-10 py-4 text-lg transition-colors"
             >
               <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
               Escríbenos por WhatsApp
@@ -881,7 +922,7 @@ function CTASection() {
               href={TALLY_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-white/30 hover:border-white/60 text-white font-semibold px-10 py-4 text-lg transition-colors"
+              className="inline-flex items-center gap-2 border-2 border-white hover:bg-white hover:text-[#C8102E] text-white font-semibold px-10 py-4 text-lg transition-colors"
             >
               Cuéntanos tu situación
               <ArrowRight className="w-5 h-5" />
@@ -896,7 +937,7 @@ function CTASection() {
 // ─── FOOTER ───
 function Footer() {
   return (
-    <footer className="bg-[#0D1B2A] text-white/60 py-12 border-t border-white/10">
+    <footer className="bg-[#0D1B2A] text-white/60 py-12 border-t-4 border-[#FCBA05]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -904,7 +945,9 @@ function Footer() {
               className="text-white font-bold text-lg mb-2"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              <span className="text-[#C8102E]">México</span> en España
+              <span className="text-[#006847]">México</span>{" "}
+              <span className="text-white/40">en</span>{" "}
+              <span className="text-[#FCBA05]">España</span>
             </p>
             <p className="text-sm">Next Abogados · Ascente</p>
             <p className="text-sm mt-1">C/ Miguel Ángel 21, planta baja B</p>
