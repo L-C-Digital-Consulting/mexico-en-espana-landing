@@ -115,15 +115,26 @@ function Navbar() {
             Equipo
           </a>
         </div>
-        <a
-          href={TALLY_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-5 py-2 text-sm transition-colors"
-        >
-          Cuéntanos tu situación
-          <ArrowRight className="w-4 h-4" />
-        </a>
+        <div className="flex items-center gap-2">
+          <a
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white font-semibold px-4 py-2 text-sm transition-colors"
+          >
+            <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-4 h-4 object-contain" />
+            WhatsApp
+          </a>
+          <a
+            href={TALLY_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-5 py-2 text-sm transition-colors"
+          >
+            Cuéntanos tu situación
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
       </div>
     </nav>
   );
@@ -173,26 +184,6 @@ function HeroSection() {
             <p className="text-base font-semibold text-[#FCBA05] mb-10">
               Un mexicano en el equipo. Todo bajo un mismo techo en Madrid.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href={TALLY_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-8 py-4 text-base transition-colors"
-              >
-                Cuéntanos tu situación
-                <ArrowRight className="w-5 h-5" />
-              </a>
-              <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border border-white/30 hover:border-white/60 text-white font-semibold px-8 py-4 text-base transition-colors"
-              >
-                <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
-                WhatsApp
-              </a>
-            </div>
           </motion.div>
 
       </div>
