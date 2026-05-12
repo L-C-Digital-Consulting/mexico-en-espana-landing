@@ -145,18 +145,16 @@ function HeroSection() {
       <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#006847]" />
       {/* España yellow bar — right */}
       <div className="absolute right-0 top-0 bottom-0 w-1.5 bg-[#FCBA05]" />
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left: copy */}
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <div className="flex items-center gap-3 mb-6">
               <span className="text-[#006847] font-bold text-sm tracking-widest uppercase">🇲🇽 México</span>
               <ArrowRight className="w-4 h-4 text-white/30" />
-              <span className="text-[#C8102E] font-bold text-sm tracking-widest uppercase">🇪🇸 España</span>
+              <span className="text-[#FCBA05] font-bold text-sm tracking-widest uppercase">🇪🇸 España</span>
             </div>
             <p className="text-[#C8102E] font-bold text-xs tracking-widest uppercase mb-6 border-l-4 border-[#C8102E] pl-4">
               Next Abogados · Ascente — Madrid
@@ -169,11 +167,11 @@ function HeroSection() {
               <br />
               <span className="text-[#C8102E]">Tienes a alguien que ya lo vivió.</span>
             </h1>
-            <p className="text-lg text-white/70 mb-4 max-w-xl">
+            <p className="text-lg text-white/70 mb-4 max-w-2xl">
               Asesoramiento jurídico, fiscal y financiero integral para mexicanos
               que quieren instalarse, emprender o invertir en España.
             </p>
-            <p className="text-lg font-semibold text-[#C8102E] mb-10">
+            <p className="text-lg font-semibold text-[#FCBA05] mb-10">
               Un mexicano en el equipo. Todo bajo un mismo techo en Madrid.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -196,7 +194,6 @@ function HeroSection() {
             </div>
           </motion.div>
 
-        </div>
       </div>
     </section>
   );
