@@ -480,7 +480,7 @@ const bloques = [
     icon: Scale,
     titulo: "Next Abogados",
     subtitulo: "Asesoramiento jurídico",
-    variant: "light" as const,
+    variant: "red" as const,
     servicios: [
       "Derecho Fiscal e IRPF",
       "Fiscalidad Internacional",
@@ -498,7 +498,7 @@ const bloques = [
     icon: FileText,
     titulo: "Ascente",
     subtitulo: "Compliance y administración",
-    variant: "light" as const,
+    variant: "yellow" as const,
     servicios: [
       "Altas iniciales (NIE, AEAT, S.Social)",
       "Contabilidad mensual",
@@ -548,39 +548,35 @@ function ServiciosSection() {
         </motion.div>
         <div className="grid md:grid-cols-3 gap-6">
           {bloques.map((b, i) => {
-            const isRed = b.variant === "red";
+            const isYellow = b.variant === "yellow";
+            // red cards: white text, yellow accents, dark icon box
+            // yellow card: dark text, red accents, dark icon box
             return (
               <motion.div
                 key={i}
                 variants={fadeUp}
-                className={`${
-                  isRed
-                    ? "bg-[#C8102E]"
-                    : "bg-white border border-gray-200 hover:border-[#C8102E]"
-                } p-8 flex flex-col transition-colors`}
+                className={`p-8 flex flex-col ${
+                  isYellow ? "bg-[#FCBA05]" : "bg-[#C8102E]"
+                }`}
               >
-                <div
-                  className={`w-10 h-10 flex items-center justify-center mb-5 ${
-                    isRed ? "bg-[#0D1B2A]" : "bg-[#0D1B2A]"
-                  }`}
-                >
+                <div className="w-10 h-10 bg-[#0D1B2A] flex items-center justify-center mb-5">
                   <b.icon
                     className={`w-5 h-5 ${
-                      isRed ? "text-[#C8102E]" : "text-[#C8102E]"
+                      isYellow ? "text-[#FCBA05]" : "text-[#C8102E]"
                     }`}
                   />
                 </div>
                 <h3
                   className={`font-bold text-xl mb-1 ${
-                    isRed ? "text-white" : "text-[#0D1B2A]"
+                    isYellow ? "text-[#0D1B2A]" : "text-white"
                   }`}
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
                   {b.titulo}
                 </h3>
                 <p
-                  className={`text-sm mb-6 ${
-                    isRed ? "text-white/80" : "text-[#C8102E]"
+                  className={`text-sm mb-6 font-semibold ${
+                    isYellow ? "text-[#C8102E]" : "text-[#FCBA05]"
                   }`}
                 >
                   {b.subtitulo}
@@ -590,12 +586,12 @@ function ServiciosSection() {
                     <li key={j} className="flex items-start gap-2">
                       <CheckCircle2
                         className={`w-4 h-4 flex-shrink-0 mt-0.5 ${
-                          isRed ? "text-white" : "text-[#006847]"
+                          isYellow ? "text-[#0D1B2A]" : "text-white"
                         }`}
                       />
                       <span
                         className={`text-sm ${
-                          isRed ? "text-white/85" : "text-gray-600"
+                          isYellow ? "text-[#0D1B2A]/80" : "text-white/90"
                         }`}
                       >
                         {s}
