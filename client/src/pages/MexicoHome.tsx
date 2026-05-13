@@ -892,6 +892,7 @@ function YaEstasSection() {
               { text: "Optimizar la estructura fiscal de tu sociedad para pagar menos de forma legal", highlight: false },
               { text: "Revisar el convenio de doble imposición MX-ES para no tributar dos veces", highlight: false },
               { text: "Planificación sucesoria y patrimonial con herederos en México", highlight: false },
+              { text: "Ascente CFO® — dirección financiera externa: análisis, presupuesto, escenarios y decisiones estratégicas para tu empresa en España", highlight: false },
             ].map((item, i) => (
               <div key={i} className={`flex items-start gap-3 px-4 py-3 ${item.highlight ? 'bg-[#FCBA05]/20 border border-[#FCBA05]/40' : 'bg-white/10'}`}>
                 <Star className="w-4 h-4 text-[#FCBA05] flex-shrink-0 mt-0.5" />
