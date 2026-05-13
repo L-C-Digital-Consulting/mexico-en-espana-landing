@@ -307,7 +307,7 @@ function QuienesSomosSection() {
               ))}
             </div>
             <p className="text-sm text-gray-400 mt-6">
-              C/ Miguel Ángel 21, planta baja B · 28010 Madrid · (+34) 91 159 42 48
+              C/ Miguel Ángel 21, planta baja B · 28010 Madrid
             </p>
           </motion.div>
           {/* Right: stats */}
@@ -315,7 +315,7 @@ function QuienesSomosSection() {
             {[
               { value: "2014", label: "Fundación del despacho" },
               { value: "+10", label: "Profesionales en plantilla" },
-              { value: "Madrid", label: "Chamberí — sede única" },
+              { value: "Madrid", label: "Chamberí" },
             ].map((s, i) => (
               <div
                 key={i}
