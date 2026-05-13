@@ -859,13 +859,13 @@ function YaEstasSection() {
               La buena noticia: todo tiene solución. Y cada mes que pasa sin ordenarlo es un mes de riesgo fiscal, dinero perdido y decisiones sin información.
             </p>
             <a
-              href={TALLY_LINK}
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#FCBA05] hover:bg-[#e0a800] text-[#0D1B2A] font-bold px-8 py-4 text-base transition-colors"
             >
+              <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-5 h-5 object-contain" />
               Revisamos tu situación — primera llamada sin coste
-              <ArrowRight className="w-5 h-5" />
             </a>
           </motion.div>
 
