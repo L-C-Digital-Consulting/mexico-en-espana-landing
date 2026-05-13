@@ -646,7 +646,7 @@ function LeyBeckhamSection() {
               54%
             </p>
             <p className="text-[#0D1B2A]/70 text-sm">
-              Régimen general ISR (IRPF en España) — tributación sobre renta mundial con escala
+              IRPF en España (ISR Personas físicas) — tributación sobre renta mundial con escala
               progresiva (19% a 54%)
             </p>
           </motion.div>
