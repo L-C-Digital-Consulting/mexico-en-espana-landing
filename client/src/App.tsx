@@ -5,11 +5,13 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import MexicoHome from "./pages/MexicoHome";
+import AvisoLegal from "./pages/AvisoLegal";
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={MexicoHome} />
+      <Route path={"/aviso-legal"} component={AvisoLegal} />
       <Route component={NotFound} />
     </Switch>
   );

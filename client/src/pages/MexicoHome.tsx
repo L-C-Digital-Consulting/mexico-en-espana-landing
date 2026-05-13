@@ -1303,9 +1303,19 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-white/10 pt-8">
-          <p className="text-center text-sm">
-            © {new Date().getFullYear()} Next Abogados · Ascente — Madrid · Todos los derechos reservados
+        <div className="border-t border-white/10 pt-8 space-y-3">
+          <div className="flex flex-wrap justify-center gap-4 text-xs">
+            <a href="/aviso-legal" className="hover:text-white transition-colors">Aviso Legal</a>
+            <span className="text-white/20">·</span>
+            <a href="/aviso-legal" className="hover:text-white transition-colors">Política de Privacidad</a>
+            <span className="text-white/20">·</span>
+            <a href="/aviso-legal" className="hover:text-white transition-colors">Política de Cookies</a>
+          </div>
+          <p className="text-center text-xs text-white/30">
+            mexicoenespana.com es operado por L&C Digital & Consulting, S.L. (NIF B22652069) · Los servicios legales son prestados por Next Abogados · Ascente CFO® es marca de L&C Digital & Consulting, S.L.
+          </p>
+          <p className="text-center text-xs">
+            © {new Date().getFullYear()} L&C Digital & Consulting, S.L. · Next Abogados · Madrid · Todos los derechos reservados
           </p>
         </div>
       </div>
