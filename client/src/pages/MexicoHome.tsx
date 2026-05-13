@@ -164,7 +164,7 @@ function HeroSection() {
               <span className="text-[#C8102E]">España.</span>
             </h1>
             <p className="text-lg text-white/85 mb-3 max-w-xl leading-relaxed">
-              Asesoramiento jurídico, fiscal y financiero integral para mexicanos
+              Asesoramiento legal, fiscal y financiero integral para mexicanos
               que quieren instalarse, emprender o invertir en España.
             </p>
             <p className="text-base font-semibold text-[#FCBA05] mb-8">
@@ -264,7 +264,7 @@ function QuienesSomosSection() {
               Un grupo profesional con vocación internacional
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Next Abogados es un despacho independiente fundado en 2014 por Rafael Núñez Blázquez, orientado a ofrecer servicios jurídicos de elevada calidad técnica en Derecho Fiscal, Inmobiliario, Mercantil y Procesal.
+              Next Abogados es un despacho independiente fundado en 2014 por Rafael Núñez Blázquez, orientado a ofrecer servicios legales de elevada calidad técnica en Derecho Fiscal, Inmobiliario, Mercantil y Procesal.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
               En 2020 constituimos Ascente, nuestra unidad económico-financiera, para acompañar a nuestros clientes también en la gestión integral de su actividad empresarial.
@@ -660,7 +660,7 @@ const bloques = [
   {
     icon: Scale,
     titulo: "Next Abogados",
-    subtitulo: "Asesoramiento jurídico",
+    subtitulo: "Asesoramiento legal",
     variant: "red" as const,
     servicios: [
       "Derecho Fiscal e IRPF",
@@ -864,7 +864,7 @@ function MiguelSection() {
               },
               {
                 icon: Users,
-                titulo: "Puente con el equipo jurídico y financiero",
+                titulo: "Puente con el equipo legal y financiero",
                 desc: "Coordina abogados, fiscalistas y finanzas para que tú solo tengas un interlocutor.",
               },
               {
@@ -938,7 +938,7 @@ function EquipoSection() {
             className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-4"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
-            El equipo jurídico detrás del servicio
+            El equipo legal detrás del servicio
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Profesionales senior colegiados en Madrid. Cada cliente es atendido directamente por quienes firman — sin intermediarios.
@@ -994,7 +994,7 @@ const diferenciales = [
   },
   {
     icon: Building2,
-    titulo: "Visión jurídico-financiera integrada",
+    titulo: "Visión legal y financiera integrada",
     desc: "Bajo un mismo techo: abogados fiscalistas, mercantilistas y equipo financiero Ascente CFO®. Sin coordinar varios proveedores.",
   },
   {
@@ -1175,7 +1175,7 @@ function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Servicios</h4>
             <ul className="space-y-2 text-sm">
-              <li>Asesoramiento jurídico</li>
+              <li>Asesoramiento legal</li>
               <li>Compliance y administración</li>
               <li>Dirección financiera externa</li>
               <li>Ley Beckham</li>
