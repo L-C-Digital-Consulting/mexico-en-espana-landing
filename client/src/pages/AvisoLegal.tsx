@@ -43,7 +43,7 @@ export default function AvisoLegal() {
               <p><strong>Administrador único:</strong> López Sainz, Miguel Ángel</p>
             </div>
             <p className="mt-4">
-              Este Sitio Web es operado bajo el nombre comercial <strong>México en España</strong>, en el marco de un contrato de colaboración con <strong>Next Abogados</strong> (Compañía de Abogados Núñez Blázquez SLP, NIF B87125548, C/ Miguel Ángel 21, Bajo B, 28010 Madrid) para la prestación de servicios legales. Los servicios financieros son prestados bajo la marca <strong>Ascente CFO®</strong>, titularidad de L&C Digital & Consulting, S.L.
+              Este Sitio Web es operado bajo el nombre comercial <strong>México en España</strong>, en el marco de contratos de colaboración con <strong>Next Abogados</strong> (Compañía de Abogados Núñez Blázquez SLP, NIF B87125548, C/ Miguel Ángel 21, Bajo B, 28010 Madrid) para la prestación de servicios legales, y con <strong>Ascente CFO®</strong> para la prestación de servicios financieros, fiscales y de asesoramiento CFO.
             </p>
             <p className="mt-2">
               El Sitio Web tiene como finalidad la presentación y promoción de servicios de asesoramiento legal, fiscal y financiero dirigidos a ciudadanos mexicanos que desean instalarse, emprender o invertir en España, sin que el contenido publicado constituya asesoramiento legal o fiscal individualizado.
@@ -132,7 +132,7 @@ export default function AvisoLegal() {
               Quedan expresamente prohibidas la reproducción, distribución y comunicación pública —incluida su modalidad de puesta a disposición— de la totalidad o parte de los contenidos de este Sitio Web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin autorización expresa de L&C Digital & Consulting, S.L.
             </p>
             <p className="mt-3">
-              La marca <strong>Ascente CFO®</strong> es titularidad de L&C Digital & Consulting, S.L. El nombre comercial <strong>México en España</strong> es utilizado por L&C Digital & Consulting, S.L. sin que constituya marca registrada. Los servicios de asesoramiento legal son prestados por Next Abogados (Compañía de Abogados Núñez Blázquez SLP), con quien L&C Digital & Consulting, S.L. mantiene un contrato de colaboración para la prestación de dichos servicios.
+              El nombre comercial <strong>México en España</strong> es utilizado por L&C Digital & Consulting, S.L. sin que constituya marca registrada. Los servicios de asesoramiento legal son prestados en colaboración con <strong>Next Abogados</strong> (Compañía de Abogados Núñez Blázquez SLP), y los servicios financieros y CFO en colaboración con <strong>Ascente CFO®</strong>, en virtud de los respectivos contratos de colaboración suscritos con L&C Digital & Consulting, S.L.
             </p>
           </section>
 
