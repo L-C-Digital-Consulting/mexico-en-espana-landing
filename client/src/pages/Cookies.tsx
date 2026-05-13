@@ -71,6 +71,13 @@ export default function Cookies() {
                     <td className="p-3">Técnica / Necesaria</td>
                     <td className="p-3">Sesión</td>
                   </tr>
+                  <tr className="align-top">
+                    <td className="p-3 font-medium">Google Analytics (_ga, _ga_*)</td>
+                    <td className="p-3">Google LLC (EE.UU.)</td>
+                    <td className="p-3">Medir el uso del sitio web: páginas visitadas, tiempo de visita, origen del tráfico. Solo se activan con consentimiento del usuario.</td>
+                    <td className="p-3">Analítica / Opcional</td>
+                    <td className="p-3">2 años (_ga) / 1 año (_ga_*)</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
