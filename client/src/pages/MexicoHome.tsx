@@ -217,7 +217,7 @@ function PorQueEspanaSection() {
             familias, emprendedores e inversores mexicanos.
           </p>
         </motion.div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {stats.map((s, i) => (
             <motion.div
               key={i}
@@ -241,6 +241,49 @@ function PorQueEspanaSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Calidad de vida y seguridad */}
+        <motion.div variants={fadeUp}>
+          <div className="bg-[#0D1B2A] p-8 sm:p-12">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <p className="text-[#FCBA05] font-semibold text-xs tracking-widest uppercase mb-4">
+                  La razón más importante
+                </p>
+                <h3
+                  className="text-2xl sm:text-3xl font-bold text-white mb-5 leading-tight"
+                  style={{ fontFamily: "'DM Sans', sans-serif" }}
+                >
+                  Calidad de vida y seguridad para tu familia
+                </h3>
+                <p className="text-white/70 leading-relaxed mb-4">
+                  Para muchos mexicanos, la decisión de venir a España no es solo económica — es personal. España ofrece hoy lo que cada vez más familias mexicanas buscan: caminar tranquilos, que los hijos vayan solos al colegio, vivir sin el peso constante de la inseguridad.
+                </p>
+                <p className="text-white/70 leading-relaxed">
+                  Madrid es una de las capitales más seguras de Europa, con excelente sistema de salud pública, educación de calidad y una comunidad mexicana que crece y se consolida cada año.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { value: "#3", label: "país más seguro de la UE según índice global de paz 2024", color: "#FCBA05" },
+                  { value: "100%", label: "acceso a sanidad pública desde el primer día de residencia legal", color: "#C8102E" },
+                  { value: "+180k", label: "mexicanos ya instalados — una comunidad que te recibe", color: "#FCBA05" },
+                  { value: "26", label: "países del Espacio Schengen a los que puedes viajar sin visado", color: "#C8102E" },
+                ].map((d, i) => (
+                  <div key={i} className="border border-white/10 p-5">
+                    <p
+                      className="text-3xl font-bold mb-2"
+                      style={{ fontFamily: "'DM Sans', sans-serif", color: d.color }}
+                    >
+                      {d.value}
+                    </p>
+                    <p className="text-white/50 text-xs leading-relaxed">{d.label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </AnimatedSection>
     </section>
   );
