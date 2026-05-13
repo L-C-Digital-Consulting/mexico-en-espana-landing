@@ -114,10 +114,9 @@ function Navbar() {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white font-semibold px-4 py-2 text-sm transition-colors"
+            className="inline-flex items-center justify-center hover:opacity-70 p-2 transition-opacity"
           >
-            <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-4 h-4 object-contain" />
-            WhatsApp
+            <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-6 h-6 object-contain" />
           </a>
           <a
             href={TALLY_LINK}
@@ -166,7 +165,7 @@ function HeroSection() {
               Next Abogados · Ascente — Madrid
             </p>
             <h1
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6"
+              className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               Acompañando a<br />
