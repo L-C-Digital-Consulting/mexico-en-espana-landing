@@ -91,7 +91,7 @@ function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <a href="/" className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3 ml-5">
           <span
             className={`font-bold text-lg transition-colors ${scrolled ? "text-[#0D1B2A]" : "text-white"}`}
             style={{ fontFamily: "'DM Sans', sans-serif" }}
