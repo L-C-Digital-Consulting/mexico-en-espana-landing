@@ -832,6 +832,80 @@ function ServiciosSection() {
   );
 }
 
+// ─── YA ESTÁS EN ESPAÑA ───
+function YaEstasSection() {
+  return (
+    <section className="py-20 lg:py-28" style={{ backgroundColor: '#006847' }}>
+      <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-14 items-start">
+
+          {/* Left */}
+          <motion.div variants={fadeUp}>
+            <p className="text-white/60 font-semibold text-xs tracking-widest uppercase mb-4">
+              Para mexicanos ya instalados
+            </p>
+            <h2
+              className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-6"
+              style={{ fontFamily: "'DM Sans', sans-serif" }}
+            >
+              ¿Ya tienes empresa en España?<br />
+              <span style={{ color: '#FCBA05' }}>Podemos tomar el relevo desde hoy.</span>
+            </h2>
+            <p className="text-white/80 leading-relaxed mb-4">
+              Muchos mexicanos llegaron, montaron su empresa con lo que tenían a mano y hoy cargan con contabilidad desordenada, compliance pendiente o impuestos que nunca se optimizaron. No es falta de esfuerzo — es que nadie los acompañó desde el principio.
+            </p>
+            <p className="text-white/80 leading-relaxed mb-8">
+              La buena noticia: todo tiene solución. Y cada mes que pasa sin ordenarlo es un mes de riesgo fiscal, dinero perdido y decisiones sin información.
+            </p>
+            <a
+              href={TALLY_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#FCBA05] hover:bg-[#e0a800] text-[#0D1B2A] font-bold px-8 py-4 text-base transition-colors"
+            >
+              Revisamos tu situación — primera llamada sin coste
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </motion.div>
+
+          {/* Right: dos columnas de checks */}
+          <motion.div variants={fadeUp} className="space-y-3">
+            {/* Problemas a resolver */}
+            <p className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-2">Lo que podemos resolver</p>
+            {[
+              { text: "Contabilidad mensual al día según el PGC español", op: false },
+              { text: "Impuestos periódicos correctamente presentados (IVA, IS, ISR/IRPF)", op: false },
+              { text: "Nóminas, contratos y Seguridad Social en regla", op: false },
+              { text: "Depósito de Cuentas Anuales en el Registro Mercantil", op: false },
+              { text: "Relación con la AEAT: notificaciones, trámites y consultas", op: false },
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-3 bg-white/10 px-4 py-3">
+                <CheckCircle2 className="w-4 h-4 text-[#FCBA05] flex-shrink-0 mt-0.5" />
+                <p className="text-white/90 text-sm">{item.text}</p>
+              </div>
+            ))}
+
+            {/* Oportunidades */}
+            <p className="text-white/50 text-xs font-semibold uppercase tracking-widest mt-5 mb-2">Oportunidades que quizás aún puedes aprovechar</p>
+            {[
+              { text: "Aplicar la Ley Beckham (si llevas menos de un año en España — el plazo corre)", highlight: true },
+              { text: "Optimizar la estructura fiscal de tu sociedad para pagar menos de forma legal", highlight: false },
+              { text: "Revisar el convenio de doble imposición MX-ES para no tributar dos veces", highlight: false },
+              { text: "Planificación sucesoria y patrimonial con herederos en México", highlight: false },
+            ].map((item, i) => (
+              <div key={i} className={`flex items-start gap-3 px-4 py-3 ${item.highlight ? 'bg-[#FCBA05]/20 border border-[#FCBA05]/40' : 'bg-white/10'}`}>
+                <Star className="w-4 h-4 text-[#FCBA05] flex-shrink-0 mt-0.5" />
+                <p className="text-white/90 text-sm">{item.text}</p>
+              </div>
+            ))}
+          </motion.div>
+
+        </div>
+      </AnimatedSection>
+    </section>
+  );
+}
+
 // ─── MIGUEL ÁNGEL — EL PUENTE ───
 function MiguelSection() {
   return (
@@ -1248,6 +1322,7 @@ export default function MexicoHome() {
       <NecesidadesSection />
       <ComoTrabajamosSection />
       <ServiciosSection />
+      <YaEstasSection />
       <MiguelSection />
       <EquipoSection />
       <DiferencialesSection />
