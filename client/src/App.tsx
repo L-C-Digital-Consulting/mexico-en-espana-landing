@@ -6,12 +6,14 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import MexicoHome from "./pages/MexicoHome";
 import AvisoLegal from "./pages/AvisoLegal";
+import Privacidad from "./pages/Privacidad";
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={MexicoHome} />
       <Route path={"/aviso-legal"} component={AvisoLegal} />
+      <Route path={"/privacidad"} component={Privacidad} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -1307,7 +1307,7 @@ function Footer() {
           <div className="flex flex-wrap justify-center gap-4 text-xs">
             <a href="/aviso-legal" className="hover:text-white transition-colors">Aviso Legal</a>
             <span className="text-white/20">·</span>
-            <a href="/aviso-legal" className="hover:text-white transition-colors">Política de Privacidad</a>
+            <a href="/privacidad" className="hover:text-white transition-colors">Política de Privacidad</a>
             <span className="text-white/20">·</span>
             <a href="/aviso-legal" className="hover:text-white transition-colors">Política de Cookies</a>
           </div>
