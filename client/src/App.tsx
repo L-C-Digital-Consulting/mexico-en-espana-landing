@@ -8,6 +8,7 @@ import MexicoHome from "./pages/MexicoHome";
 import AvisoLegal from "./pages/AvisoLegal";
 import Privacidad from "./pages/Privacidad";
 import Cookies from "./pages/Cookies";
+import CookieBanner from "./components/CookieBanner";
 
 function Router() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router />
+          <CookieBanner />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
