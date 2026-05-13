@@ -101,12 +101,13 @@ function Navbar() {
             <span className="text-[#C8102E]">España</span>
           </span>
         </a>
-        <div className={`hidden md:flex items-center gap-6 text-sm transition-colors ${scrolled ? "text-[#0D1B2A]/70" : "text-white/80"}`}>
+        <div className={`hidden md:flex items-center gap-5 text-xs transition-colors ${scrolled ? "text-[#0D1B2A]/70" : "text-white/80"}`}>
           <a href="#por-que-espana" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">¿Por qué España?</a>
           <a href="#quienes-somos" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Quiénes somos</a>
           <a href="#ley-beckham" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Ley Beckham</a>
           <a href="#necesidades" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Necesidades</a>
           <a href="#servicios" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Servicios</a>
+          <a href="#ya-en-espana" className="hover:text-[#006847] transition-colors whitespace-nowrap font-semibold" style={{ color: '#006847' }}>Ya en España</a>
           <a href="#equipo" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Equipo</a>
         </div>
         <a
@@ -835,7 +836,7 @@ function ServiciosSection() {
 // ─── YA ESTÁS EN ESPAÑA ───
 function YaEstasSection() {
   return (
-    <section className="py-20 lg:py-28" style={{ backgroundColor: '#006847' }}>
+    <section id="ya-en-espana" className="py-20 lg:py-28" style={{ backgroundColor: '#006847' }}>
       <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-14 items-start">
 
