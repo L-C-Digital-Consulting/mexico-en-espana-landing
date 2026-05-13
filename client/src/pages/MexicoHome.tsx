@@ -1030,6 +1030,7 @@ const equipoNext = [
     cargo: "Derecho Mercantil y Protección de Datos",
     bio: "Doble Grado Derecho-ADE ICADE-ICAI. Asesoramiento mercantil, protección de datos y cumplimiento normativo para empresas internacionales.",
     foto: "/team/carlos.jpg",
+    zoom: true,
   },
   {
     nombre: "Ángel Bravo",
@@ -1076,6 +1077,7 @@ function EquipoSection() {
                   src={m.foto}
                   alt={m.nombre}
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  style={(m as any).zoom ? { transform: 'scale(1.08)', transformOrigin: 'center top' } : {}}
                 />
               </div>
               {/* Info */}
