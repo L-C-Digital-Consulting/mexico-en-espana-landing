@@ -365,14 +365,14 @@ function NecesidadesSection() {
     { item: "Constitución de sociedad limitada", detalle: "desde 3.000€ de capital social, lista para operar" },
     { item: "Apertura de cuentas bancarias", detalle: "acompañamiento ante bancos españoles tras obtener NIE" },
     { item: "Estructuración matriz-filial MX-ES", detalle: "optimización del grupo y flujos transfronterizos" },
-    { item: "Alta censal y de autónomos societarios", detalle: "todas las altas iniciales ante la AEAT y Seguridad Social" },
+    { item: "Alta censal y de autónomos societarios (cuenta propia)", detalle: "todas las altas iniciales ante la AEAT (SAT en México) y Seguridad Social (IMSS en México)" },
     { item: "Contabilidad y cierres", detalle: "según PGC español, con seguimiento recurrente mensual" },
     { item: "Impuestos y Cuentas Anuales", detalle: "mensuales, trimestrales, anuales y depósito en el Registro Mercantil" },
     { item: "Nóminas y laboral", detalle: "contratos, Seguros Sociales e informes ITA mensuales" },
   ];
   const familiaPatrimonio = [
     { item: "Compra o alquiler de vivienda", detalle: "revisión de contratos y fiscalidad del inmueble" },
-    { item: "IRPF del mexicano residente", detalle: "declaración anual y Modelo 151 (régimen impatriados)" },
+    { item: "ISR de personas físicas (IRPF en España)", detalle: "declaración anual y Modelo 151 (régimen impatriados)" },
     { item: "Impuesto sobre el Patrimonio", detalle: "análisis de bienes mundiales vs. situados en España" },
     { item: "Convenio doble imposición MX-ES", detalle: "evitar tributar dos veces por los mismos ingresos" },
     { item: "Sucesiones y donaciones", detalle: "planificación sucesoria adaptada a herederos en México" },
@@ -531,7 +531,7 @@ const momentos = [
   {
     num: "02",
     titulo: "Llegada a España",
-    desc: "NIE, TIE, empadronamiento y apertura de cuenta bancaria.",
+    desc: "NIE, TIE, empadronamiento (registro de domicilio) y apertura de cuenta bancaria.",
   },
   {
     num: "03",
@@ -646,7 +646,7 @@ function LeyBeckhamSection() {
               54%
             </p>
             <p className="text-[#0D1B2A]/70 text-sm">
-              Régimen general IRPF — tributación sobre renta mundial con escala
+              Régimen general ISR (IRPF en España) — tributación sobre renta mundial con escala
               progresiva (19% a 54%)
             </p>
           </motion.div>
@@ -683,7 +683,7 @@ function LeyBeckhamSection() {
             {[
               "Ejecutivos desplazados por multinacionales o contratados por empresa española",
               "Emprendedores con actividad económica calificada como innovadora",
-              "Nómadas digitales con visado de teletrabajo internacional",
+              "Nómadas digitales con visado de teletrabajo (home office) internacional",
               "Cónyuge e hijos menores de 25 años — extensión al núcleo familiar desde 2023",
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3 bg-white border border-gray-200 p-4">
@@ -706,7 +706,7 @@ const bloques = [
     subtitulo: "Asesoramiento legal",
     variant: "red" as const,
     servicios: [
-      "Derecho Fiscal e IRPF",
+      "Derecho Fiscal e ISR (IRPF en España)",
       "Fiscalidad Internacional",
       "Derecho Mercantil y Societario",
       "Constitución de sociedades",
@@ -724,14 +724,14 @@ const bloques = [
     subtitulo: "Compliance y administración",
     variant: "yellow" as const,
     servicios: [
-      "Altas iniciales (NIE, AEAT, S.Social)",
+      "Altas iniciales (NIE, AEAT/SAT, Seguridad Social/IMSS)",
       "Contabilidad mensual",
       "Cierres y Cuentas Anuales",
-      "Impuestos periódicos (IVA, IS, IRPF)",
+      "Impuestos periódicos (IVA, IS, ISR/IRPF)",
       "Nóminas y laboral",
       "Modelo 151 (régimen impatriados)",
       "Libros y legalización",
-      "Relación con la AEAT",
+      "Relación con la AEAT (SAT en México)",
     ],
   },
   {
@@ -958,7 +958,7 @@ const equipoNext = [
   {
     nombre: "Ángel Bravo",
     cargo: "Derecho Fiscal y Procedimientos",
-    bio: "Asociado Senior. UCLM · CEF · ESADE. Fiscalidad empresarial, IRPF, IS, IVA, Ley Beckham y procedimientos tributarios ante la AEAT.",
+    bio: "Asociado Senior. UCLM · CEF · ESADE. Fiscalidad empresarial, ISR (IRPF), IS, IVA, Ley Beckham y procedimientos tributarios ante la AEAT (SAT).",
     foto: "/team/angel.jpg",
   },
   {
@@ -1048,7 +1048,7 @@ const diferenciales = [
   {
     icon: Shield,
     titulo: "Continuidad a largo plazo",
-    desc: "No solo tramitamos la llegada. Acompañamos a la sociedad y a la familia durante años, con cuota mensual estable y previsible.",
+    desc: "No solo tramitamos la llegada. Acompañamos a la sociedad y a la familia durante años, con mensualidad (cuota mensual) estable y previsible.",
   },
 ];
 
