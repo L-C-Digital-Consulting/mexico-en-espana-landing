@@ -109,25 +109,15 @@ function Navbar() {
           <a href="#servicios" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Servicios</a>
           <a href="#equipo" className="hover:text-[#C8102E] transition-colors whitespace-nowrap">Equipo</a>
         </div>
-        <div className="flex items-center gap-2">
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center hover:opacity-70 p-2 transition-opacity"
-          >
-            <img src={WHATSAPP_LOGO} alt="WhatsApp" className="w-6 h-6 object-contain" />
-          </a>
-          <a
-            href={TALLY_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-5 py-2 text-sm transition-colors"
-          >
-            Cuéntanos tu situación
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </div>
+        <a
+          href={TALLY_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-4 py-2 text-xs whitespace-nowrap transition-colors"
+        >
+          Cuéntanos tu situación
+          <ArrowRight className="w-3 h-3" />
+        </a>
       </div>
     </nav>
   );
@@ -180,17 +170,6 @@ function HeroSection() {
             <p className="text-base font-semibold text-[#FCBA05] mb-8">
               Un mexicano en el equipo. Todo bajo un mismo techo en Madrid.
             </p>
-          </div>
-          <div className="pl-6">
-            <a
-              href={TALLY_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#C8102E] hover:bg-[#A30D24] text-white font-semibold px-8 py-4 text-base transition-colors"
-            >
-              Cuéntanos tu situación
-              <ArrowRight className="w-5 h-5" />
-            </a>
           </div>
         </motion.div>
       </div>
