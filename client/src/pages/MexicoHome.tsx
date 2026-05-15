@@ -1312,7 +1312,7 @@ function Footer() {
             <a href="/cookies" className="hover:text-white transition-colors">Política de Cookies</a>
           </div>
           <p className="text-center text-xs text-white/30">
-            mexicoenespana.com es operado por L&C Digital & Consulting, S.L. (NIF B22652069) · Los servicios legales son prestados por Next Abogados · Ascente CFO® es marca de L&C Digital & Consulting, S.L.
+            mexicoenespana.com es operado por L&C Digital & Consulting, S.L. (NIF B22652069) · Los servicios legales son prestados por Next Abogados
           </p>
           <p className="text-center text-xs">
             © {new Date().getFullYear()} L&C Digital & Consulting, S.L. · Next Abogados · Madrid · Todos los derechos reservados
