@@ -622,7 +622,7 @@ function LeyBeckhamSection() {
             className="text-3xl sm:text-4xl font-bold text-[#0D1B2A] mb-4"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
-            Ley Beckham — tributa al 24% en lugar del 54%
+            Ley Beckham — tributa al 24% en lugar del 47%
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Si llegas bien asesorado, puedes acogerte al régimen especial de
@@ -644,11 +644,11 @@ function LeyBeckhamSection() {
               className="text-6xl font-bold text-[#0D1B2A] mb-3"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              54%
+              47%
             </p>
             <p className="text-[#0D1B2A]/70 text-sm">
               IRPF en España (ISR Personas físicas) — tributación sobre renta mundial con escala
-              progresiva (19% a 54%)
+              progresiva (19% a 47%)
             </p>
           </motion.div>
 
