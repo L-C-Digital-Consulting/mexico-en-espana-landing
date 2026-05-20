@@ -627,7 +627,7 @@ function LeyBeckhamSection() {
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Si llegas bien asesorado, puedes acogerte al régimen especial de
             impatriados. Esta ventaja solo existe si se planifica{" "}
-            <strong>antes de llegar</strong> — una vez en España, puede ser tarde.
+            <strong>antes de llegar o en los primeros 6 meses en España</strong> — después puede ser tarde.
           </p>
         </motion.div>
 
@@ -670,7 +670,7 @@ function LeyBeckhamSection() {
               24%
             </p>
             <p className="text-white/80 text-sm">
-              Tipo fijo hasta 600.000€ anuales, tributando solo por rentas de
+              Tipo fijo hasta 600.000€ anuales durante 6 años, tributando solo por rentas de
               fuente española
             </p>
           </motion.div>
@@ -683,6 +683,7 @@ function LeyBeckhamSection() {
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               "Ejecutivos desplazados por multinacionales o contratados por empresa española",
+              "Administrador de sociedad española — empresarios que constituyen y dirigen su propia empresa en España",
               "Emprendedores con actividad económica calificada como innovadora",
               "Nómadas digitales con visado de teletrabajo (home office) internacional",
               "Cónyuge e hijos menores de 25 años — extensión al núcleo familiar desde 2023",
