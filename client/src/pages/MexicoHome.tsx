@@ -683,7 +683,7 @@ function LeyBeckhamSection() {
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               "Ejecutivos desplazados por multinacionales o contratados por empresa española",
-              "Administrador de sociedad española — empresarios que constituyen y dirigen su propia empresa en España",
+              "Administrador de una entidad en España — persona que se traslada para asumir funciones de administración o dirección en una sociedad",
               "Emprendedores con actividad económica calificada como innovadora",
               "Nómadas digitales con visado de teletrabajo (home office) internacional",
               "Cónyuge e hijos menores de 25 años — extensión al núcleo familiar desde 2023",
