@@ -694,6 +694,9 @@ function LeyBeckhamSection() {
               </div>
             ))}
           </div>
+          <p className="text-sm text-gray-500 mt-4 border-l-2 border-gray-300 pl-3">
+            Requisito común: no haber sido residente fiscal en España en los 5 años anteriores al desplazamiento.
+          </p>
         </motion.div>
       </AnimatedSection>
     </section>
