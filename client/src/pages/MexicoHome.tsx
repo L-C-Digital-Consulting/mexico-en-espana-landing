@@ -1279,10 +1279,10 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:miguel.lopez@lycconsulting.com"
+                  href="mailto:legal@lycconsulting.com"
                   className="hover:text-white transition-colors"
                 >
-                  miguel.lopez@lycconsulting.com
+                  legal@lycconsulting.com
                 </a>
               </li>
               <li>

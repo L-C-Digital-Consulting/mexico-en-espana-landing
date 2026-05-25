@@ -39,7 +39,7 @@ export default function AvisoLegal() {
               <p><strong>NIF:</strong> B22652069</p>
               <p><strong>Domicilio social:</strong> Calle del Poeta Joan Maragall 23, 28020 Madrid</p>
               <p><strong>Registro Mercantil:</strong> Madrid, Hoja M-859195, Inscripción 1ª</p>
-              <p><strong>Email de contacto:</strong> miguel.lopez@lycconsulting.com</p>
+              <p><strong>Email de contacto:</strong> legal@lycconsulting.com</p>
               <p><strong>Administrador único:</strong> López Sainz, Miguel Ángel</p>
             </div>
             <p className="mt-4">

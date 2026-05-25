@@ -161,8 +161,8 @@ export default function Cookies() {
             </h2>
             <p>
               Si tiene cualquier duda sobre el uso de cookies en este sitio web, puede contactarnos en:{" "}
-              <a href="mailto:miguel.lopez@lycconsulting.com" className="text-[#C8102E] hover:underline">
-                miguel.lopez@lycconsulting.com
+              <a href="mailto:legal@lycconsulting.com" className="text-[#C8102E] hover:underline">
+                legal@lycconsulting.com
               </a>
             </p>
           </section>

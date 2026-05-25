@@ -33,13 +33,13 @@ export default function Privacidad() {
               <p><strong>NIF:</strong> B22652069</p>
               <p><strong>Domicilio:</strong> Calle del Poeta Joan Maragall 23, 28020 Madrid</p>
               <p><strong>Registro Mercantil:</strong> Madrid, Hoja M-859195, Inscripción 1ª</p>
-              <p><strong>Contacto de privacidad:</strong> miguel.lopez@lycconsulting.com</p>
+              <p><strong>Contacto de privacidad:</strong> legal@lycconsulting.com</p>
             </div>
             <p className="mt-4">
               L&C Digital & Consulting, S.L. (en adelante, "el Responsable") es responsable del tratamiento de sus datos personales como usuario del sitio web <strong>mexicoenespana.com</strong>. Esta Política de Privacidad tiene por objeto facilitar información sobre el uso que realizamos de sus datos personales y sobre los derechos que le asisten en virtud del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD).
             </p>
             <p className="mt-3">
-              Si tiene cualquier duda relativa al tratamiento de sus datos personales, puede contactarnos en: <a href="mailto:miguel.lopez@lycconsulting.com" className="text-[#C8102E] hover:underline">miguel.lopez@lycconsulting.com</a>
+              Si tiene cualquier duda relativa al tratamiento de sus datos personales, puede contactarnos en: <a href="mailto:legal@lycconsulting.com" className="text-[#C8102E] hover:underline">legal@lycconsulting.com</a>
             </p>
           </section>
 
@@ -96,7 +96,7 @@ export default function Privacidad() {
             </div>
 
             <p className="mt-4 text-gray-500">
-              No cedemos sus datos personales a terceros salvo que exista obligación legal o se trate de profesionales colaboradores necesarios para prestarle el servicio. Puede solicitar mayor detalle sobre los destinatarios escribiendo a miguel.lopez@lycconsulting.com.
+              No cedemos sus datos personales a terceros salvo que exista obligación legal o se trate de profesionales colaboradores necesarios para prestarle el servicio. Puede solicitar mayor detalle sobre los destinatarios escribiendo a legal@lycconsulting.com.
             </p>
           </section>
 
@@ -116,7 +116,7 @@ export default function Privacidad() {
               <li><strong>Revocación del consentimiento:</strong> en cualquier momento, sin que ello afecte a la licitud del tratamiento previo.</li>
             </ul>
             <p className="mt-4">
-              Puede ejercitar sus derechos de forma gratuita en cualquier momento enviando un correo a <a href="mailto:miguel.lopez@lycconsulting.com" className="text-[#C8102E] hover:underline">miguel.lopez@lycconsulting.com</a>, indicando el derecho que desea ejercitar y adjuntando copia de su documento de identidad.
+              Puede ejercitar sus derechos de forma gratuita en cualquier momento enviando un correo a <a href="mailto:legal@lycconsulting.com" className="text-[#C8102E] hover:underline">legal@lycconsulting.com</a>, indicando el derecho que desea ejercitar y adjuntando copia de su documento de identidad.
             </p>
             <p className="mt-3">
               Si considera que no hemos tratado sus datos adecuadamente, tiene derecho a presentar una reclamación ante la <strong>Agencia Española de Protección de Datos</strong> (www.aepd.es).
