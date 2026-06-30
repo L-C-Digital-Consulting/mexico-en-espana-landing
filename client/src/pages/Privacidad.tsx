@@ -76,7 +76,7 @@ export default function Privacidad() {
                   <tr className="align-top">
                     <td className="p-3">Gestionar las consultas recibidas a través del formulario de contacto (Google Forms) o por WhatsApp</td>
                     <td className="p-3">Interés legítimo del Responsable para atender requerimientos de información</td>
-                    <td className="p-3">Sus datos pueden ser accedidos por los profesionales de Next Abogados y Ascente CFO® encargados de atender su solicitud. Google LLC actúa como encargado del tratamiento en la prestación del servicio Google Forms. WhatsApp Ireland Ltd. actúa como encargado en las comunicaciones vía WhatsApp.</td>
+                    <td className="p-3">Sus datos pueden ser accedidos por los profesionales de Next Abogados encargados de atender su solicitud. Google LLC actúa como encargado del tratamiento en la prestación del servicio Google Forms. WhatsApp Ireland Ltd. actúa como encargado en las comunicaciones vía WhatsApp.</td>
                     <td className="p-3">Hasta la resolución de su solicitud de información</td>
                   </tr>
                   <tr className="align-top bg-gray-50">

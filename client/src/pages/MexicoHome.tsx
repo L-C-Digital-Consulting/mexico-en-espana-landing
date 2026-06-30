@@ -741,7 +741,8 @@ const bloques = [
   },
   {
     icon: TrendingUp,
-    titulo: "Ascente CFO®",
+    titulo: "L&C CFO",
+    href: "https://lccfo.es",
     subtitulo: "Dirección financiera",
     variant: "red" as const,
     servicios: [
@@ -801,7 +802,11 @@ function ServiciosSection() {
                   }`}
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
-                  {b.titulo}
+                  {b.href ? (
+                    <a href={b.href} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-70">
+                      {b.titulo}
+                    </a>
+                  ) : b.titulo}
                 </h3>
                 <p
                   className={`text-sm mb-6 font-semibold ${
@@ -897,7 +902,7 @@ function YaEstasSection() {
               { text: "Optimizar la estructura fiscal de tu sociedad para pagar menos de forma legal", highlight: false },
               { text: "Revisar el convenio de doble imposición MX-ES para no tributar dos veces", highlight: false },
               { text: "Planificación sucesoria y patrimonial con herederos en México", highlight: false },
-              { text: "Ascente CFO® — dirección financiera externa: análisis, presupuesto, escenarios y decisiones estratégicas para tu empresa en España", highlight: false },
+              { text: "L&C CFO — dirección financiera externa: análisis, presupuesto, escenarios y decisiones estratégicas para tu empresa en España", highlight: false },
             ].map((item, i) => (
               <div key={i} className={`flex items-start gap-3 px-4 py-3 ${item.highlight ? 'bg-[#FCBA05]/20 border border-[#FCBA05]/40' : 'bg-white/10'}`}>
                 <Star className="w-4 h-4 text-[#FCBA05] flex-shrink-0 mt-0.5" />
@@ -1120,7 +1125,8 @@ const diferenciales = [
   {
     icon: Building2,
     titulo: "Visión legal y financiera integrada",
-    desc: "Bajo un mismo techo: abogados fiscalistas, mercantilistas y equipo financiero Ascente CFO®. Sin coordinar varios proveedores.",
+    desc: "Bajo un mismo techo: abogados fiscalistas, mercantilistas y equipo financiero L&C CFO. Sin coordinar varios proveedores.",
+    descLink: { text: "L&C CFO", href: "https://lccfo.es" },
   },
   {
     icon: Briefcase,
@@ -1172,7 +1178,15 @@ function DiferencialesSection() {
               >
                 {d.titulo}
               </h3>
-              <p className="text-gray-600 text-sm">{d.desc}</p>
+              <p className="text-gray-600 text-sm">
+                {d.descLink
+                  ? d.desc.split(d.descLink.text).map((part, idx, arr) =>
+                      idx < arr.length - 1 ? (
+                        <span key={idx}>{part}<a href={d.descLink!.href} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-70">{d.descLink!.text}</a></span>
+                      ) : part
+                    )
+                  : d.desc}
+              </p>
             </motion.div>
           ))}
         </div>
