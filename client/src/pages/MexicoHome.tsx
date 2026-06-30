@@ -746,8 +746,8 @@ const bloques = [
     subtitulo: "Dirección financiera",
     variant: "red" as const,
     servicios: [
-      "Diagnóstico de Claridad Financiera®",
-      "Planeación Financiera Mensual®",
+      { text: "Diagnóstico de Claridad Financiera®", href: "https://lccfo.es/diagnostico-financiero-pyme" },
+      { text: "Planeación Financiera Mensual®", href: "https://lccfo.es/direccion-financiera-mensual" },
       "Presupuesto Estratégico Anual®",
       "Análisis de Decisiones Críticas®",
       "Optimización de Rentabilidad y Caja®",
@@ -828,7 +828,11 @@ function ServiciosSection() {
                           isYellow ? "text-[#0D1B2A]/80" : "text-white/90"
                         }`}
                       >
-                        {s}
+                        {typeof s === "string" ? s : (
+                          <a href={s.href} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-70">
+                            {s.text}
+                          </a>
+                        )}
                       </span>
                     </li>
                   ))}
