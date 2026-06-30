@@ -755,6 +755,21 @@ const bloques = [
       "Validación de Nuevos Negocios®",
     ],
   },
+  {
+    icon: Calculator,
+    titulo: "SBOD Consulting",
+    subtitulo: "Fiscalidad en México",
+    badge: "En colaboración · Ciudad de México",
+    variant: "yellow" as const,
+    servicios: [
+      "Asesoría fiscal SAT y regímenes fiscales",
+      "Diagnóstico y reestructura corporativa",
+      "Fusiones, escisiones y liquidaciones",
+      "Cumplimiento contable (NIF México)",
+      "Prevención de lavado de dinero",
+      "Coordinación convenio doble imposición MX-ES",
+    ],
+  },
 ];
 
 function ServiciosSection() {
@@ -815,6 +830,11 @@ function ServiciosSection() {
                 >
                   {b.subtitulo}
                 </p>
+                {b.badge && (
+                  <p className={`text-xs mb-4 opacity-70 ${isYellow ? "text-[#0D1B2A]" : "text-white"}`}>
+                    {b.badge}
+                  </p>
+                )}
                 <ul className="space-y-2 flex-1">
                   {b.servicios.map((s, j) => (
                     <li key={j} className="flex items-start gap-2">
