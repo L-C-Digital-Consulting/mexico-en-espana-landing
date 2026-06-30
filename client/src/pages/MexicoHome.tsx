@@ -791,7 +791,7 @@ function ServiciosSection() {
             dirección financiera integrados en Madrid.
           </p>
         </motion.div>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {bloques.map((b, i) => {
             const isYellow = b.variant === "yellow";
             // red cards: white text, yellow accents, dark icon box
