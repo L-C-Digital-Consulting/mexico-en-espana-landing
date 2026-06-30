@@ -1337,6 +1337,26 @@ function Footer() {
                   nextabogados.com
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://lccfo.es"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  lccfo.es
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://sbodconsulting.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  sbodconsulting.com
+                </a>
+              </li>
             </ul>
           </div>
           <div>
