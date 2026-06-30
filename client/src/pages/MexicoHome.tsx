@@ -708,7 +708,7 @@ const bloques = [
   {
     icon: Scale,
     titulo: "Next Abogados",
-    subtitulo: "Asesoramiento legal",
+    subtitulo: "Asesoramiento legal en España",
     variant: "red" as const,
     servicios: [
       "Derecho Fiscal e ISR (IRPF en España)",
@@ -726,7 +726,7 @@ const bloques = [
   {
     icon: FileText,
     titulo: "Ascente",
-    subtitulo: "Compliance y administración",
+    subtitulo: "Compliance y administración en España",
     variant: "yellow" as const,
     servicios: [
       "Altas iniciales (NIE, AEAT/SAT, Seguridad Social/IMSS)",
