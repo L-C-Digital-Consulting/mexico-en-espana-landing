@@ -1258,8 +1258,7 @@ function CTASection() {
             <span className="text-[#FCBA05]">Después hablamos.</span>
           </h2>
           <p className="text-lg text-white/85 mb-10 max-w-2xl mx-auto">
-            Completa el formulario en 2 minutos. Te contactamos en menos de 24 horas
-            para una primera llamada sin coste donde evaluamos tu caso.
+            Completa el formulario en 2 minutos y te contactamos en menos de 24 horas hábiles.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
