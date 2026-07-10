@@ -30,7 +30,7 @@ const MX_GREEN = "#006847";
 const DARK = "#0D1B2A";
 
 const WHATSAPP_LINK =
-  "https://wa.me/34635580883?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20instalarme%20en%20Espa%C3%B1a.";
+  "https://wa.me/34635580883?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20M%C3%A9xico%20en%20Espa%C3%B1a.";
 const WHATSAPP_LOGO =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663493406861/AbQacd8d6pBJJuTzbrztLz/whatsapp_logo_09eed037.png";
 const TALLY_LINK = "https://forms.gle/K2jUxAYeHfpaxSYf8";
