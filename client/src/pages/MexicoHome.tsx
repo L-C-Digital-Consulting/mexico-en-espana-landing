@@ -1,6 +1,6 @@
 /*
  * México en España — Landing Page
- * Next Abogados · Ascente
+ * Next Abogados · Next Asesores
  * Light bg: white / gray-50 · Accent: #C8102E (España) · #006847 (México) · Dark: #0D1B2A
  */
 
@@ -153,7 +153,7 @@ function HeroSection() {
           {/* Text panel con borde izquierdo amarillo */}
           <div className="border-l-4 border-[#FCBA05] pl-6">
             <p className="text-white/50 font-semibold text-xs tracking-widest uppercase mb-5">
-              Next Abogados · Ascente — Madrid
+              Next Abogados · Next Asesores — Madrid
             </p>
             <h1
               className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6"
@@ -311,7 +311,7 @@ function QuienesSomosSection() {
               Next Abogados es un despacho independiente fundado en 2014 por Rafael Núñez Blázquez, orientado a ofrecer servicios legales de elevada calidad técnica en Derecho Fiscal, Inmobiliario, Mercantil y Procesal.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              En 2020 constituimos Ascente, nuestra unidad económico-financiera, para acompañar a nuestros clientes también en la gestión integral de su actividad empresarial.
+              En 2020 constituimos Next Asesores, nuestra unidad económico-financiera, para acompañar a nuestros clientes también en la gestión integral de su actividad empresarial.
             </p>
             <div className="space-y-3">
               {[
@@ -725,7 +725,7 @@ const bloques = [
   },
   {
     icon: FileText,
-    titulo: "Ascente",
+    titulo: "Next Asesores",
     subtitulo: "Compliance y administración en España",
     variant: "yellow" as const,
     servicios: [
@@ -1295,7 +1295,7 @@ function Footer() {
               <span className="text-white/40">en</span>{" "}
               <span className="text-[#FCBA05]">España</span>
             </p>
-            <p className="text-sm">Next Abogados · Ascente</p>
+            <p className="text-sm">Grupo Next</p>
             <p className="text-sm mt-1">C/ Miguel Ángel 21, planta baja B</p>
             <p className="text-sm">28010 Madrid</p>
           </div>
