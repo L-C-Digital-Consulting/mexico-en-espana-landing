@@ -1075,12 +1075,6 @@ const equipoNext = [
     bio: "Asociado Senior. UCLM · CEF · ESADE. Fiscalidad empresarial, ISR (IRPF), IS, IVA, Ley Beckham y procedimientos tributarios ante la AEAT (SAT).",
     foto: "/team/angel.jpg",
   },
-  {
-    nombre: "Alfonso Picón",
-    cargo: "Dirección Administrativa",
-    bio: "Responsable de contabilidad, compliance y administración de sociedades. Gestión integral del día a día de las empresas cliente.",
-    foto: "/team/alfonso.jpg",
-  },
 ];
 
 function EquipoSection() {
@@ -1101,7 +1095,7 @@ function EquipoSection() {
             Profesionales senior colegiados en Madrid. Cada cliente es atendido directamente por quienes firman — sin intermediarios.
           </p>
         </motion.div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {equipoNext.map((m, i) => (
             <motion.div
               key={i}

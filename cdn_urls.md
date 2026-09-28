@@ -13,7 +13,7 @@
 |------|-----|
 | `/img/whatsapp.png` | Icono de WhatsApp en el CTA y el footer |
 | `/hero-madrid.png` | Fondo del hero |
-| `/team/*.jpg` | Fotos del equipo (miguel, rafael, yolanda, carlos, angel, alfonso) |
+| `/team/*.jpg` | Fotos del equipo (miguel, rafael, yolanda, carlos, angel) |
 | `/logo-lc-negro.png`, `/logo-lc-blanco.png`, `/logo-lc.svg` | Logos L&C |
 | `/proceso-visual.png` | Diagrama del proceso |
 | `/og-image.jpg` | Imagen Open Graph / Twitter Card |
